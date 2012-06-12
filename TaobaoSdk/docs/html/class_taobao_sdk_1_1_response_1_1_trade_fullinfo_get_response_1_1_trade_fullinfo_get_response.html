@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Response::TradeFullinfoGetResponse::TradeFullinfoGetResponse��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Response</b>::<b>TradeFullinfoGetResponse</b>::<a class="el" href="class_taobao_sdk_1_1_response_1_1_trade_fullinfo_get_response_1_1_trade_fullinfo_get_response.html">TradeFullinfoGetResponse</a></div>
+<h1>TaobaoSdk::Response::TradeFullinfoGetResponse::TradeFullinfoGetResponse��ο�</h1><!-- doxytag: class="TaobaoSdk::Response::TradeFullinfoGetResponse::TradeFullinfoGetResponse" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Response: 获取单笔交易的详细信息 1. </span> 
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_response_1_1_trade_fullinfo_get_response_1_1_trade_fullinfo_get_response-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="0120d408448602166ca80f5076109a0c"></a><!-- doxytag: member="TaobaoSdk::Response::TradeFullinfoGetResponse::TradeFullinfoGetResponse::__init__" ref="0120d408448602166ca80f5076109a0c" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_trade_fullinfo_get_response_1_1_trade_fullinfo_get_response.html#042edbb5077e8b04b99155d61d31525c">responseStatus</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的返回信息,包含状态等</span>  <a href="#042edbb5077e8b04b99155d61d31525c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_trade_fullinfo_get_response_1_1_trade_fullinfo_get_response.html#09b193b92789d60c0f99e8d8f386f211">responseBody</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的响应内容</span>  <a href="#09b193b92789d60c0f99e8d8f386f211"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_trade_fullinfo_get_response_1_1_trade_fullinfo_get_response.html#d52187d0abf2b9c5534942e178f8fb69">trade</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">搜索到的交易信息列表，返回的Trade和Order中包含的具体信息为入参fields请求的字段信息</span>  <a href="#d52187d0abf2b9c5534942e178f8fb69"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Response: 获取单笔交易的详细信息 1. </span>
+<p>
+只有在交易成功的状态下才能取到交易佣金，其它状态下取到的都是零或空值 2.只有单笔订单的情况下Trade数据结构中才包含商品相关的信息 3.获取到的Order中的payment字段在单笔子订单时包含物流费用，多笔子订单时不包含物流费用 注：包含以下字段的返回会增加TOP的后台压力，请仅在确实需要的情况下才去获取：commission_fee, buyer_alipay_no, seller_alipay_no, buyer_email, seller_mobile, seller_phone, seller_name, seller_email, timeout_action_time, item_memo, trade_memo, title, available_confirm_fee <ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="09b193b92789d60c0f99e8d8f386f211"></a><!-- doxytag: member="TaobaoSdk::Response::TradeFullinfoGetResponse::TradeFullinfoGetResponse::responseBody" ref="09b193b92789d60c0f99e8d8f386f211" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_trade_fullinfo_get_response_1_1_trade_fullinfo_get_response.html#09b193b92789d60c0f99e8d8f386f211">TaobaoSdk::Response::TradeFullinfoGetResponse::TradeFullinfoGetResponse::responseBody</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的响应内容</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="042edbb5077e8b04b99155d61d31525c"></a><!-- doxytag: member="TaobaoSdk::Response::TradeFullinfoGetResponse::TradeFullinfoGetResponse::responseStatus" ref="042edbb5077e8b04b99155d61d31525c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_trade_fullinfo_get_response_1_1_trade_fullinfo_get_response.html#042edbb5077e8b04b99155d61d31525c">TaobaoSdk::Response::TradeFullinfoGetResponse::TradeFullinfoGetResponse::responseStatus</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的返回信息,包含状态等</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">dict</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="d52187d0abf2b9c5534942e178f8fb69"></a><!-- doxytag: member="TaobaoSdk::Response::TradeFullinfoGetResponse::TradeFullinfoGetResponse::trade" ref="d52187d0abf2b9c5534942e178f8fb69" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_trade_fullinfo_get_response_1_1_trade_fullinfo_get_response.html#d52187d0abf2b9c5534942e178f8fb69">TaobaoSdk::Response::TradeFullinfoGetResponse::TradeFullinfoGetResponse::trade</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">搜索到的交易信息列表，返回的Trade和Order中包含的具体信息为入参fields请求的字段信息</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Trade</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Object</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Response/TradeFullinfoGetResponse.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:31:00 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

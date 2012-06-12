@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Request</b>::<b>PromotionLimitdiscountGetRequest</b>::<a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html">PromotionLimitdiscountGetRequest</a></div>
+<h1>TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest��ο�</h1><!-- doxytag: class="TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">分页查询某个卖家的限时打折信息。每页20条数据，按照结束时间降序排列。也可指定某一个限时打折id查询唯一的限时打折信息。</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="687acb38797b505ea5d2688f14c1ab9f"></a><!-- doxytag: member="TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::__init__" ref="687acb38797b505ea5d2688f14c1ab9f" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#71dbe56c02f5cbb9b9e2652069a819af">method</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span>  <a href="#71dbe56c02f5cbb9b9e2652069a819af"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#fc58328f394d284922cdc084c3417d6b">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span>  <a href="#fc58328f394d284922cdc084c3417d6b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#077ff3f9bc10b5575b5d4613607bfe61">end_time</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">限时打折结束时间。输入的时间会被截取，年月日有效，时分秒忽略。</span>  <a href="#077ff3f9bc10b5575b5d4613607bfe61"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#2162892de183da4939bc7a585b35b76c">limit_discount_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">限时打折ID。这个针对查询唯一限时打折情况。若此字段不为空，则说明操作为单条限时打折记录查询，其他字段忽略。若想分页按条件查询，这个字段置为空。</span>  <a href="#2162892de183da4939bc7a585b35b76c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#df55c52c75ddc94508e560862c411995">page_number</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">分页页号。默认1。当页数大于最大页数时，结果为最大页数的数据。</span>  <a href="#df55c52c75ddc94508e560862c411995"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#43a54b0b1f8352bfe86dd4fcd47b7f73">start_time</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">限时打折开始时间。输入的时间会被截取，年月日有效，时分秒忽略。</span>  <a href="#43a54b0b1f8352bfe86dd4fcd47b7f73"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#fc0c6fab7c82eff7ddf8317aa6611a2a">status</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">限时打折活动状态。ALL:全部状态;OVER:已结束;DOING:进行中;PROPARE:未开始(只支持大写)。当limit_discount_id为空时，为空时，默认为全部的状态。</span>  <a href="#fc0c6fab7c82eff7ddf8317aa6611a2a"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">分页查询某个卖家的限时打折信息。每页20条数据，按照结束时间降序排列。也可指定某一个限时打折id查询唯一的限时打折信息。</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="077ff3f9bc10b5575b5d4613607bfe61"></a><!-- doxytag: member="TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::end_time" ref="077ff3f9bc10b5575b5d4613607bfe61" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#077ff3f9bc10b5575b5d4613607bfe61">TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::end_time</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">限时打折结束时间。输入的时间会被截取，年月日有效，时分秒忽略。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="2162892de183da4939bc7a585b35b76c"></a><!-- doxytag: member="TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::limit_discount_id" ref="2162892de183da4939bc7a585b35b76c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#2162892de183da4939bc7a585b35b76c">TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::limit_discount_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">限时打折ID。这个针对查询唯一限时打折情况。若此字段不为空，则说明操作为单条限时打折记录查询，其他字段忽略。若想分页按条件查询，这个字段置为空。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="71dbe56c02f5cbb9b9e2652069a819af"></a><!-- doxytag: member="TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::method" ref="71dbe56c02f5cbb9b9e2652069a819af" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#71dbe56c02f5cbb9b9e2652069a819af">TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::method</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="df55c52c75ddc94508e560862c411995"></a><!-- doxytag: member="TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::page_number" ref="df55c52c75ddc94508e560862c411995" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#df55c52c75ddc94508e560862c411995">TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::page_number</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">分页页号。默认1。当页数大于最大页数时，结果为最大页数的数据。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="43a54b0b1f8352bfe86dd4fcd47b7f73"></a><!-- doxytag: member="TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::start_time" ref="43a54b0b1f8352bfe86dd4fcd47b7f73" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#43a54b0b1f8352bfe86dd4fcd47b7f73">TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::start_time</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">限时打折开始时间。输入的时间会被截取，年月日有效，时分秒忽略。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="fc0c6fab7c82eff7ddf8317aa6611a2a"></a><!-- doxytag: member="TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::status" ref="fc0c6fab7c82eff7ddf8317aa6611a2a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#fc0c6fab7c82eff7ddf8317aa6611a2a">TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::status</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">限时打折活动状态。ALL:全部状态;OVER:已结束;DOING:进行中;PROPARE:未开始(只支持大写)。当limit_discount_id为空时，为空时，默认为全部的状态。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="fc58328f394d284922cdc084c3417d6b"></a><!-- doxytag: member="TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::timestamp" ref="fc58328f394d284922cdc084c3417d6b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_promotion_limitdiscount_get_request_1_1_promotion_limitdiscount_get_request.html#fc58328f394d284922cdc084c3417d6b">TaobaoSdk::Request::PromotionLimitdiscountGetRequest::PromotionLimitdiscountGetRequest::timestamp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Request/PromotionLimitdiscountGetRequest.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:49 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

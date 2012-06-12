@@ -1,0 +1,390 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Request</b>::<b>TopatsDeliverySendRequest</b>::<a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html">TopatsDeliverySendRequest</a></div>
+<h1>TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest��ο�</h1><!-- doxytag: class="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">使用指南：http://open.taobao.com/dev/index.php/ATSE4BDBFE794A8E68C87E58D97 1. </span> 
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="363f86fb6e58d8ac4c056e770461568e"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::__init__" ref="363f86fb6e58d8ac4c056e770461568e" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#72eff615149c624e339713c99180f980">method</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span>  <a href="#72eff615149c624e339713c99180f980"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#da4c0f076f78d8ebac50d554d259e53e">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span>  <a href="#da4c0f076f78d8ebac50d554d259e53e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#6b9cfa8345d517de9bde514b20f70be4">company_codes</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每个tid所对应的物流公司代码。可以不传，表示所有的物流公司都为"其他"，但是只要有一个订单需要指定物流公司，所有的订单都需要指定物流公司,每个类型之间用";"连接。排列要和tid顺序一致，不需要指定物流公司的订单，该位置上放上一个空字符串""。可以不传，传了长度和位置要和tid保持一致。 每个company_code表示物流公司代码. </span> <a href="#6b9cfa8345d517de9bde514b20f70be4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#d03d719f16a85b663114643747151d3f">memos</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每个tid所对应的卖家备注。可以不传，表示所有的发货订单都不需要卖家备注，但是只要有一个订单需要指定卖家备注，所有的订单都需要指定卖家备注,每个卖家备注之间用";"连接。排列要和tid顺序一致，不需要指定卖家备注的订单，该位置上放上一个空字符串""。可以不传，传了长度和位置要和tid保持一致。卖家备注. </span> <a href="#d03d719f16a85b663114643747151d3f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#fcff387a930c7b4d1c9e001b60d9f903">order_types</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每个tid所对应的物流发货类型。可以不传，表示所有的发货类型都为"delivery_needed"，但是只要有一个订单需要指定发货类型，所有的订单都需要指定发货类型,每个类型之间用";"连接。排列要和tid顺序一致，不需要指定发货类型的订单，该位置上放上一个空字符串""。可以不传，传了长度和位置要和tid保持一致。 每个类型可选( delivery_needed(物流订单发货),virtual_goods(虚拟物品发货). </span> <a href="#fcff387a930c7b4d1c9e001b60d9f903"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#7921891ba1ad3a98a1243601a16df5e9">out_sids</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每个tid所对应的物流公司运单号。可以不传，表示所有的物流订单都没有订单号，但是只要有一个订单需要有订单号，所有的订单都需要指定订单号,每个订单号之间用";"连接。排列要和tid顺序一致，不需要指定订单号的订单，该位置上放上一个空字符串""。可以不传，传了长度和位置要和tid保持一致。 具体一个物流公司的真实运单号码。淘宝官方物流会校验，请谨慎传入；若company_codes中传入的代码非淘宝官方物流合作公司，此处运单号不校验。如果orderType为delivery_needed，则必传</span>  <a href="#7921891ba1ad3a98a1243601a16df5e9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#e412260502f3ac40378fbcc9a1eccaa1">seller_address</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家地址(详细地址). </span> <a href="#e412260502f3ac40378fbcc9a1eccaa1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#b9c57cb887b049ba7011437b1f252899">seller_area_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家所在地国家公布的标准地区码. </span> <a href="#b9c57cb887b049ba7011437b1f252899"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#b57920b603963fd3c1484540e7563bd6">seller_mobile</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家手机号码</span>  <a href="#b57920b603963fd3c1484540e7563bd6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#192ea00b05d315cec3931ed9e489f8a3">seller_name</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家姓名。如果orderType为delivery_needed，则必传</span>  <a href="#192ea00b05d315cec3931ed9e489f8a3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#51b8696f09c8af7ad01836f8530bf50f">seller_phone</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家固定电话. </span> <a href="#51b8696f09c8af7ad01836f8530bf50f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#468ad29e086948c952cc623354843e3d">seller_zip</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家邮编。如果orderType为delivery_needed，则必传</span>  <a href="#468ad29e086948c952cc623354843e3d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#4bcc2e0400ca84df77950249a5e2ba10">tids</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">批量发货的订单id列表，每个订单id必需是合法的数字类型的tid，每个tid之间以";"分隔，至少要指定一个tid，最多不超过40个tid</span>  <a href="#4bcc2e0400ca84df77950249a5e2ba10"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">使用指南：http://open.taobao.com/dev/index.php/ATSE4BDBFE794A8E68C87E58D97 1. </span>
+<p>
+提供异步批量物流发货功能 2.一次最多发货40个订单 3.提交任务会进行初步任务校验，如果成功会返回任务号和创建时间，如果失败就报错 4.可以接收淘宝发出的任务完成消息，也可以过一段时间来取结果。获取结果接口为taobao.topats.result.get 5.此api执行完成发送的通知消息格式为{"task":{"task_id":123456,"created":"2010-8-19"}} <ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="6b9cfa8345d517de9bde514b20f70be4"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::company_codes" ref="6b9cfa8345d517de9bde514b20f70be4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#6b9cfa8345d517de9bde514b20f70be4">TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::company_codes</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每个tid所对应的物流公司代码。可以不传，表示所有的物流公司都为"其他"，但是只要有一个订单需要指定物流公司，所有的订单都需要指定物流公司,每个类型之间用";"连接。排列要和tid顺序一致，不需要指定物流公司的订单，该位置上放上一个空字符串""。可以不传，传了长度和位置要和tid保持一致。 每个company_code表示物流公司代码. </span>
+<p>
+如"POST"就代表中国邮政,"ZJS"就代表宅急送.调用 taobao.logisticcompanies.get 获取。如传入的代码非淘宝官方物流合作公司，默认是“其他”物流的方式，在淘宝不显示物流具体进度，故传入需谨慎。如果orderType为delivery_needed，则必传 <ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="d03d719f16a85b663114643747151d3f"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::memos" ref="d03d719f16a85b663114643747151d3f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#d03d719f16a85b663114643747151d3f">TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::memos</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每个tid所对应的卖家备注。可以不传，表示所有的发货订单都不需要卖家备注，但是只要有一个订单需要指定卖家备注，所有的订单都需要指定卖家备注,每个卖家备注之间用";"连接。排列要和tid顺序一致，不需要指定卖家备注的订单，该位置上放上一个空字符串""。可以不传，传了长度和位置要和tid保持一致。卖家备注. </span>
+<p>
+最大长度为250个字符。如果orderType为delivery_needed，则必传 <ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="72eff615149c624e339713c99180f980"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::method" ref="72eff615149c624e339713c99180f980" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#72eff615149c624e339713c99180f980">TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::method</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="fcff387a930c7b4d1c9e001b60d9f903"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::order_types" ref="fcff387a930c7b4d1c9e001b60d9f903" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#fcff387a930c7b4d1c9e001b60d9f903">TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::order_types</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每个tid所对应的物流发货类型。可以不传，表示所有的发货类型都为"delivery_needed"，但是只要有一个订单需要指定发货类型，所有的订单都需要指定发货类型,每个类型之间用";"连接。排列要和tid顺序一致，不需要指定发货类型的订单，该位置上放上一个空字符串""。可以不传，传了长度和位置要和tid保持一致。 每个类型可选( delivery_needed(物流订单发货),virtual_goods(虚拟物品发货). </span>
+<p>
+) 注:选择virtual_goods类型进行发货的话下面的参数可以不需填写。如果选择delivery_needed 则下面的参数必须要填写 <ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="7921891ba1ad3a98a1243601a16df5e9"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::out_sids" ref="7921891ba1ad3a98a1243601a16df5e9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#7921891ba1ad3a98a1243601a16df5e9">TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::out_sids</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每个tid所对应的物流公司运单号。可以不传，表示所有的物流订单都没有订单号，但是只要有一个订单需要有订单号，所有的订单都需要指定订单号,每个订单号之间用";"连接。排列要和tid顺序一致，不需要指定订单号的订单，该位置上放上一个空字符串""。可以不传，传了长度和位置要和tid保持一致。 具体一个物流公司的真实运单号码。淘宝官方物流会校验，请谨慎传入；若company_codes中传入的代码非淘宝官方物流合作公司，此处运单号不校验。如果orderType为delivery_needed，则必传</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="e412260502f3ac40378fbcc9a1eccaa1"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::seller_address" ref="e412260502f3ac40378fbcc9a1eccaa1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#e412260502f3ac40378fbcc9a1eccaa1">TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::seller_address</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家地址(详细地址). </span>
+<p>
+如:XXX街道XXX门牌,省市区不需要提供。如果orderType为delivery_needed，则必传 <ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="b9c57cb887b049ba7011437b1f252899"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::seller_area_id" ref="b9c57cb887b049ba7011437b1f252899" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#b9c57cb887b049ba7011437b1f252899">TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::seller_area_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家所在地国家公布的标准地区码. </span>
+<p>
+参考:<a href="http://www.stats.gov.cn/tjbz/xzqhdm/t20080215_402462675.htm">http://www.stats.gov.cn/tjbz/xzqhdm/t20080215_402462675.htm</a> 或者调用 taobao.areas.get 获取。如果orderType为delivery_needed，则必传 <ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="b57920b603963fd3c1484540e7563bd6"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::seller_mobile" ref="b57920b603963fd3c1484540e7563bd6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#b57920b603963fd3c1484540e7563bd6">TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::seller_mobile</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家手机号码</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="192ea00b05d315cec3931ed9e489f8a3"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::seller_name" ref="192ea00b05d315cec3931ed9e489f8a3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#192ea00b05d315cec3931ed9e489f8a3">TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::seller_name</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家姓名。如果orderType为delivery_needed，则必传</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="51b8696f09c8af7ad01836f8530bf50f"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::seller_phone" ref="51b8696f09c8af7ad01836f8530bf50f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#51b8696f09c8af7ad01836f8530bf50f">TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::seller_phone</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家固定电话. </span>
+<p>
+包含区号,电话,分机号,中间用 " – "; 卖家固定电话和卖家手机号码,必须填写一个. <ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="468ad29e086948c952cc623354843e3d"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::seller_zip" ref="468ad29e086948c952cc623354843e3d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#468ad29e086948c952cc623354843e3d">TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::seller_zip</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家邮编。如果orderType为delivery_needed，则必传</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="4bcc2e0400ca84df77950249a5e2ba10"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::tids" ref="4bcc2e0400ca84df77950249a5e2ba10" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#4bcc2e0400ca84df77950249a5e2ba10">TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::tids</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">批量发货的订单id列表，每个订单id必需是合法的数字类型的tid，每个tid之间以";"分隔，至少要指定一个tid，最多不超过40个tid</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="da4c0f076f78d8ebac50d554d259e53e"></a><!-- doxytag: member="TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::timestamp" ref="da4c0f076f78d8ebac50d554d259e53e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_topats_delivery_send_request_1_1_topats_delivery_send_request.html#da4c0f076f78d8ebac50d554d259e53e">TaobaoSdk::Request::TopatsDeliverySendRequest::TopatsDeliverySendRequest::timestamp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Request/TopatsDeliverySendRequest.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:52 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

@@ -1,0 +1,792 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Request</b>::<b>ItemsGetRequest</b>::<a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html">ItemsGetRequest</a></div>
+<h1>TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest��ο�</h1><!-- doxytag: class="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">根据传入的搜索条件，获取商品列表（类似于淘宝页面上的商品搜索功能，但是只有搜索到的商品列表，不包含商品的ItemCategory列表） 只能获得商品的部分信息，商品的详细信息请通过taobao.item.get获取 如果只输入fields其他条件都不输入，系统会因为搜索条件不足而报错。 不能通过设置cid=0来查询。</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6d356b96b3072f25af7539525ec2f139"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::__init__" ref="6d356b96b3072f25af7539525ec2f139" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#6f5d0512251857060613b430fc045999">method</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span>  <a href="#6f5d0512251857060613b430fc045999"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#f2ec0fb48a474cac4391b447fefad01b">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span>  <a href="#f2ec0fb48a474cac4391b447fefad01b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#4eb63f2e73ce3964f39f3b1ee9a0c895">cid</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属类目Id,ItemCat中的cid字段。可以通过taobao.itemcats.get取到</span>  <a href="#4eb63f2e73ce3964f39f3b1ee9a0c895"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#d4eb74a58333934d50969536838fa0c6">end_price</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品最高价格。单位:元。正整数，取值范围:0-100000000</span>  <a href="#d4eb74a58333934d50969536838fa0c6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#2159bedb07b1057e15fc2e381082ff63">end_score</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属卖家的最大信用等级数，1表示1心，2表示2心……，设置此条件表示搜索结果里的商品，所属的卖家信用必须小于等于设置的end_score</span>  <a href="#2159bedb07b1057e15fc2e381082ff63"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#c557602224f058628724c29111f2722f">end_volume</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品最近成交量最大值，设置此条件表示搜索结果里的商品，最近成交量必须小于等于设置的end_volume</span>  <a href="#c557602224f058628724c29111f2722f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#8063a631b7102cd0964c6287e87f7309">fields</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">需返回的商品结构字段列表。可选值为Item中的以下字段：num_iid,title,nick,pic_url,cid,price,type,delist_time,post_fee;多个字段用“,”分隔。如：num_iid,title。新增字段score(卖家信用等级数),volume(最近成交量),location（卖家地址，可以分别获取location.city,location.state）,num_iid商品数字id。此接口返回的post_fee是快递费用，volume对应搜索商品列表页的最近成交量</span>  <a href="#8063a631b7102cd0964c6287e87f7309"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#d923709b3b93e3f4039f2ea352a03a29">genuine_security</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否正品保障商品(既是如实描述，又是7天无理由退换货的商品，设置了这个属性时：is_prepay和promoted_service不能再行设置)，设置为true表示该商品是正品保障的商品，设置为false或不设置表示不判断这个属性</span>  <a href="#d923709b3b93e3f4039f2ea352a03a29"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#46bad98aae2ee1f7aa4a1ea9bf0f7b21">is_3D</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否是3D淘宝的商品,置为false或为空表示不对是否3D商品进行判断</span>  <a href="#46bad98aae2ee1f7aa4a1ea9bf0f7b21"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#21863514012e6d462b39b78c2fbdf49c">is_cod</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否支持货到付款，设置为true表示支持货到付款，设置为false或不设置表示不判断这个属性</span>  <a href="#21863514012e6d462b39b78c2fbdf49c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#e334491659cd8382f104a035ccdd3391">is_mall</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">表示是否搜索商城的商品这一搜索条件。 值含义：true：搜索商城商品，false：搜素集市商品，若为null，则搜索全部的商品（默认值）</span>  <a href="#e334491659cd8382f104a035ccdd3391"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#a2305bf4cfe3f559b57eb12ff573ad17">is_prepay</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否如实描述(即:先行赔付)商品，设置为true表示该商品是如实描述的商品，设置为false或不设置表示不判断这个属性</span>  <a href="#a2305bf4cfe3f559b57eb12ff573ad17"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#e727d77a642348b67cc919e4a20be40f">is_xinpin</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">表示是否新品这一搜索条件。 值含义：true-是新品，false-无限制，null-无限制</span>  <a href="#e727d77a642348b67cc919e4a20be40f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#4dc7133d7a9fe11f9b036dde9aa54a84">nicks</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">所在市。如：杭州。具体可以根据taobao.areas.get取到</span> <span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">所在省。如：浙江。具体可以根据taobao.areas.get 取到</span> <span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家昵称列表。多个之间以“,”分隔;最多支持5个卖家昵称。如：nick1,nick2,nick3</span>  <a href="#4dc7133d7a9fe11f9b036dde9aa54a84"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#d035c46d0045066044ba2d0353bcc0d3">one_station</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否淘1站代购商品，设置为true表示淘1站商品，设置为false或不设置表示不判断这个属性</span>  <a href="#d035c46d0045066044ba2d0353bcc0d3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#4c29c59492e50867d0973d4a644d2309">order_by</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">排序方式。格式为column:asc/desc,column可选值为: price（价格）, delist_time（下架时间）, seller_credit（卖家信用）,popularity(人气)。如按价格升序排列表示为：price:asc。新增排序字段：volume（最近成交量）</span>  <a href="#4c29c59492e50867d0973d4a644d2309"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#93628d778e6fe463f6b9909392bb515b">page_no</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">页码。取值范围:大于零的整数。默认值为1,即默认返回第一页数据。用此接口获取数据时，当翻页获取的条数（page_no*page_size）超过10240,为了保护后台搜索引擎，接口将报错。所以请大家尽可能的细化自己的搜索条件，例如根据修改时间分段获取商品</span>  <a href="#93628d778e6fe463f6b9909392bb515b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#d00fb18b82e04455ef02b693caed5b13">page_size</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每页条数。取值范围:大于零的整数;最大值:200;默认值:40</span>  <a href="#d00fb18b82e04455ef02b693caed5b13"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#789b39ffe5685f8d117a79864f3b83d3">post_free</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">免运费（不设置包含所有邮费状态，设置为true结果只有卖家包邮的商品）。不能单独使用，要和其他条件一起用才行</span>  <a href="#789b39ffe5685f8d117a79864f3b83d3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#9dd2f3e717c12365ff7c3c72b3e4d42d">product_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">可以根据产品Id搜索属于这个spu的商品。这个字段可以通过查询 taobao.products.get 取到</span>  <a href="#9dd2f3e717c12365ff7c3c72b3e4d42d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#ab7240543960cb0078f7e66e94c513f9">promoted_service</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否提供保障服务的商品。可选入参有：2、4。设置为2表示该商品是“假一赔三”的商品，设置为4表示该商品是“7天无理由退换货”的商品</span>  <a href="#ab7240543960cb0078f7e66e94c513f9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#5095026935f036d1dfa7f9edc270d1ae">props</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品属性。可以搜到拥有和输入的属性一样的商品列表。字段格式为：pid1:vid1;pid2:vid2. </span> <a href="#5095026935f036d1dfa7f9edc270d1ae"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#7f5bb361735505f99f8e19239c48b109">q</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">搜索字段。 用来搜索商品的title以及商品所对应的产品的title</span>  <a href="#7f5bb361735505f99f8e19239c48b109"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#f185d557033a607c2730fbf6cc697b38">start_price</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品最低价格。单位:元。正整数，取值范围:0-100000000。</span>  <a href="#f185d557033a607c2730fbf6cc697b38"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#fdbb6dcc8e54e31199c885d5eaf62765">start_score</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属卖家的最小信用等级数，1表示1心，2表示2心……，设置此条件表示搜索结果里的商品，所属的卖家信用必须大于等于设置的start_score。</span>  <a href="#fdbb6dcc8e54e31199c885d5eaf62765"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#edb9723bf69fc3345049cede1363d79d">start_volume</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品最近成交量最小值，设置此条件表示搜索结果里的商品，最近成交量必须大于等于设置的start_volume。</span>  <a href="#edb9723bf69fc3345049cede1363d79d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#25c39f4c5c5af8d4d04e548183dc0389">stuff_status</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品的新旧状态。可选入参有：new、second、unused 。设置为new表示该商品是全新的商品，设置为second表示该商品是二手的商品，设置为unused表示该商品是闲置的商品</span>  <a href="#25c39f4c5c5af8d4d04e548183dc0389"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#5cd639efe255c173e293d98a5147d68c">ww_status</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">旺旺在线状态（不设置结果包含所有状态，设置为true结果只有旺旺在线卖家的商品）。不能单独使用，要和其他条件一起用才行</span>  <a href="#5cd639efe255c173e293d98a5147d68c"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">根据传入的搜索条件，获取商品列表（类似于淘宝页面上的商品搜索功能，但是只有搜索到的商品列表，不包含商品的ItemCategory列表） 只能获得商品的部分信息，商品的详细信息请通过taobao.item.get获取 如果只输入fields其他条件都不输入，系统会因为搜索条件不足而报错。 不能通过设置cid=0来查询。</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="4eb63f2e73ce3964f39f3b1ee9a0c895"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::cid" ref="4eb63f2e73ce3964f39f3b1ee9a0c895" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#4eb63f2e73ce3964f39f3b1ee9a0c895">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::cid</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属类目Id,ItemCat中的cid字段。可以通过taobao.itemcats.get取到</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="d4eb74a58333934d50969536838fa0c6"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::end_price" ref="d4eb74a58333934d50969536838fa0c6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#d4eb74a58333934d50969536838fa0c6">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::end_price</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品最高价格。单位:元。正整数，取值范围:0-100000000</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="2159bedb07b1057e15fc2e381082ff63"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::end_score" ref="2159bedb07b1057e15fc2e381082ff63" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#2159bedb07b1057e15fc2e381082ff63">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::end_score</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属卖家的最大信用等级数，1表示1心，2表示2心……，设置此条件表示搜索结果里的商品，所属的卖家信用必须小于等于设置的end_score</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="c557602224f058628724c29111f2722f"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::end_volume" ref="c557602224f058628724c29111f2722f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#c557602224f058628724c29111f2722f">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::end_volume</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品最近成交量最大值，设置此条件表示搜索结果里的商品，最近成交量必须小于等于设置的end_volume</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="8063a631b7102cd0964c6287e87f7309"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::fields" ref="8063a631b7102cd0964c6287e87f7309" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#8063a631b7102cd0964c6287e87f7309">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::fields</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">需返回的商品结构字段列表。可选值为Item中的以下字段：num_iid,title,nick,pic_url,cid,price,type,delist_time,post_fee;多个字段用“,”分隔。如：num_iid,title。新增字段score(卖家信用等级数),volume(最近成交量),location（卖家地址，可以分别获取location.city,location.state）,num_iid商品数字id。此接口返回的post_fee是快递费用，volume对应搜索商品列表页的最近成交量</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Field List</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="d923709b3b93e3f4039f2ea352a03a29"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::genuine_security" ref="d923709b3b93e3f4039f2ea352a03a29" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#d923709b3b93e3f4039f2ea352a03a29">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::genuine_security</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否正品保障商品(既是如实描述，又是7天无理由退换货的商品，设置了这个属性时：is_prepay和promoted_service不能再行设置)，设置为true表示该商品是正品保障的商品，设置为false或不设置表示不判断这个属性</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="46bad98aae2ee1f7aa4a1ea9bf0f7b21"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::is_3D" ref="46bad98aae2ee1f7aa4a1ea9bf0f7b21" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#46bad98aae2ee1f7aa4a1ea9bf0f7b21">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::is_3D</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否是3D淘宝的商品,置为false或为空表示不对是否3D商品进行判断</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="21863514012e6d462b39b78c2fbdf49c"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::is_cod" ref="21863514012e6d462b39b78c2fbdf49c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#21863514012e6d462b39b78c2fbdf49c">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::is_cod</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否支持货到付款，设置为true表示支持货到付款，设置为false或不设置表示不判断这个属性</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="e334491659cd8382f104a035ccdd3391"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::is_mall" ref="e334491659cd8382f104a035ccdd3391" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#e334491659cd8382f104a035ccdd3391">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::is_mall</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">表示是否搜索商城的商品这一搜索条件。 值含义：true：搜索商城商品，false：搜素集市商品，若为null，则搜索全部的商品（默认值）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="a2305bf4cfe3f559b57eb12ff573ad17"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::is_prepay" ref="a2305bf4cfe3f559b57eb12ff573ad17" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#a2305bf4cfe3f559b57eb12ff573ad17">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::is_prepay</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否如实描述(即:先行赔付)商品，设置为true表示该商品是如实描述的商品，设置为false或不设置表示不判断这个属性</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="e727d77a642348b67cc919e4a20be40f"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::is_xinpin" ref="e727d77a642348b67cc919e4a20be40f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#e727d77a642348b67cc919e4a20be40f">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::is_xinpin</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">表示是否新品这一搜索条件。 值含义：true-是新品，false-无限制，null-无限制</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="6f5d0512251857060613b430fc045999"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::method" ref="6f5d0512251857060613b430fc045999" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#6f5d0512251857060613b430fc045999">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::method</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="4dc7133d7a9fe11f9b036dde9aa54a84"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::nicks" ref="4dc7133d7a9fe11f9b036dde9aa54a84" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#4dc7133d7a9fe11f9b036dde9aa54a84">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::nicks</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">所在市。如：杭州。具体可以根据taobao.areas.get取到</span> <span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">所在省。如：浙江。具体可以根据taobao.areas.get 取到</span> <span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家昵称列表。多个之间以“,”分隔;最多支持5个卖家昵称。如：nick1,nick2,nick3</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="d035c46d0045066044ba2d0353bcc0d3"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::one_station" ref="d035c46d0045066044ba2d0353bcc0d3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#d035c46d0045066044ba2d0353bcc0d3">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::one_station</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否淘1站代购商品，设置为true表示淘1站商品，设置为false或不设置表示不判断这个属性</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="4c29c59492e50867d0973d4a644d2309"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::order_by" ref="4c29c59492e50867d0973d4a644d2309" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#4c29c59492e50867d0973d4a644d2309">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::order_by</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">排序方式。格式为column:asc/desc,column可选值为: price（价格）, delist_time（下架时间）, seller_credit（卖家信用）,popularity(人气)。如按价格升序排列表示为：price:asc。新增排序字段：volume（最近成交量）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="93628d778e6fe463f6b9909392bb515b"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::page_no" ref="93628d778e6fe463f6b9909392bb515b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#93628d778e6fe463f6b9909392bb515b">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::page_no</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">页码。取值范围:大于零的整数。默认值为1,即默认返回第一页数据。用此接口获取数据时，当翻页获取的条数（page_no*page_size）超过10240,为了保护后台搜索引擎，接口将报错。所以请大家尽可能的细化自己的搜索条件，例如根据修改时间分段获取商品</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="d00fb18b82e04455ef02b693caed5b13"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::page_size" ref="d00fb18b82e04455ef02b693caed5b13" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#d00fb18b82e04455ef02b693caed5b13">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::page_size</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每页条数。取值范围:大于零的整数;最大值:200;默认值:40</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="789b39ffe5685f8d117a79864f3b83d3"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::post_free" ref="789b39ffe5685f8d117a79864f3b83d3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#789b39ffe5685f8d117a79864f3b83d3">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::post_free</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">免运费（不设置包含所有邮费状态，设置为true结果只有卖家包邮的商品）。不能单独使用，要和其他条件一起用才行</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="9dd2f3e717c12365ff7c3c72b3e4d42d"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::product_id" ref="9dd2f3e717c12365ff7c3c72b3e4d42d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#9dd2f3e717c12365ff7c3c72b3e4d42d">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::product_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">可以根据产品Id搜索属于这个spu的商品。这个字段可以通过查询 taobao.products.get 取到</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="ab7240543960cb0078f7e66e94c513f9"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::promoted_service" ref="ab7240543960cb0078f7e66e94c513f9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#ab7240543960cb0078f7e66e94c513f9">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::promoted_service</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否提供保障服务的商品。可选入参有：2、4。设置为2表示该商品是“假一赔三”的商品，设置为4表示该商品是“7天无理由退换货”的商品</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="5095026935f036d1dfa7f9edc270d1ae"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::props" ref="5095026935f036d1dfa7f9edc270d1ae" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#5095026935f036d1dfa7f9edc270d1ae">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::props</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品属性。可以搜到拥有和输入的属性一样的商品列表。字段格式为：pid1:vid1;pid2:vid2. </span>
+<p>
+属性的pid调用taobao.itemprops.get取得，属性值的vid用taobao.itempropvalues.get取得vid。 <ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="7f5bb361735505f99f8e19239c48b109"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::q" ref="7f5bb361735505f99f8e19239c48b109" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#7f5bb361735505f99f8e19239c48b109">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::q</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">搜索字段。 用来搜索商品的title以及商品所对应的产品的title</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="f185d557033a607c2730fbf6cc697b38"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::start_price" ref="f185d557033a607c2730fbf6cc697b38" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#f185d557033a607c2730fbf6cc697b38">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::start_price</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品最低价格。单位:元。正整数，取值范围:0-100000000。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="fdbb6dcc8e54e31199c885d5eaf62765"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::start_score" ref="fdbb6dcc8e54e31199c885d5eaf62765" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#fdbb6dcc8e54e31199c885d5eaf62765">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::start_score</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属卖家的最小信用等级数，1表示1心，2表示2心……，设置此条件表示搜索结果里的商品，所属的卖家信用必须大于等于设置的start_score。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="edb9723bf69fc3345049cede1363d79d"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::start_volume" ref="edb9723bf69fc3345049cede1363d79d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#edb9723bf69fc3345049cede1363d79d">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::start_volume</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品最近成交量最小值，设置此条件表示搜索结果里的商品，最近成交量必须大于等于设置的start_volume。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="25c39f4c5c5af8d4d04e548183dc0389"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::stuff_status" ref="25c39f4c5c5af8d4d04e548183dc0389" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#25c39f4c5c5af8d4d04e548183dc0389">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::stuff_status</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品的新旧状态。可选入参有：new、second、unused 。设置为new表示该商品是全新的商品，设置为second表示该商品是二手的商品，设置为unused表示该商品是闲置的商品</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="f2ec0fb48a474cac4391b447fefad01b"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::timestamp" ref="f2ec0fb48a474cac4391b447fefad01b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#f2ec0fb48a474cac4391b447fefad01b">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::timestamp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="5cd639efe255c173e293d98a5147d68c"></a><!-- doxytag: member="TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::ww_status" ref="5cd639efe255c173e293d98a5147d68c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_items_get_request_1_1_items_get_request.html#5cd639efe255c173e293d98a5147d68c">TaobaoSdk::Request::ItemsGetRequest::ItemsGetRequest::ww_status</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">旺旺在线状态（不设置结果包含所有状态，设置为true结果只有旺旺在线卖家的商品）。不能单独使用，要和其他条件一起用才行</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Request/ItemsGetRequest.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:47 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

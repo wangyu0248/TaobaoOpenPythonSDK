@@ -1,0 +1,416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Request</b>::<b>FenxiaoProductsGetRequest</b>::<a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html">FenxiaoProductsGetRequest</a></div>
+<h1>TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest��ο�</h1><!-- doxytag: class="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">查询供应商的产品数据。 * 入参传入pids将优先查询，即只按这个条件查询。 *入参传入sku_number将优先查询(没有传入pids)，即只按这个条件查询(最多显示50条) * 入参fields传skus将查询sku的数据，不传该参数默认不查询，返回产品的其它信息。 * 入参fields传入images将查询多图数据，不传只返回主图数据。 * 入参fields仅对传入pids生效（只有按ID查询时，才能查询额外的数据） * 查询结果按照产品发布时间倒序，即时间近的数据在前。</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a2d1b45f133d8398f8ae131798bfb1c5"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::__init__" ref="a2d1b45f133d8398f8ae131798bfb1c5" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#d1db5202a228f888b2e703558a32fb96">method</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span>  <a href="#d1db5202a228f888b2e703558a32fb96"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#17ce6df164a156f9c9b1d0d57a4db493">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span>  <a href="#17ce6df164a156f9c9b1d0d57a4db493"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#edc9152969f64c400f51c01bee59e039">end_modified</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">结束修改时间</span>  <a href="#edc9152969f64c400f51c01bee59e039"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#f45cc5e318157976654508381ff68ff5">fields</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">指定查询额外的信息，可选值：skus（sku数据）、images（多图），多个可选值用逗号分割。</span>  <a href="#f45cc5e318157976654508381ff68ff5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#376240e8dcf5f80b9541692aedef89f8">is_authz</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">查询产品列表时，查询入参“是否需要授权” yes:需要授权 no:不需要授权</span>  <a href="#376240e8dcf5f80b9541692aedef89f8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#c98ff68d0b98def3f9be8c701b098f96">item_ids</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">可根据导入的商品ID列表查询，优先级次于产品ID、sku_numbers，高于其他分页查询条件。最大限制20，用逗号分割，例如：“1001,1002,1003,1004,1005”</span>  <a href="#c98ff68d0b98def3f9be8c701b098f96"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#4a8682451ecca9e4142237a80efe074a">outer_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商家编码</span>  <a href="#4a8682451ecca9e4142237a80efe074a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#7dd9e647de89f0d7c23263957aee1c54">page_no</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">页码（大于0的整数，默认1）</span>  <a href="#7dd9e647de89f0d7c23263957aee1c54"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#6b3dcbda2a5574cdce10010920ce95ef">page_size</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每页记录数（默认20，最大50）</span>  <a href="#6b3dcbda2a5574cdce10010920ce95ef"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#1fc4fd419a3ec04c637e32728d5a3ad3">pids</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">产品ID列表（最大限制30），用逗号分割，例如：“1001,1002,1003,1004,1005”</span>  <a href="#1fc4fd419a3ec04c637e32728d5a3ad3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#7f3bd50879993545ff2570096dda6f09">productcat_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">产品线ID</span>  <a href="#7f3bd50879993545ff2570096dda6f09"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#7715d39971a01ffedc9193e1cca317a2">sku_number</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">sku商家编码</span>  <a href="#7715d39971a01ffedc9193e1cca317a2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#648f5415aa361ac49184fe43c17e10c2">start_modified</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">开始修改时间</span>  <a href="#648f5415aa361ac49184fe43c17e10c2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#bac9a4a40e1e6f1e36e06cdc9a59edb6">status</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">产品状态，可选值：up（上架）、down（下架），不传默认查询所有</span>  <a href="#bac9a4a40e1e6f1e36e06cdc9a59edb6"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">查询供应商的产品数据。 * 入参传入pids将优先查询，即只按这个条件查询。 *入参传入sku_number将优先查询(没有传入pids)，即只按这个条件查询(最多显示50条) * 入参fields传skus将查询sku的数据，不传该参数默认不查询，返回产品的其它信息。 * 入参fields传入images将查询多图数据，不传只返回主图数据。 * 入参fields仅对传入pids生效（只有按ID查询时，才能查询额外的数据） * 查询结果按照产品发布时间倒序，即时间近的数据在前。</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="edc9152969f64c400f51c01bee59e039"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::end_modified" ref="edc9152969f64c400f51c01bee59e039" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#edc9152969f64c400f51c01bee59e039">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::end_modified</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">结束修改时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="f45cc5e318157976654508381ff68ff5"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::fields" ref="f45cc5e318157976654508381ff68ff5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#f45cc5e318157976654508381ff68ff5">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::fields</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">指定查询额外的信息，可选值：skus（sku数据）、images（多图），多个可选值用逗号分割。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Field List</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="376240e8dcf5f80b9541692aedef89f8"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::is_authz" ref="376240e8dcf5f80b9541692aedef89f8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#376240e8dcf5f80b9541692aedef89f8">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::is_authz</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">查询产品列表时，查询入参“是否需要授权” yes:需要授权 no:不需要授权</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="c98ff68d0b98def3f9be8c701b098f96"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::item_ids" ref="c98ff68d0b98def3f9be8c701b098f96" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#c98ff68d0b98def3f9be8c701b098f96">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::item_ids</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">可根据导入的商品ID列表查询，优先级次于产品ID、sku_numbers，高于其他分页查询条件。最大限制20，用逗号分割，例如：“1001,1002,1003,1004,1005”</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="d1db5202a228f888b2e703558a32fb96"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::method" ref="d1db5202a228f888b2e703558a32fb96" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#d1db5202a228f888b2e703558a32fb96">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::method</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="4a8682451ecca9e4142237a80efe074a"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::outer_id" ref="4a8682451ecca9e4142237a80efe074a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#4a8682451ecca9e4142237a80efe074a">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::outer_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商家编码</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="7dd9e647de89f0d7c23263957aee1c54"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::page_no" ref="7dd9e647de89f0d7c23263957aee1c54" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#7dd9e647de89f0d7c23263957aee1c54">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::page_no</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">页码（大于0的整数，默认1）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="6b3dcbda2a5574cdce10010920ce95ef"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::page_size" ref="6b3dcbda2a5574cdce10010920ce95ef" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#6b3dcbda2a5574cdce10010920ce95ef">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::page_size</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每页记录数（默认20，最大50）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="1fc4fd419a3ec04c637e32728d5a3ad3"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::pids" ref="1fc4fd419a3ec04c637e32728d5a3ad3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#1fc4fd419a3ec04c637e32728d5a3ad3">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::pids</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">产品ID列表（最大限制30），用逗号分割，例如：“1001,1002,1003,1004,1005”</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="7f3bd50879993545ff2570096dda6f09"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::productcat_id" ref="7f3bd50879993545ff2570096dda6f09" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#7f3bd50879993545ff2570096dda6f09">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::productcat_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">产品线ID</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="7715d39971a01ffedc9193e1cca317a2"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::sku_number" ref="7715d39971a01ffedc9193e1cca317a2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#7715d39971a01ffedc9193e1cca317a2">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::sku_number</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">sku商家编码</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="648f5415aa361ac49184fe43c17e10c2"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::start_modified" ref="648f5415aa361ac49184fe43c17e10c2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#648f5415aa361ac49184fe43c17e10c2">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::start_modified</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">开始修改时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="bac9a4a40e1e6f1e36e06cdc9a59edb6"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::status" ref="bac9a4a40e1e6f1e36e06cdc9a59edb6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#bac9a4a40e1e6f1e36e06cdc9a59edb6">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::status</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">产品状态，可选值：up（上架）、down（下架），不传默认查询所有</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="17ce6df164a156f9c9b1d0d57a4db493"></a><!-- doxytag: member="TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::timestamp" ref="17ce6df164a156f9c9b1d0d57a4db493" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_fenxiao_products_get_request_1_1_fenxiao_products_get_request.html#17ce6df164a156f9c9b1d0d57a4db493">TaobaoSdk::Request::FenxiaoProductsGetRequest::FenxiaoProductsGetRequest::timestamp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Request/FenxiaoProductsGetRequest.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:45 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

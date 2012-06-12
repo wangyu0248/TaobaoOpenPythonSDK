@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Request</b>::<b>LogisticsOnlineSendRequest</b>::<a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html">LogisticsOnlineSendRequest</a></div>
+<h1>TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest��ο�</h1><!-- doxytag: class="TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">用户调用该接口可实现在线订单发货（支持货到付款） 调用该接口实现在线下单发货，有两种情况：<br>
+ &lt;font color="red"&gt;如果不输入运单号的情况：交易状态不会改变，需要调用taobao.logistics.online.confirm确认发货后交易状态才会变成卖家已发货。<br>
+ 如果输入运单号的情况发货：交易订单状态会直接变成卖家已发货 。&lt;/font&gt;</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="8c3a07d11a6fa7680b52d8897611e112"></a><!-- doxytag: member="TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::__init__" ref="8c3a07d11a6fa7680b52d8897611e112" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#a6e38becc74f0f9055946bb0046d2587">method</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span>  <a href="#a6e38becc74f0f9055946bb0046d2587"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#74ea74721936d6b83bad72684487bcf4">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span>  <a href="#74ea74721936d6b83bad72684487bcf4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#ae7ae49e5f0d47fa487eaba70c5f7031">cancel_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家联系人地址库ID，可以通过taobao.logistics.address.search接口查询到地址库ID。<br>
+&lt;font color="red"&gt;如果为空，取的卖家的默认退货地址&lt;/font&gt;<br>
+</span>  <a href="#ae7ae49e5f0d47fa487eaba70c5f7031"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#facc7211b857c54cb6d34df204ef279c">company_code</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">物流公司代码. </span> <a href="#facc7211b857c54cb6d34df204ef279c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#cab9fe96dc4abe25d3690bd7be73d9b1">feature</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">feature参数格式<br>
+ 范例: mobileCode=tid1:手机串号1,手机串号2|tid2:手机串号3;machineCode=tid3:3C机器号A,3C机器号B<br>
+ mobileCode无忧购的KEY,machineCode为3C的KEY,多个key之间用”;”分隔<br>
+ “tid1:手机串号1,手机串号2|tid2:手机串号3”为mobileCode对应的value。 "|"不同商品间的分隔符。<br>
+ 例A商品和B商品都属于无忧购商品，之间就用"|"分开。<br>
+ TID就是商品代表的子订单号，对应taobao.trade.fullinfo.get 接口获得的oid字段。(通过OID可以唯一定位到当前商品上)<br>
+ ":"TID和具体传入参数间的分隔符。冒号前表示TID,之后代表该商品的参数属性。<br>
+ "," 属性间分隔符。（对应商品数量，当存在一个商品的数量超过1个时，用逗号分开）。<br>
+ 具体:当订单中A商品的数量为2个，其中手机串号分别为"12345","67890"。<br>
+ 参数格式：mobileCode=TIDA:12345,67890。 TIDA对应了A宝贝，冒号后用逗号分隔的"12345","67890". </span> <a href="#cab9fe96dc4abe25d3690bd7be73d9b1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#7fb3c7512fab10c0a0bf6c7b06d840aa">out_sid</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">运单号. </span> <a href="#7fb3c7512fab10c0a0bf6c7b06d840aa"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#b63b14b658cd23feb2de10532fe9ea0c">sender_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家联系人地址库ID，可以通过taobao.logistics.address.search接口查询到地址库ID。&lt;font color="red"&gt;如果为空，取的卖家的默认取货地址&lt;/font&gt;</span>  <a href="#b63b14b658cd23feb2de10532fe9ea0c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#6fcb1441fc81808bee6706815a63c1ca">tid</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">淘宝交易ID</span>  <a href="#6fcb1441fc81808bee6706815a63c1ca"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">用户调用该接口可实现在线订单发货（支持货到付款） 调用该接口实现在线下单发货，有两种情况：<br>
+ &lt;font color="red"&gt;如果不输入运单号的情况：交易状态不会改变，需要调用taobao.logistics.online.confirm确认发货后交易状态才会变成卖家已发货。<br>
+ 如果输入运单号的情况发货：交易订单状态会直接变成卖家已发货 。&lt;/font&gt;</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="ae7ae49e5f0d47fa487eaba70c5f7031"></a><!-- doxytag: member="TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::cancel_id" ref="ae7ae49e5f0d47fa487eaba70c5f7031" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#ae7ae49e5f0d47fa487eaba70c5f7031">TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::cancel_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家联系人地址库ID，可以通过taobao.logistics.address.search接口查询到地址库ID。<br>
+&lt;font color="red"&gt;如果为空，取的卖家的默认退货地址&lt;/font&gt;<br>
+</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="facc7211b857c54cb6d34df204ef279c"></a><!-- doxytag: member="TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::company_code" ref="facc7211b857c54cb6d34df204ef279c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#facc7211b857c54cb6d34df204ef279c">TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::company_code</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">物流公司代码. </span>
+<p>
+如"POST"就代表中国邮政,"ZJS"就代表宅急送.调用 taobao.logistics.companies.get 获取。 <br>
+&lt;font color="red"&gt;如果是货到付款订单，选择的物流公司必须支持货到付款发货方式&lt;/font&gt; <ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="cab9fe96dc4abe25d3690bd7be73d9b1"></a><!-- doxytag: member="TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::feature" ref="cab9fe96dc4abe25d3690bd7be73d9b1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#cab9fe96dc4abe25d3690bd7be73d9b1">TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::feature</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">feature参数格式<br>
+ 范例: mobileCode=tid1:手机串号1,手机串号2|tid2:手机串号3;machineCode=tid3:3C机器号A,3C机器号B<br>
+ mobileCode无忧购的KEY,machineCode为3C的KEY,多个key之间用”;”分隔<br>
+ “tid1:手机串号1,手机串号2|tid2:手机串号3”为mobileCode对应的value。 "|"不同商品间的分隔符。<br>
+ 例A商品和B商品都属于无忧购商品，之间就用"|"分开。<br>
+ TID就是商品代表的子订单号，对应taobao.trade.fullinfo.get 接口获得的oid字段。(通过OID可以唯一定位到当前商品上)<br>
+ ":"TID和具体传入参数间的分隔符。冒号前表示TID,之后代表该商品的参数属性。<br>
+ "," 属性间分隔符。（对应商品数量，当存在一个商品的数量超过1个时，用逗号分开）。<br>
+ 具体:当订单中A商品的数量为2个，其中手机串号分别为"12345","67890"。<br>
+ 参数格式：mobileCode=TIDA:12345,67890。 TIDA对应了A宝贝，冒号后用逗号分隔的"12345","67890". </span>
+<p>
+说明本订单A宝贝的数量为2，值分别为"12345","67890"。<br>
+ 当存在"|"时，就说明订单中存在多个无忧购的商品，商品间用"|"分隔了开来。|"之后的内容含义同上。 <ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="a6e38becc74f0f9055946bb0046d2587"></a><!-- doxytag: member="TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::method" ref="a6e38becc74f0f9055946bb0046d2587" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#a6e38becc74f0f9055946bb0046d2587">TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::method</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="7fb3c7512fab10c0a0bf6c7b06d840aa"></a><!-- doxytag: member="TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::out_sid" ref="7fb3c7512fab10c0a0bf6c7b06d840aa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#7fb3c7512fab10c0a0bf6c7b06d840aa">TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::out_sid</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">运单号. </span>
+<p>
+具体一个物流公司的真实运单号码。淘宝官方物流会校验，请谨慎传入； <ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="b63b14b658cd23feb2de10532fe9ea0c"></a><!-- doxytag: member="TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::sender_id" ref="b63b14b658cd23feb2de10532fe9ea0c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#b63b14b658cd23feb2de10532fe9ea0c">TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::sender_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家联系人地址库ID，可以通过taobao.logistics.address.search接口查询到地址库ID。&lt;font color="red"&gt;如果为空，取的卖家的默认取货地址&lt;/font&gt;</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="6fcb1441fc81808bee6706815a63c1ca"></a><!-- doxytag: member="TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::tid" ref="6fcb1441fc81808bee6706815a63c1ca" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#6fcb1441fc81808bee6706815a63c1ca">TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::tid</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">淘宝交易ID</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="74ea74721936d6b83bad72684487bcf4"></a><!-- doxytag: member="TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::timestamp" ref="74ea74721936d6b83bad72684487bcf4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_logistics_online_send_request_1_1_logistics_online_send_request.html#74ea74721936d6b83bad72684487bcf4">TaobaoSdk::Request::LogisticsOnlineSendRequest::LogisticsOnlineSendRequest::timestamp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Request/LogisticsOnlineSendRequest.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:48 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

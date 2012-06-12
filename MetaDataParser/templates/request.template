@@ -1,0 +1,150 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+# vim: set ts=4 sts=4 sw=4 et:
+<%
+import os
+import time
+try:
+    from mercurial import ui, hg
+    version = hg.repository(ui.ui(), '.').changelog.headrevs()[0]
+except Exception:
+    version = 0 
+description = str()
+try:
+    description = api.getElementsByTagName("desc")[0].firstChild.data.replace(os.linesep, str())
+except Exception:
+    pass
+%>
+
+\#\# @brief ${description}
+# @author wuliang@maimiaotech.com
+# @date ${time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}
+# @version: 0.0.${version}
+
+import os
+import sys
+import time
+
+<%
+className = str().join([x.capitalize() for x in api.getElementsByTagName("name")[0].firstChild.data.encode("utf-8").lstrip("taobao").split(".") if x != str()])
+%>
+
+def __getCurrentPath():
+    return os.path.normpath(os.path.join(os.path.realpath(__file__), os.path.pardir))
+
+__modulePath = os.path.join(__getCurrentPath(), os.path.pardir)
+__modulePath = os.path.normpath(__modulePath)
+if __modulePath not in sys.path:
+    sys.path.insert(0, __modulePath)
+
+<%
+    methodName = str()
+    authorize = str()
+
+    try:
+        methodName = api.getElementsByTagName("name")[0].firstChild.data
+        authorize = api.getElementsByTagName("authorize")[0].firstChild.data
+    except Exception:
+        pass
+%>
+\#\# @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">${description}</SPAN>
+# <UL>
+% if authorize != str():
+# <LI>
+# <SPAN style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Authorize</SPAN>: <SPAN style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">${authorize}</SPAN>
+# </LI>
+% endif
+# </UL>
+class ${className + "Request"}(object):
+    def __init__(self):
+        super(self.__class__, self).__init__()
+        
+    ## 请求通用的属性
+        \#\# @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</SPAN>
+        # <UL>
+        # <LI>
+        # <SPAN style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</SPAN>: <SPAN style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</SPAN>
+        # </LI>
+        # </UL>
+        self.method = "${methodName}"
+        
+        \#\# @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</SPAN>
+        # <UL>
+        # <LI>
+        # <SPAN style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</SPAN>: <SPAN style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</SPAN>
+        # </LI>
+        # </UL>
+        self.timestamp = int(time.time())
+
+    ## 从元数据中解析得到的属性
+    % if len(api.getElementsByTagName("request")) > 0:
+        % for parameter in api.getElementsByTagName("request")[0].getElementsByTagName("param"):
+        <%
+        type = str()
+        level = str()
+        required = str()
+        description = str()
+        sample = str()
+        default = None
+        try:
+            type = parameter.getElementsByTagName("type")[0].firstChild.data
+        except Exception:
+            pass
+        try:
+            level = parameter.getElementsByTagName("level")[0].firstChild.data
+        except Exception:
+            pass
+        try:
+            required = parameter.getElementsByTagName("required")[0].firstChild.data
+        except Exception:
+            pass
+        try:
+            description = parameter.getElementsByTagName("desc")[0].firstChild.data
+        except Exception:
+            pass
+        try:
+            sample = parameter.getElementsByTagName("sample")[0].firstChild.data
+        except Exception:
+            pass
+        try:
+            default = parameter.getElementsByTagName("default")[0].firstChild.data
+        except Exception:
+            pass
+        %>
+        \#\# @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">${description.replace(os.linesep, str())}</SPAN>
+        # <UL>
+        % if type != str():
+        # <LI>
+        # <SPAN style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</SPAN>: <SPAN style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">${type}</SPAN>
+        # </LI>
+        % endif
+        % if level != str():
+        # <LI>
+        # <SPAN style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</SPAN>: <SPAN style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">${level}</SPAN>
+        # </LI>
+        % endif
+        % if required != str():
+        # <LI>
+        # <SPAN style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</SPAN>: <SPAN style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">${required}</SPAN>
+        # </LI>
+        % endif
+        % if sample != str():
+        # <LI>
+        # <SPAN style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</SPAN>: <SPAN style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">${sample}</SPAN>
+        # </LI>
+        % endif
+        % if default != None:
+        # <LI>
+        # <SPAN style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Default</SPAN>: <SPAN style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">${default}</SPAN>
+        # </LI>
+        % endif
+        # </UL>
+        % if default != None and default.isdigit():
+        self.${parameter.getElementsByTagName("name")[0].firstChild.data} = ${default}
+        % elif default != None:
+        self.${parameter.getElementsByTagName("name")[0].firstChild.data} = "${default}"
+        % else:
+        self.${parameter.getElementsByTagName("name")[0].firstChild.data} = None
+        % endif
+        % endfor
+    % endif

@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Request::HotelRoomsUpdateRequest::HotelRoomsUpdateRequest��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Request</b>::<b>HotelRoomsUpdateRequest</b>::<a class="el" href="class_taobao_sdk_1_1_request_1_1_hotel_rooms_update_request_1_1_hotel_rooms_update_request.html">HotelRoomsUpdateRequest</a></div>
+<h1>TaobaoSdk::Request::HotelRoomsUpdateRequest::HotelRoomsUpdateRequest��ο�</h1><!-- doxytag: class="TaobaoSdk::Request::HotelRoomsUpdateRequest::HotelRoomsUpdateRequest" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">此接口用于更新多个集市酒店商品房态信息，根据传入的gids更新商品信息，该商品必须为对应的发布者才能执行更新操作。如果对应的商品在淘宝集市酒店系统中不存在，则会返回错误提示。是全量更新，非增量，会把之前的房态进行覆盖。</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_request_1_1_hotel_rooms_update_request_1_1_hotel_rooms_update_request-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="24f2810191178ffbb12babc8a51ffe5d"></a><!-- doxytag: member="TaobaoSdk::Request::HotelRoomsUpdateRequest::HotelRoomsUpdateRequest::__init__" ref="24f2810191178ffbb12babc8a51ffe5d" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_hotel_rooms_update_request_1_1_hotel_rooms_update_request.html#1b2f9649368549ffe9a01be94e6a7565">method</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span>  <a href="#1b2f9649368549ffe9a01be94e6a7565"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_hotel_rooms_update_request_1_1_hotel_rooms_update_request.html#a3606043e562b4c78bc8e9c1b5b30143">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span>  <a href="#a3606043e562b4c78bc8e9c1b5b30143"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_hotel_rooms_update_request_1_1_hotel_rooms_update_request.html#de65b0e5b3223eba97157e895f825e06">gid_room_quota_map</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">多商品房态信息。json encode。每个商品房态参考单商品更新中的room_quota字段。反序列化后入：array(( 'gid'=&gt;1, 'roomQuota'=&gt;array(('date'=&gt;'2011-01-29', 'price'=&gt;100, 'num'=&gt;1),('date'=&gt;'2011-01-30', 'price'=&gt;100, 'num'=&gt;1)),( 'gid'=&gt;2, 'roomQuota'=&gt;array(('date'=&gt;'2011-01-29', 'price'=&gt;100, 'num'=&gt;1),('date'=&gt;'2011-01-30', 'price'=&gt;100, 'num'=&gt;1)))</span>  <a href="#de65b0e5b3223eba97157e895f825e06"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">此接口用于更新多个集市酒店商品房态信息，根据传入的gids更新商品信息，该商品必须为对应的发布者才能执行更新操作。如果对应的商品在淘宝集市酒店系统中不存在，则会返回错误提示。是全量更新，非增量，会把之前的房态进行覆盖。</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="de65b0e5b3223eba97157e895f825e06"></a><!-- doxytag: member="TaobaoSdk::Request::HotelRoomsUpdateRequest::HotelRoomsUpdateRequest::gid_room_quota_map" ref="de65b0e5b3223eba97157e895f825e06" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_hotel_rooms_update_request_1_1_hotel_rooms_update_request.html#de65b0e5b3223eba97157e895f825e06">TaobaoSdk::Request::HotelRoomsUpdateRequest::HotelRoomsUpdateRequest::gid_room_quota_map</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">多商品房态信息。json encode。每个商品房态参考单商品更新中的room_quota字段。反序列化后入：array(( 'gid'=&gt;1, 'roomQuota'=&gt;array(('date'=&gt;'2011-01-29', 'price'=&gt;100, 'num'=&gt;1),('date'=&gt;'2011-01-30', 'price'=&gt;100, 'num'=&gt;1)),( 'gid'=&gt;2, 'roomQuota'=&gt;array(('date'=&gt;'2011-01-29', 'price'=&gt;100, 'num'=&gt;1),('date'=&gt;'2011-01-30', 'price'=&gt;100, 'num'=&gt;1)))</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="1b2f9649368549ffe9a01be94e6a7565"></a><!-- doxytag: member="TaobaoSdk::Request::HotelRoomsUpdateRequest::HotelRoomsUpdateRequest::method" ref="1b2f9649368549ffe9a01be94e6a7565" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_hotel_rooms_update_request_1_1_hotel_rooms_update_request.html#1b2f9649368549ffe9a01be94e6a7565">TaobaoSdk::Request::HotelRoomsUpdateRequest::HotelRoomsUpdateRequest::method</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="a3606043e562b4c78bc8e9c1b5b30143"></a><!-- doxytag: member="TaobaoSdk::Request::HotelRoomsUpdateRequest::HotelRoomsUpdateRequest::timestamp" ref="a3606043e562b4c78bc8e9c1b5b30143" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_hotel_rooms_update_request_1_1_hotel_rooms_update_request.html#a3606043e562b4c78bc8e9c1b5b30143">TaobaoSdk::Request::HotelRoomsUpdateRequest::HotelRoomsUpdateRequest::timestamp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Request/HotelRoomsUpdateRequest.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:46 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

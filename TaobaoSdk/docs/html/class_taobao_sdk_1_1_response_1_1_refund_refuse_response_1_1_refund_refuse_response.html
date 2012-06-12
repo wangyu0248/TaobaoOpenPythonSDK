@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Response::RefundRefuseResponse::RefundRefuseResponse��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Response</b>::<b>RefundRefuseResponse</b>::<a class="el" href="class_taobao_sdk_1_1_response_1_1_refund_refuse_response_1_1_refund_refuse_response.html">RefundRefuseResponse</a></div>
+<h1>TaobaoSdk::Response::RefundRefuseResponse::RefundRefuseResponse��ο�</h1><!-- doxytag: class="TaobaoSdk::Response::RefundRefuseResponse::RefundRefuseResponse" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Response: 卖家拒绝单笔退款交易，要求如下： 1. </span> 
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_response_1_1_refund_refuse_response_1_1_refund_refuse_response-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4768e22526eb8a60931fc8aa9d374628"></a><!-- doxytag: member="TaobaoSdk::Response::RefundRefuseResponse::RefundRefuseResponse::__init__" ref="4768e22526eb8a60931fc8aa9d374628" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_refund_refuse_response_1_1_refund_refuse_response.html#36c61da4ef4cc33aace097f924de3fc3">responseStatus</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的返回信息,包含状态等</span>  <a href="#36c61da4ef4cc33aace097f924de3fc3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_refund_refuse_response_1_1_refund_refuse_response.html#4589a452539f263a4f1d37f569b0bdf4">responseBody</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的响应内容</span>  <a href="#4589a452539f263a4f1d37f569b0bdf4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_refund_refuse_response_1_1_refund_refuse_response.html#b62e2d57fc327d53ea4f44137a4ac814">refund</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">拒绝退款成功后，会返回Refund数据结构中的refund_id, status, modified字段</span>  <a href="#b62e2d57fc327d53ea4f44137a4ac814"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Response: 卖家拒绝单笔退款交易，要求如下： 1. </span>
+<p>
+传入的refund_id和相应的tid, oid必须匹配 2. 如果一笔订单只有一笔子订单，则tid必须与oid相同 3. 只有卖家才能执行拒绝退款操作 4. 以下三种情况不能退款：卖家未发货；7天无理由退换货；网游订单 <ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="b62e2d57fc327d53ea4f44137a4ac814"></a><!-- doxytag: member="TaobaoSdk::Response::RefundRefuseResponse::RefundRefuseResponse::refund" ref="b62e2d57fc327d53ea4f44137a4ac814" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_refund_refuse_response_1_1_refund_refuse_response.html#b62e2d57fc327d53ea4f44137a4ac814">TaobaoSdk::Response::RefundRefuseResponse::RefundRefuseResponse::refund</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">拒绝退款成功后，会返回Refund数据结构中的refund_id, status, modified字段</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Refund</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Object</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="4589a452539f263a4f1d37f569b0bdf4"></a><!-- doxytag: member="TaobaoSdk::Response::RefundRefuseResponse::RefundRefuseResponse::responseBody" ref="4589a452539f263a4f1d37f569b0bdf4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_refund_refuse_response_1_1_refund_refuse_response.html#4589a452539f263a4f1d37f569b0bdf4">TaobaoSdk::Response::RefundRefuseResponse::RefundRefuseResponse::responseBody</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的响应内容</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="36c61da4ef4cc33aace097f924de3fc3"></a><!-- doxytag: member="TaobaoSdk::Response::RefundRefuseResponse::RefundRefuseResponse::responseStatus" ref="36c61da4ef4cc33aace097f924de3fc3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_refund_refuse_response_1_1_refund_refuse_response.html#36c61da4ef4cc33aace097f924de3fc3">TaobaoSdk::Response::RefundRefuseResponse::RefundRefuseResponse::responseStatus</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的返回信息,包含状态等</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">dict</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Response/RefundRefuseResponse.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:57 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

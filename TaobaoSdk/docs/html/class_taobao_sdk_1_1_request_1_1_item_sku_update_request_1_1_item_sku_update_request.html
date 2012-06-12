@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Request</b>::<b>ItemSkuUpdateRequest</b>::<a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html">ItemSkuUpdateRequest</a></div>
+<h1>TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest��ο�</h1><!-- doxytag: class="TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">*更新一个sku的数据 *需要更新的sku通过属性properties进行匹配查找 *商品的数量和价格必须大于等于0 *sku记录会更新到指定的num_iid对应的商品中 *num_iid对应的商品必须属于当前的会话用户</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="034664797fcdc6ed5427948944532ece"></a><!-- doxytag: member="TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::__init__" ref="034664797fcdc6ed5427948944532ece" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#7584efac9ba075bd2781be3cce8cc1b5">method</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span>  <a href="#7584efac9ba075bd2781be3cce8cc1b5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#0a120ae30606a52d7ebf0a0dd93fdd89">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span>  <a href="#0a120ae30606a52d7ebf0a0dd93fdd89"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#a875a2ed2c9aed8088934349f39a3bf2">item_price</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">sku所属商品的价格。当用户更新sku，使商品价格不属于sku价格之间的时候，用于修改商品的价格，使sku能够更新成功</span>  <a href="#a875a2ed2c9aed8088934349f39a3bf2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#2a492f376acee605108f0847201ec6c3">lang</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Sku文字的版本。可选值:zh_HK(繁体),zh_CN(简体);默认值:zh_CN</span>  <a href="#2a492f376acee605108f0847201ec6c3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#724874940d552f9e48fba78b72549d27">num_iid</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Sku所属商品数字id，可通过 taobao.item.get 获取</span>  <a href="#724874940d552f9e48fba78b72549d27"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#91eb43ad8f066757ff271d2e765501ab">outer_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Sku的商家外部id</span>  <a href="#91eb43ad8f066757ff271d2e765501ab"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#484e977731f1e0df0eab7ddda17c3678">price</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Sku的销售价格。精确到2位小数;单位:元。如:200.07，表示:200元7分。修改后的sku价格要保证商品的价格在所有sku价格所形成的价格区间内（例如：商品价格为6元，sku价格有5元、10元两种，如果要修改5元sku的价格，那么修改的范围只能是0-6元之间；如果要修改10元的sku，那么修改的范围只能是6到无穷大的区间中）</span>  <a href="#484e977731f1e0df0eab7ddda17c3678"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#0d933129af4c7359b3359817842110f2">properties</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Sku属性串。格式:pid:vid;pid:vid,如: 1627207:3232483;1630696:3284570,表示机身颜色:军绿色;手机套餐:一电一充。 如果包含自定义属性，则格式为pid:vid;pid2:vid2;<dl compact><dt><b>pText</b></dt><dd>vText , 其中</dd></dl>
+pText:vText为自定义属性。限制：其中$pText的’$’前缀不能少，且pText和vText文本中不可以存在 冒号:和分号;以及逗号，</span>  <a href="#0d933129af4c7359b3359817842110f2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#5c4cdea1efa78d039a7bf100907ccdb9">quantity</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Sku的库存数量。sku的总数量应该小于等于商品总数量(Item的NUM)，sku数量变化后item的总数量也会随着变化。取值范围:大于等于零的整数</span>  <a href="#5c4cdea1efa78d039a7bf100907ccdb9"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">*更新一个sku的数据 *需要更新的sku通过属性properties进行匹配查找 *商品的数量和价格必须大于等于0 *sku记录会更新到指定的num_iid对应的商品中 *num_iid对应的商品必须属于当前的会话用户</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="a875a2ed2c9aed8088934349f39a3bf2"></a><!-- doxytag: member="TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::item_price" ref="a875a2ed2c9aed8088934349f39a3bf2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#a875a2ed2c9aed8088934349f39a3bf2">TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::item_price</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">sku所属商品的价格。当用户更新sku，使商品价格不属于sku价格之间的时候，用于修改商品的价格，使sku能够更新成功</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Price</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="2a492f376acee605108f0847201ec6c3"></a><!-- doxytag: member="TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::lang" ref="2a492f376acee605108f0847201ec6c3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#2a492f376acee605108f0847201ec6c3">TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::lang</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Sku文字的版本。可选值:zh_HK(繁体),zh_CN(简体);默认值:zh_CN</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="7584efac9ba075bd2781be3cce8cc1b5"></a><!-- doxytag: member="TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::method" ref="7584efac9ba075bd2781be3cce8cc1b5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#7584efac9ba075bd2781be3cce8cc1b5">TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::method</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="724874940d552f9e48fba78b72549d27"></a><!-- doxytag: member="TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::num_iid" ref="724874940d552f9e48fba78b72549d27" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#724874940d552f9e48fba78b72549d27">TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::num_iid</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Sku所属商品数字id，可通过 taobao.item.get 获取</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="91eb43ad8f066757ff271d2e765501ab"></a><!-- doxytag: member="TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::outer_id" ref="91eb43ad8f066757ff271d2e765501ab" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#91eb43ad8f066757ff271d2e765501ab">TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::outer_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Sku的商家外部id</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="484e977731f1e0df0eab7ddda17c3678"></a><!-- doxytag: member="TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::price" ref="484e977731f1e0df0eab7ddda17c3678" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#484e977731f1e0df0eab7ddda17c3678">TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::price</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Sku的销售价格。精确到2位小数;单位:元。如:200.07，表示:200元7分。修改后的sku价格要保证商品的价格在所有sku价格所形成的价格区间内（例如：商品价格为6元，sku价格有5元、10元两种，如果要修改5元sku的价格，那么修改的范围只能是0-6元之间；如果要修改10元的sku，那么修改的范围只能是6到无穷大的区间中）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Price</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="0d933129af4c7359b3359817842110f2"></a><!-- doxytag: member="TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::properties" ref="0d933129af4c7359b3359817842110f2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#0d933129af4c7359b3359817842110f2">TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::properties</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Sku属性串。格式:pid:vid;pid:vid,如: 1627207:3232483;1630696:3284570,表示机身颜色:军绿色;手机套餐:一电一充。 如果包含自定义属性，则格式为pid:vid;pid2:vid2;<dl compact><dt><b>pText</b></dt><dd>vText , 其中</dd></dl>
+pText:vText为自定义属性。限制：其中$pText的’$’前缀不能少，且pText和vText文本中不可以存在 冒号:和分号;以及逗号，</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="5c4cdea1efa78d039a7bf100907ccdb9"></a><!-- doxytag: member="TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::quantity" ref="5c4cdea1efa78d039a7bf100907ccdb9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#5c4cdea1efa78d039a7bf100907ccdb9">TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::quantity</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Sku的库存数量。sku的总数量应该小于等于商品总数量(Item的NUM)，sku数量变化后item的总数量也会随着变化。取值范围:大于等于零的整数</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="0a120ae30606a52d7ebf0a0dd93fdd89"></a><!-- doxytag: member="TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::timestamp" ref="0a120ae30606a52d7ebf0a0dd93fdd89" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_item_sku_update_request_1_1_item_sku_update_request.html#0a120ae30606a52d7ebf0a0dd93fdd89">TaobaoSdk::Request::ItemSkuUpdateRequest::ItemSkuUpdateRequest::timestamp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Request/ItemSkuUpdateRequest.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:47 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

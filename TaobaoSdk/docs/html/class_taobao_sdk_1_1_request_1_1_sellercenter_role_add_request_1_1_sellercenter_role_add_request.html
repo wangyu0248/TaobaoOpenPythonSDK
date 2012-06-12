@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Request</b>::<b>SellercenterRoleAddRequest</b>::<a class="el" href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request.html">SellercenterRoleAddRequest</a></div>
+<h1>TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest��ο�</h1><!-- doxytag: class="TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">给指定的卖家创建新的子账号角色<br>
+ 如果需要授权的权限点有下级权限点或上级权限点，把该权限点的父权限点和该权限点的所有子权限都一并做赋权操作，并递归处理<br>
+例如：权限点列表如下<br>
+ code=sell 宝贝管理<br>
+ ---------|code=sm 店铺管理<br>
+ ---------|---------|code=sm-design 如店铺装修<br>
+ ---------|---------|---------|code=sm-tbd-visit内店装修入口<br>
+ ---------|---------|---------|code=sm-tbd-publish内店装修发布<br>
+ ---------|---------|code=phone 手机淘宝店铺<br>
+ 调用改接口给code=sm-design店铺装修赋权时，同时会将下列权限点都赋予默认角色<br>
+ code=sell 宝贝管理<br>
+ ---------|code=sm 店铺管理<br>
+ ---------|---------|code=sm-design 如店铺装修<br>
+ ---------|---------|---------|code=sm-tbd-visit内店装修入口<br>
+ ---------|---------|---------|code=sm-tbd-publish内店装修发布<br>
+</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="2b63c0d76e724fb1f60cc6de5737e552"></a><!-- doxytag: member="TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest::__init__" ref="2b63c0d76e724fb1f60cc6de5737e552" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request.html#f0dd90a0b95988b30f2b6acf74c133ea">method</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span>  <a href="#f0dd90a0b95988b30f2b6acf74c133ea"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request.html#941e8d88d5976f329f8f103f4de9aaf6">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span>  <a href="#941e8d88d5976f329f8f103f4de9aaf6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request.html#69e6bbb3e30249d946dcd86ae930fe32">description</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">角色描述</span>  <a href="#69e6bbb3e30249d946dcd86ae930fe32"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request.html#6d4dd660fb5b0b45ad6fe02a67b665e6">name</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">角色名</span>  <a href="#6d4dd660fb5b0b45ad6fe02a67b665e6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request.html#5ad4912470aca6c4d72ce4a243406928">nick</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">表示卖家昵称</span>  <a href="#5ad4912470aca6c4d72ce4a243406928"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request.html#96c955f8d94c86b15f994bcd35a5f884">permission_codes</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">需要授权的权限点permission_code列表,以","分割. </span> <a href="#96c955f8d94c86b15f994bcd35a5f884"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">给指定的卖家创建新的子账号角色<br>
+ 如果需要授权的权限点有下级权限点或上级权限点，把该权限点的父权限点和该权限点的所有子权限都一并做赋权操作，并递归处理<br>
+例如：权限点列表如下<br>
+ code=sell 宝贝管理<br>
+ ---------|code=sm 店铺管理<br>
+ ---------|---------|code=sm-design 如店铺装修<br>
+ ---------|---------|---------|code=sm-tbd-visit内店装修入口<br>
+ ---------|---------|---------|code=sm-tbd-publish内店装修发布<br>
+ ---------|---------|code=phone 手机淘宝店铺<br>
+ 调用改接口给code=sm-design店铺装修赋权时，同时会将下列权限点都赋予默认角色<br>
+ code=sell 宝贝管理<br>
+ ---------|code=sm 店铺管理<br>
+ ---------|---------|code=sm-design 如店铺装修<br>
+ ---------|---------|---------|code=sm-tbd-visit内店装修入口<br>
+ ---------|---------|---------|code=sm-tbd-publish内店装修发布<br>
+</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="69e6bbb3e30249d946dcd86ae930fe32"></a><!-- doxytag: member="TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest::description" ref="69e6bbb3e30249d946dcd86ae930fe32" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request.html#69e6bbb3e30249d946dcd86ae930fe32">TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest::description</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">角色描述</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="f0dd90a0b95988b30f2b6acf74c133ea"></a><!-- doxytag: member="TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest::method" ref="f0dd90a0b95988b30f2b6acf74c133ea" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request.html#f0dd90a0b95988b30f2b6acf74c133ea">TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest::method</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="6d4dd660fb5b0b45ad6fe02a67b665e6"></a><!-- doxytag: member="TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest::name" ref="6d4dd660fb5b0b45ad6fe02a67b665e6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request.html#6d4dd660fb5b0b45ad6fe02a67b665e6">TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest::name</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">角色名</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="5ad4912470aca6c4d72ce4a243406928"></a><!-- doxytag: member="TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest::nick" ref="5ad4912470aca6c4d72ce4a243406928" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request.html#5ad4912470aca6c4d72ce4a243406928">TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest::nick</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">表示卖家昵称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="96c955f8d94c86b15f994bcd35a5f884"></a><!-- doxytag: member="TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest::permission_codes" ref="96c955f8d94c86b15f994bcd35a5f884" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request.html#96c955f8d94c86b15f994bcd35a5f884">TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest::permission_codes</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">需要授权的权限点permission_code列表,以","分割. </span>
+<p>
+其code值可以通过调用taobao.sellercenter.user.permissions.get返回，其中permission.is_authorize=1的权限点可以通过本接口授权给对应角色。 <ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="941e8d88d5976f329f8f103f4de9aaf6"></a><!-- doxytag: member="TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest::timestamp" ref="941e8d88d5976f329f8f103f4de9aaf6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_sellercenter_role_add_request_1_1_sellercenter_role_add_request.html#941e8d88d5976f329f8f103f4de9aaf6">TaobaoSdk::Request::SellercenterRoleAddRequest::SellercenterRoleAddRequest::timestamp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Request/SellercenterRoleAddRequest.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:49 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Response::ItemAddResponse::ItemAddResponse��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Response</b>::<b>ItemAddResponse</b>::<a class="el" href="class_taobao_sdk_1_1_response_1_1_item_add_response_1_1_item_add_response.html">ItemAddResponse</a></div>
+<h1>TaobaoSdk::Response::ItemAddResponse::ItemAddResponse��ο�</h1><!-- doxytag: class="TaobaoSdk::Response::ItemAddResponse::ItemAddResponse" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Response: 此接口用于新增一个商品 商品所属的卖家是当前会话的用户 商品的属性和sku的属性有包含的关系，商品的价格要位于sku的价格区间之中（例如，sku价格有5元、10元两种，那么商品的价格就需要大于等于5元，小于等于10元，否则新增商品会失败） 商品的类目和商品的价格、sku的价格都有一定的相关性（具体的关系要通过类目属性查询接口获得） 商品的运费承担方式和邮费设置有相关性，卖家承担运费不用设置邮费，买家承担运费需要设置邮费 当关键属性值选择了“其他”的时候，需要输入input_pids和input_str商品才能添加成功。</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_response_1_1_item_add_response_1_1_item_add_response-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5b8d4c3a3936cc99388ad12709acd6fc"></a><!-- doxytag: member="TaobaoSdk::Response::ItemAddResponse::ItemAddResponse::__init__" ref="5b8d4c3a3936cc99388ad12709acd6fc" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_item_add_response_1_1_item_add_response.html#dcb92572fdfdf33848329f9220f5a25e">responseStatus</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的返回信息,包含状态等</span>  <a href="#dcb92572fdfdf33848329f9220f5a25e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_item_add_response_1_1_item_add_response.html#199035ea3c957d8ceed77bb5c5d8fe32">responseBody</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的响应内容</span>  <a href="#199035ea3c957d8ceed77bb5c5d8fe32"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_item_add_response_1_1_item_add_response.html#3585c67460170a1969b6da4bbd9c83d0">item</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品结构,仅有numIid和created返回</span>  <a href="#3585c67460170a1969b6da4bbd9c83d0"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Response: 此接口用于新增一个商品 商品所属的卖家是当前会话的用户 商品的属性和sku的属性有包含的关系，商品的价格要位于sku的价格区间之中（例如，sku价格有5元、10元两种，那么商品的价格就需要大于等于5元，小于等于10元，否则新增商品会失败） 商品的类目和商品的价格、sku的价格都有一定的相关性（具体的关系要通过类目属性查询接口获得） 商品的运费承担方式和邮费设置有相关性，卖家承担运费不用设置邮费，买家承担运费需要设置邮费 当关键属性值选择了“其他”的时候，需要输入input_pids和input_str商品才能添加成功。</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="3585c67460170a1969b6da4bbd9c83d0"></a><!-- doxytag: member="TaobaoSdk::Response::ItemAddResponse::ItemAddResponse::item" ref="3585c67460170a1969b6da4bbd9c83d0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_item_add_response_1_1_item_add_response.html#3585c67460170a1969b6da4bbd9c83d0">TaobaoSdk::Response::ItemAddResponse::ItemAddResponse::item</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品结构,仅有numIid和created返回</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Item</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Object</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="199035ea3c957d8ceed77bb5c5d8fe32"></a><!-- doxytag: member="TaobaoSdk::Response::ItemAddResponse::ItemAddResponse::responseBody" ref="199035ea3c957d8ceed77bb5c5d8fe32" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_item_add_response_1_1_item_add_response.html#199035ea3c957d8ceed77bb5c5d8fe32">TaobaoSdk::Response::ItemAddResponse::ItemAddResponse::responseBody</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的响应内容</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="dcb92572fdfdf33848329f9220f5a25e"></a><!-- doxytag: member="TaobaoSdk::Response::ItemAddResponse::ItemAddResponse::responseStatus" ref="dcb92572fdfdf33848329f9220f5a25e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_item_add_response_1_1_item_add_response.html#dcb92572fdfdf33848329f9220f5a25e">TaobaoSdk::Response::ItemAddResponse::ItemAddResponse::responseStatus</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的返回信息,包含状态等</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">dict</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Response/ItemAddResponse.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:55 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

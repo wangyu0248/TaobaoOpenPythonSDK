@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Request</b>::<b>SimbaKeywordsPriceSetRequest</b>::<a class="el" href="class_taobao_sdk_1_1_request_1_1_simba_keywords_price_set_request_1_1_simba_keywords_price_set_request.html">SimbaKeywordsPriceSetRequest</a></div>
+<h1>TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest��ο�</h1><!-- doxytag: class="TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">设置一批关键词的出价和匹配模式（目前设置关键词出价和匹配模式不仅限制在一个宝贝下，入参keword_price中的keywordid可以是不同宝贝下的，adgroup_id暂时无用可不传）</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_request_1_1_simba_keywords_price_set_request_1_1_simba_keywords_price_set_request-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6cd394be07e9e7a935da664c3779e414"></a><!-- doxytag: member="TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest::__init__" ref="6cd394be07e9e7a935da664c3779e414" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_simba_keywords_price_set_request_1_1_simba_keywords_price_set_request.html#affeb7065f8314957ec16bcc0ef439dc">method</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span>  <a href="#affeb7065f8314957ec16bcc0ef439dc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_simba_keywords_price_set_request_1_1_simba_keywords_price_set_request.html#bd299890710840d730ef83ec5c554f24">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span>  <a href="#bd299890710840d730ef83ec5c554f24"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_simba_keywords_price_set_request_1_1_simba_keywords_price_set_request.html#73bbcc3d2250f4e01d3354fcacdfdebd">adgroup_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">推广组Id（暂时无用，为了兼容新老接口暂时保留）</span>  <a href="#73bbcc3d2250f4e01d3354fcacdfdebd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_simba_keywords_price_set_request_1_1_simba_keywords_price_set_request.html#82af0b58b1c8ff8d2e7569e3811bf56a">keywordid_prices</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">关键词Id出价字符串和匹配方式字符串数组，最多200个; 每个字符串：keywordId+ ”^^”+price+”^^”+matchscope； Price是整数，以“分”为单位，不能小于5，不能大于日限额; 如果该词为无展现词，出价需要大于原来出价，才会生效。 price为0则设置为使用默认出价； matchscope只能是1,2,4 (1代表精确匹配，2代表子串匹配，4代表广泛匹配) 可不传 例如102232^^85，102231^^82^^4</span>  <a href="#82af0b58b1c8ff8d2e7569e3811bf56a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_simba_keywords_price_set_request_1_1_simba_keywords_price_set_request.html#1e399bb2c3d83e694f4fe18e4e5bad0a">nick</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">主人昵称</span>  <a href="#1e399bb2c3d83e694f4fe18e4e5bad0a"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">设置一批关键词的出价和匹配模式（目前设置关键词出价和匹配模式不仅限制在一个宝贝下，入参keword_price中的keywordid可以是不同宝贝下的，adgroup_id暂时无用可不传）</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="73bbcc3d2250f4e01d3354fcacdfdebd"></a><!-- doxytag: member="TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest::adgroup_id" ref="73bbcc3d2250f4e01d3354fcacdfdebd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_simba_keywords_price_set_request_1_1_simba_keywords_price_set_request.html#73bbcc3d2250f4e01d3354fcacdfdebd">TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest::adgroup_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">推广组Id（暂时无用，为了兼容新老接口暂时保留）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="82af0b58b1c8ff8d2e7569e3811bf56a"></a><!-- doxytag: member="TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest::keywordid_prices" ref="82af0b58b1c8ff8d2e7569e3811bf56a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_simba_keywords_price_set_request_1_1_simba_keywords_price_set_request.html#82af0b58b1c8ff8d2e7569e3811bf56a">TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest::keywordid_prices</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">关键词Id出价字符串和匹配方式字符串数组，最多200个; 每个字符串：keywordId+ ”^^”+price+”^^”+matchscope； Price是整数，以“分”为单位，不能小于5，不能大于日限额; 如果该词为无展现词，出价需要大于原来出价，才会生效。 price为0则设置为使用默认出价； matchscope只能是1,2,4 (1代表精确匹配，2代表子串匹配，4代表广泛匹配) 可不传 例如102232^^85，102231^^82^^4</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="affeb7065f8314957ec16bcc0ef439dc"></a><!-- doxytag: member="TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest::method" ref="affeb7065f8314957ec16bcc0ef439dc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_simba_keywords_price_set_request_1_1_simba_keywords_price_set_request.html#affeb7065f8314957ec16bcc0ef439dc">TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest::method</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="1e399bb2c3d83e694f4fe18e4e5bad0a"></a><!-- doxytag: member="TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest::nick" ref="1e399bb2c3d83e694f4fe18e4e5bad0a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_simba_keywords_price_set_request_1_1_simba_keywords_price_set_request.html#1e399bb2c3d83e694f4fe18e4e5bad0a">TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest::nick</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">主人昵称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">optional</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="bd299890710840d730ef83ec5c554f24"></a><!-- doxytag: member="TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest::timestamp" ref="bd299890710840d730ef83ec5c554f24" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_simba_keywords_price_set_request_1_1_simba_keywords_price_set_request.html#bd299890710840d730ef83ec5c554f24">TaobaoSdk::Request::SimbaKeywordsPriceSetRequest::SimbaKeywordsPriceSetRequest::timestamp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Request/SimbaKeywordsPriceSetRequest.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:51 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Request</b>::<b>IncrementTradesGetRequest</b>::<a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html">IncrementTradesGetRequest</a></div>
+<h1>TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest��ο�</h1><!-- doxytag: class="TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">自用型应用：执行taobao.increment.app.subscribe进行订阅，设置duration参数值为-1。自用型应用订阅后默认会自动进行一次授权，授权时间是永远有效。 他用型应用：首先，执行taobao.increment.app.subscribe进行订阅，设置合理的duration参数（如果为淘宝合作伙伴应用可以设置为-1）；然后执行taobao.increment.user.authorize进行用户授权。 授权后，应用即可通过taobao.increment.items.get、taobao.increment.trades.get或taobao.increment.refunds.get获取已授权用户的增量数据。 </span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="839c2dc4ba7b2a3548c8560ff801eda8"></a><!-- doxytag: member="TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::__init__" ref="839c2dc4ba7b2a3548c8560ff801eda8" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#f441ffbd5b5f27cef5e5ee57b8301b1a">method</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span>  <a href="#f441ffbd5b5f27cef5e5ee57b8301b1a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#41ef717f47815b8275e5bd43452a5ac7">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span>  <a href="#41ef717f47815b8275e5bd43452a5ac7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#ef1e33420cfe1ff19fc0d4ac5f9efb76">status</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">交易或评价的状态，默认查询所有状态的数据，除了默认值外每次只能查询一种状态。除了交易超时提醒消息没有type分类以外，交易的其他消息都有type分类。 可选值 TradeCreate（创建交易） TradeModifyFee（修改交易费用） TradeCloseAndModifyDetailOrder（关闭或修改子订单） TradeClose（关闭交易） TradeBuyerPay（买家付款） TradeSellerShip（卖家发货） TradeDelayConfirmPay（延长收货时间） TradePartlyRefund（子订单退款成功） TradePartlyConfirmPay（子订单打款成功） TradeSuccess（交易成功） TradeTimeoutRemind（交易超时提醒） TradeRated（交易评价变更） TradeMemoModified（交易备注修改） TradeLogisticsAddressChanged（修改交易收货地址） TradeChanged（修改订单信息（SKU等））</span>  <a href="#ef1e33420cfe1ff19fc0d4ac5f9efb76"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#7ec30371bdf04a16a2f6bc8f661c6451">type</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">交易所属的类型，默认查询所有类型的数据，除了默认值外每次只能查询一种类型。交易超时提醒类型的消息没有消息类型，固定返回“timeout”。 可选值： ec（直冲） guarantee_trade（一口价、拍卖） auto_delivery（自动发货） cod（货到付款） independent_shop_trade（旺店标准版交易） independent_simple_trade（旺店入门版交易） shopex_trade（ShopEX版) netcn_trade（淘宝与万网合作版网） travel（旅游产品交易） fenxiao（分销平台交易） game_equipment（网游虚拟交易）</span>  <a href="#7ec30371bdf04a16a2f6bc8f661c6451"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#ef929d72859b38ff832ae441fc98b591">nick</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">消息所属于的用户的昵称。设置此参数，返回的消息会根据传入nick的进行过滤。自用型appKey的昵称默认为自己的绑定昵称，此参数无效。</span>  <a href="#ef929d72859b38ff832ae441fc98b591"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#987bce2d0e3ffdb5ac3690f53134acc0">start_modified</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">消息所对应的操作时间的最小值。和end_modified搭配使用能过滤消通知消息的时间段。不传时：如果设置了end_modified，默认为与end_modified同一天的00:00:00，否则默认为调用接口当天的00:00:00。（格式：yyyy-MM-dd HH:mm:ss）</span>  <a href="#987bce2d0e3ffdb5ac3690f53134acc0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#b3f3c8befe15f00545155b52d45f181b">end_modified</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">消息所对应的操作时间的最大值。和start_modified搭配使用能过滤消通知消息的时间段。不传时：如果设置了start_modified，默认为与start_modified同一天的23:59:59；否则默认为调用接口当天的23:59:59。（格式：yyyy-MM-dd HH:mm:ss）</span>  <a href="#b3f3c8befe15f00545155b52d45f181b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#b76d77e5f328c68fc8470e49aeedbf1b">page_no</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">页码。取值范围:大于零的整数; 默认值:1,即返回第一页数据。</span>  <a href="#b76d77e5f328c68fc8470e49aeedbf1b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#0435af518015afa17f87cadb5b9106b2">page_size</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每页条数。取值范围:大于零的整数;最大值:200;默认值:40。</span>  <a href="#0435af518015afa17f87cadb5b9106b2"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">自用型应用：执行taobao.increment.app.subscribe进行订阅，设置duration参数值为-1。自用型应用订阅后默认会自动进行一次授权，授权时间是永远有效。 他用型应用：首先，执行taobao.increment.app.subscribe进行订阅，设置合理的duration参数（如果为淘宝合作伙伴应用可以设置为-1）；然后执行taobao.increment.user.authorize进行用户授权。 授权后，应用即可通过taobao.increment.items.get、taobao.increment.trades.get或taobao.increment.refunds.get获取已授权用户的增量数据。 </span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">CName</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">获取交易和评价变更通知信息</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Authorize</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">不需用户授权</span>  </li>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="b3f3c8befe15f00545155b52d45f181b"></a><!-- doxytag: member="TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::end_modified" ref="b3f3c8befe15f00545155b52d45f181b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#b3f3c8befe15f00545155b52d45f181b">TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::end_modified</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">消息所对应的操作时间的最大值。和start_modified搭配使用能过滤消通知消息的时间段。不传时：如果设置了start_modified，默认为与start_modified同一天的23:59:59；否则默认为调用接口当天的23:59:59。（格式：yyyy-MM-dd HH:mm:ss）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">可选</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">2000-01-01 00:00:00</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Default</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">None</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="f441ffbd5b5f27cef5e5ee57b8301b1a"></a><!-- doxytag: member="TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::method" ref="f441ffbd5b5f27cef5e5ee57b8301b1a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#f441ffbd5b5f27cef5e5ee57b8301b1a">TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::method</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="ef929d72859b38ff832ae441fc98b591"></a><!-- doxytag: member="TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::nick" ref="ef929d72859b38ff832ae441fc98b591" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#ef929d72859b38ff832ae441fc98b591">TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::nick</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">消息所属于的用户的昵称。设置此参数，返回的消息会根据传入nick的进行过滤。自用型appKey的昵称默认为自己的绑定昵称，此参数无效。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">可选</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">我是一个用户名</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Default</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">None</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="b76d77e5f328c68fc8470e49aeedbf1b"></a><!-- doxytag: member="TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::page_no" ref="b76d77e5f328c68fc8470e49aeedbf1b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#b76d77e5f328c68fc8470e49aeedbf1b">TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::page_no</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">页码。取值范围:大于零的整数; 默认值:1,即返回第一页数据。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">可选</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">1</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Default</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">1</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="0435af518015afa17f87cadb5b9106b2"></a><!-- doxytag: member="TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::page_size" ref="0435af518015afa17f87cadb5b9106b2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#0435af518015afa17f87cadb5b9106b2">TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::page_size</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">每页条数。取值范围:大于零的整数;最大值:200;默认值:40。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">可选</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">40</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Default</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">40</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="987bce2d0e3ffdb5ac3690f53134acc0"></a><!-- doxytag: member="TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::start_modified" ref="987bce2d0e3ffdb5ac3690f53134acc0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#987bce2d0e3ffdb5ac3690f53134acc0">TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::start_modified</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">消息所对应的操作时间的最小值。和end_modified搭配使用能过滤消通知消息的时间段。不传时：如果设置了end_modified，默认为与end_modified同一天的00:00:00，否则默认为调用接口当天的00:00:00。（格式：yyyy-MM-dd HH:mm:ss）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">可选</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">2000-01-01 00:00:00</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Default</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">None</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="ef1e33420cfe1ff19fc0d4ac5f9efb76"></a><!-- doxytag: member="TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::status" ref="ef1e33420cfe1ff19fc0d4ac5f9efb76" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#ef1e33420cfe1ff19fc0d4ac5f9efb76">TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::status</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">交易或评价的状态，默认查询所有状态的数据，除了默认值外每次只能查询一种状态。除了交易超时提醒消息没有type分类以外，交易的其他消息都有type分类。 可选值 TradeCreate（创建交易） TradeModifyFee（修改交易费用） TradeCloseAndModifyDetailOrder（关闭或修改子订单） TradeClose（关闭交易） TradeBuyerPay（买家付款） TradeSellerShip（卖家发货） TradeDelayConfirmPay（延长收货时间） TradePartlyRefund（子订单退款成功） TradePartlyConfirmPay（子订单打款成功） TradeSuccess（交易成功） TradeTimeoutRemind（交易超时提醒） TradeRated（交易评价变更） TradeMemoModified（交易备注修改） TradeLogisticsAddressChanged（修改交易收货地址） TradeChanged（修改订单信息（SKU等））</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">可选</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">TradeCreate</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Default</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">None</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="41ef717f47815b8275e5bd43452a5ac7"></a><!-- doxytag: member="TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::timestamp" ref="41ef717f47815b8275e5bd43452a5ac7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#41ef717f47815b8275e5bd43452a5ac7">TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::timestamp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="7ec30371bdf04a16a2f6bc8f661c6451"></a><!-- doxytag: member="TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::type" ref="7ec30371bdf04a16a2f6bc8f661c6451" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_increment_trades_get_request_1_1_increment_trades_get_request.html#7ec30371bdf04a16a2f6bc8f661c6451">TaobaoSdk::Request::IncrementTradesGetRequest::IncrementTradesGetRequest::type</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">交易所属的类型，默认查询所有类型的数据，除了默认值外每次只能查询一种类型。交易超时提醒类型的消息没有消息类型，固定返回“timeout”。 可选值： ec（直冲） guarantee_trade（一口价、拍卖） auto_delivery（自动发货） cod（货到付款） independent_shop_trade（旺店标准版交易） independent_simple_trade（旺店入门版交易） shopex_trade（ShopEX版) netcn_trade（淘宝与万网合作版网） travel（旅游产品交易） fenxiao（分销平台交易） game_equipment（网游虚拟交易）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">可选</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">independent_shop_trade</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Default</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">None</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Request/IncrementTradesGetRequest.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:46 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

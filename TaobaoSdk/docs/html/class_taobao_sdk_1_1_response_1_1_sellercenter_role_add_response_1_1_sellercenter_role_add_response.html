@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Response::SellercenterRoleAddResponse::SellercenterRoleAddResponse��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Response</b>::<b>SellercenterRoleAddResponse</b>::<a class="el" href="class_taobao_sdk_1_1_response_1_1_sellercenter_role_add_response_1_1_sellercenter_role_add_response.html">SellercenterRoleAddResponse</a></div>
+<h1>TaobaoSdk::Response::SellercenterRoleAddResponse::SellercenterRoleAddResponse��ο�</h1><!-- doxytag: class="TaobaoSdk::Response::SellercenterRoleAddResponse::SellercenterRoleAddResponse" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Response: 给指定的卖家创建新的子账号角色<br>
+ 如果需要授权的权限点有下级权限点或上级权限点，把该权限点的父权限点和该权限点的所有子权限都一并做赋权操作，并递归处理<br>
+例如：权限点列表如下<br>
+ code=sell 宝贝管理<br>
+ ---------|code=sm 店铺管理<br>
+ ---------|---------|code=sm-design 如店铺装修<br>
+ ---------|---------|---------|code=sm-tbd-visit内店装修入口<br>
+ ---------|---------|---------|code=sm-tbd-publish内店装修发布<br>
+ ---------|---------|code=phone 手机淘宝店铺<br>
+ 调用改接口给code=sm-design店铺装修赋权时，同时会将下列权限点都赋予默认角色<br>
+ code=sell 宝贝管理<br>
+ ---------|code=sm 店铺管理<br>
+ ---------|---------|code=sm-design 如店铺装修<br>
+ ---------|---------|---------|code=sm-tbd-visit内店装修入口<br>
+ ---------|---------|---------|code=sm-tbd-publish内店装修发布<br>
+</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_response_1_1_sellercenter_role_add_response_1_1_sellercenter_role_add_response-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="61fad7240610b1cdf01faaca6756fa64"></a><!-- doxytag: member="TaobaoSdk::Response::SellercenterRoleAddResponse::SellercenterRoleAddResponse::__init__" ref="61fad7240610b1cdf01faaca6756fa64" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_sellercenter_role_add_response_1_1_sellercenter_role_add_response.html#67adcf7ab828272f525b5e38b5c49a11">responseStatus</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的返回信息,包含状态等</span>  <a href="#67adcf7ab828272f525b5e38b5c49a11"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_sellercenter_role_add_response_1_1_sellercenter_role_add_response.html#e652a9d7ddfdd28d8caf8b9eb5399420">responseBody</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的响应内容</span>  <a href="#e652a9d7ddfdd28d8caf8b9eb5399420"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_sellercenter_role_add_response_1_1_sellercenter_role_add_response.html#0450e2748829e97f3f54cfb1e617ce0a">role</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">子账号角色</span>  <a href="#0450e2748829e97f3f54cfb1e617ce0a"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Response: 给指定的卖家创建新的子账号角色<br>
+ 如果需要授权的权限点有下级权限点或上级权限点，把该权限点的父权限点和该权限点的所有子权限都一并做赋权操作，并递归处理<br>
+例如：权限点列表如下<br>
+ code=sell 宝贝管理<br>
+ ---------|code=sm 店铺管理<br>
+ ---------|---------|code=sm-design 如店铺装修<br>
+ ---------|---------|---------|code=sm-tbd-visit内店装修入口<br>
+ ---------|---------|---------|code=sm-tbd-publish内店装修发布<br>
+ ---------|---------|code=phone 手机淘宝店铺<br>
+ 调用改接口给code=sm-design店铺装修赋权时，同时会将下列权限点都赋予默认角色<br>
+ code=sell 宝贝管理<br>
+ ---------|code=sm 店铺管理<br>
+ ---------|---------|code=sm-design 如店铺装修<br>
+ ---------|---------|---------|code=sm-tbd-visit内店装修入口<br>
+ ---------|---------|---------|code=sm-tbd-publish内店装修发布<br>
+</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="e652a9d7ddfdd28d8caf8b9eb5399420"></a><!-- doxytag: member="TaobaoSdk::Response::SellercenterRoleAddResponse::SellercenterRoleAddResponse::responseBody" ref="e652a9d7ddfdd28d8caf8b9eb5399420" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_sellercenter_role_add_response_1_1_sellercenter_role_add_response.html#e652a9d7ddfdd28d8caf8b9eb5399420">TaobaoSdk::Response::SellercenterRoleAddResponse::SellercenterRoleAddResponse::responseBody</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的响应内容</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="67adcf7ab828272f525b5e38b5c49a11"></a><!-- doxytag: member="TaobaoSdk::Response::SellercenterRoleAddResponse::SellercenterRoleAddResponse::responseStatus" ref="67adcf7ab828272f525b5e38b5c49a11" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_sellercenter_role_add_response_1_1_sellercenter_role_add_response.html#67adcf7ab828272f525b5e38b5c49a11">TaobaoSdk::Response::SellercenterRoleAddResponse::SellercenterRoleAddResponse::responseStatus</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的返回信息,包含状态等</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">dict</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="0450e2748829e97f3f54cfb1e617ce0a"></a><!-- doxytag: member="TaobaoSdk::Response::SellercenterRoleAddResponse::SellercenterRoleAddResponse::role" ref="0450e2748829e97f3f54cfb1e617ce0a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_sellercenter_role_add_response_1_1_sellercenter_role_add_response.html#0450e2748829e97f3f54cfb1e617ce0a">TaobaoSdk::Response::SellercenterRoleAddResponse::SellercenterRoleAddResponse::role</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">子账号角色</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Role</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Object</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Response/SellercenterRoleAddResponse.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:57 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

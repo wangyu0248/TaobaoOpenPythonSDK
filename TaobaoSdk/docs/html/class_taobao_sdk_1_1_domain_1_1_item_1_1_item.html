@@ -1,0 +1,2062 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Domain::Item::Item��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Domain</b>::<b>Item</b>::<a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html">Item</a></div>
+<h1>TaobaoSdk::Domain::Item::Item��ο�</h1><!-- doxytag: class="TaobaoSdk::Domain::Item::Item" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html">Item</a>(商品)结构</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c1a8c700928ba8bacfac247260d7b491"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::__init__" ref="c1a8c700928ba8bacfac247260d7b491" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#2fa83ae420f544d6e27b04a2b8217030">after_sale_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">售后服务ID,该字段仅在taobao.item.get接口中返回</span>  <a href="#2fa83ae420f544d6e27b04a2b8217030"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#b623ee57b12a62079473d2502a14a66e">approve_status</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品上传后的状态。onsale出售中，instock库中</span>  <a href="#b623ee57b12a62079473d2502a14a66e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#827d63a0fe6ae83e76db377093232ef6">auction_point</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商城返点比例，为5的倍数，最低0.5%</span>  <a href="#827d63a0fe6ae83e76db377093232ef6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#286dc158912b19b9cebdac04fe72a67e">auto_fill</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">代充商品类型。只有少数类目下的商品可以标记上此字段，具体哪些类目可以上传可以通过taobao.itemcat.features.get获得。在代充商品的类目下，不传表示不标记商品类型（交易搜索中就不能通过标记搜到相关的交易了）。可选类型： time_card(点卡软件代充) fee_card(话费软件代充)</span>  <a href="#286dc158912b19b9cebdac04fe72a67e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#9e0e3f146a0ae82d097ff21c203b9cbc">cid</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属的叶子类目 id</span>  <a href="#9e0e3f146a0ae82d097ff21c203b9cbc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#fe14316d724bdb4101cffb4427bae4ce">cod_postage_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">货到付款运费模板ID</span>  <a href="#fe14316d724bdb4101cffb4427bae4ce"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#3b708c07a78a08a8cc927955eb1fdd4d">created</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Item的发布时间，目前仅供taobao.item.add和taobao.item.get可用</span>  <a href="#3b708c07a78a08a8cc927955eb1fdd4d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#88c90f101bb8ad23a73fb3e06669b478">delist_time</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">下架时间（格式：yyyy-MM-dd HH:mm:ss）</span>  <a href="#88c90f101bb8ad23a73fb3e06669b478"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#89c47931d8e28b72f3498b603aec1ad8">desc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品描述, 字数要大于5个字符，小于25000个字符</span>  <a href="#89c47931d8e28b72f3498b603aec1ad8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#e14be25d59608b8d874bab3e3a74acbc">detail_url</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品url</span>  <a href="#e14be25d59608b8d874bab3e3a74acbc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#9869381568b3d52b9a5d4615340a0abd">ems_fee</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">ems费用,格式：5.00；单位：元；精确到：分</span>  <a href="#9869381568b3d52b9a5d4615340a0abd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#c8041e7cbd6990cc6dad929a73340b15">express_fee</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">快递费用,格式：5.00；单位：元；精确到：分</span>  <a href="#c8041e7cbd6990cc6dad929a73340b15"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#ea264b09b52434b4ce3080e293265151">freight_payer</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">运费承担方式,seller（卖家承担），buyer(买家承担）</span>  <a href="#ea264b09b52434b4ce3080e293265151"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#27f424e981af5c100a515dd7774b0590">has_discount</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">支持会员打折,true/false</span>  <a href="#27f424e981af5c100a515dd7774b0590"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#6e9dededcd60ead0d7998afe738d3296">has_invoice</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否有发票,true/false</span>  <a href="#6e9dededcd60ead0d7998afe738d3296"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#2a48cadccdd4beca946dbdf7da2eb785">has_showcase</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">橱窗推荐,true/false</span>  <a href="#2a48cadccdd4beca946dbdf7da2eb785"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#93a4561016e6113d50d01deaea131bb6">has_warranty</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否有保修,true/false</span>  <a href="#93a4561016e6113d50d01deaea131bb6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#673037295e4f33d043666c49bb2604d1">increment</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">加价幅度。如果为0，代表系统代理幅度。 在竞拍中，为了超越上一个出价，会员需要在当前出价上增加金额，这个金额就是加价幅度。卖家在发布宝贝的时候可以自定义加价幅度，也可以让系统自动代理加价。系统自动代理加价的加价幅度随着当前出价金额的增加而增加，我们建议会员使用系统自动代理加价，并请买家在出价前看清楚加价幅度的具体金额。另外需要注意是，此功能只适用于拍卖的商品。 以下是系统自动代理加价幅度表： 当前价（加价幅度 ） 1-40（ 1 ）、41-100（ 2 ）、101-200（5 ）、201-500 （10）、501-1001（15）、001-2000（25）、2001-5000（50）、5001-10000（100） 10001以上 200</span>  <a href="#673037295e4f33d043666c49bb2604d1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#571730cefabda2ca2aeee35b4cb587f6">inner_shop_auction_template_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">用户内店宝贝装修模板id</span>  <a href="#571730cefabda2ca2aeee35b4cb587f6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#b98e5ddce77a3fc45e92bf95316a477d">input_pids</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">用户自行输入的类目属性ID串。结构："pid1,pid2,pid3"，如："20000"（表示品牌） 注：通常一个类目下用户可输入的关键属性不超过1个。</span>  <a href="#b98e5ddce77a3fc45e92bf95316a477d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#8e5bdb84f3117d3e9cdf6b874179a31f">input_str</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">用户自行输入的子属性名和属性值，结构:"父属性值;一级子属性名;一级子属性值;二级子属性名;自定义输入值,....",如：“耐克;耐克系列;科比系列;科比系列;2K5”，input_str需要与input_pids一一对应，注：通常一个类目下用户可输入的关键属性不超过1个。所有属性别名加起来不能超过 3999字节。</span>  <a href="#8e5bdb84f3117d3e9cdf6b874179a31f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#c0e773529ec314981a18c541e9f43cb9">is_3D</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否是3D淘宝的商品</span>  <a href="#c0e773529ec314981a18c541e9f43cb9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#39cf204b315bff89c7ec9177b17b0df1">is_ex</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否在外部网店显示</span>  <a href="#39cf204b315bff89c7ec9177b17b0df1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#48e6f51e21a86ded89a460c4ae16db6f">is_fenxiao</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">非分销商品：0，代销：1，经销：2</span>  <a href="#48e6f51e21a86ded89a460c4ae16db6f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#c3e7b340afec00182d9cc606675678e7">is_lightning_consignment</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否24小时闪电发货</span>  <a href="#c3e7b340afec00182d9cc606675678e7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#84e1238f4eaedd1325cf0f28988110a8">is_prepay</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品是否为先行赔付 taobao.items.search和taobao.items.vip.search专用</span>  <a href="#84e1238f4eaedd1325cf0f28988110a8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#a91b15c23b666696253a8843d84902eb">is_taobao</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否在淘宝显示</span>  <a href="#a91b15c23b666696253a8843d84902eb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#4f80d0d3181c94b4ba0613e255aa8a79">is_timing</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否定时上架商品</span>  <a href="#4f80d0d3181c94b4ba0613e255aa8a79"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#191f12a335c2f920d8193312d247ab0b">is_virtual</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">虚拟商品的状态字段</span>  <a href="#191f12a335c2f920d8193312d247ab0b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#8d50066e60e9c550edd6177b1a7eafb6">is_xinpin</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">标示商品是否为新品。 值含义：true-是，false-否。</span>  <a href="#8d50066e60e9c550edd6177b1a7eafb6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#09fb8cb0a6422ae8bf4368d90322f118">item_imgs</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品图片列表(包括主图)。fields中只设置item_img可以返回ItemImg结构体中所有字段，如果设置为item_img.id、item_img.url、item_img.position等形式就只会返回相应的字段</span>  <a href="#09fb8cb0a6422ae8bf4368d90322f118"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#de04612f16a96712f25366cd3e2d9ed5">list_time</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">上架时间（格式：yyyy-MM-dd HH:mm:ss）</span>  <a href="#de04612f16a96712f25366cd3e2d9ed5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#2dcfb19a1708bd34cb3bc8257d004b33">location</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所在地</span>  <a href="#2dcfb19a1708bd34cb3bc8257d004b33"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#075a3f67953a9ed03f319018abc92b10">modified</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品修改时间（格式：yyyy-MM-dd HH:mm:ss）</span>  <a href="#075a3f67953a9ed03f319018abc92b10"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#27a8a17d866dbe0ee1edb4d0aa006edd">nick</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家昵称</span>  <a href="#27a8a17d866dbe0ee1edb4d0aa006edd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#fca11f1db30cca4cd7e73a18c9c0bc51">num</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品数量</span>  <a href="#fca11f1db30cca4cd7e73a18c9c0bc51"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#7d7009d59a90b782d4e9d3f7381f6c79">num_iid</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品数字id</span>  <a href="#7d7009d59a90b782d4e9d3f7381f6c79"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#a6d5ea33cd03ee7106836e1b5fe6869c">one_station</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否淘1站商品</span>  <a href="#a6d5ea33cd03ee7106836e1b5fe6869c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#749d05d848e5d42b27c1d5e4afad715c">outer_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商家外部编码(可与商家外部系统对接)</span>  <a href="#749d05d848e5d42b27c1d5e4afad715c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#02c6bc69d5cb639598ce9d34a2a2c572">outer_shop_auction_template_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">用户外店装修模板id</span>  <a href="#02c6bc69d5cb639598ce9d34a2a2c572"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#8de64aaa8c90a59bfa2bc04a4163bf52">pic_url</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品主图片地址</span>  <a href="#8de64aaa8c90a59bfa2bc04a4163bf52"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#696aa949a3083a3ee0db9e78867916f0">post_fee</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">平邮费用,格式：5.00；单位：元；精确到：分</span>  <a href="#696aa949a3083a3ee0db9e78867916f0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#e7aaab36309f4e8cec2ceff5eb0b678d">postage_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">宝贝所属的运费模板ID，如果没有返回则说明没有使用运费模板</span>  <a href="#e7aaab36309f4e8cec2ceff5eb0b678d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#b30d8ff277e6fbaf567060f17e3bfa6a">price</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品价格，格式：5.00；单位：元；精确到：分</span>  <a href="#b30d8ff277e6fbaf567060f17e3bfa6a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#bf6941c8424d2046f09095ef2f718e70">product_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">宝贝所属产品的id(可能为空). </span> <a href="#bf6941c8424d2046f09095ef2f718e70"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#f6de42b0e3df98ec1e646650112b2410">promoted_service</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">消保类型，多个类型以,分割。可取以下值：2：假一赔三；4：7天无理由退换货；taobao.items.search和taobao.items.vip.search专用</span>  <a href="#f6de42b0e3df98ec1e646650112b2410"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#b8d2b5cb4c1c07c479a50a7378e002f4">prop_imgs</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品属性图片列表。fields中只设置prop_img可以返回PropImg结构体中所有字段，如果设置为prop_img.id、prop_img.url、prop_img.properties、prop_img.position等形式就只会返回相应的字段</span>  <a href="#b8d2b5cb4c1c07c479a50a7378e002f4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#03dfb845bcf14f314342e99821fcf01c">property_alias</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">属性值别名,比如颜色的自定义名称</span>  <a href="#03dfb845bcf14f314342e99821fcf01c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#b72729fec854312ef4bdba17533c1665">props</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品属性 格式：pid:vid;pid:vid</span>  <a href="#b72729fec854312ef4bdba17533c1665"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#78858fb6d5fea63162df9cda2e5f2c5c">props_name</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品属性名称。标识着props内容里面的pid和vid所对应的名称。格式为：pid1:vid1:pid_name1:vid_name1;pid2:vid2:pid_name2:vid_name2……(<b>注：</b>&lt;font color="red"&gt;属性名称中的冒号":"被转换为："cln#";  分号";"被转换为："scln#"&lt;/font&gt;)</span>  <a href="#78858fb6d5fea63162df9cda2e5f2c5c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#a83ea45daf186f0f55f3773a11e82f3e">score</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属卖家的信用等级数，1表示1心，2表示2心……，只有调用商品搜索:taobao.items.get和taobao.items.search的时候才能返回</span>  <a href="#a83ea45daf186f0f55f3773a11e82f3e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#35c60fbdc65040b15a8f429afe74fc1b">second_kill</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">秒杀商品类型。打上秒杀标记的商品，用户只能下架并不能再上架，其他任何编辑或删除操作都不能进行。如果用户想取消秒杀标记，需要联系小二进行操作。如果秒杀结束需要自由编辑请联系活动负责人（小二）去掉秒杀标记。可选类型 web_only(只能通过web网络秒杀) wap_only(只能通过wap网络秒杀) web_and_wap(既能通过web秒杀也能通过wap秒杀)</span>  <a href="#35c60fbdc65040b15a8f429afe74fc1b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#188d485a4efc1cad26fc8b0824fbd382">sell_promise</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否承诺退换货服务!</span>  <a href="#188d485a4efc1cad26fc8b0824fbd382"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#9a4f28055a9b52af80eb7d80d87d150d">seller_cids</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属的店铺内卖家自定义类目列表</span>  <a href="#9a4f28055a9b52af80eb7d80d87d150d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#4240611bd07f300b6caa34bc03203684">skus</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;"><a href="http://open.taobao.com/dev/index.php/Sku">Sku</a>列表。fields中只设置sku可以返回Sku结构体中所有字段，如果设置为sku.sku_id、sku.properties、sku.quantity等形式就只会返回相应的字段</span>  <a href="#4240611bd07f300b6caa34bc03203684"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#01560e5b163d368cd74d62368524dbb1">stuff_status</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品新旧程度(全新:new，闲置:unused，二手：second)</span>  <a href="#01560e5b163d368cd74d62368524dbb1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#7deb72808b8aa174ac5e101f25fa579c">sub_stock</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">标识商品减库存的方式 值含义：1-拍下减库存，2-付款减库存。</span>  <a href="#7deb72808b8aa174ac5e101f25fa579c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#7e8e8aa562bbfa5cbc4afe8d89ad778e">template_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">页面模板id</span>  <a href="#7e8e8aa562bbfa5cbc4afe8d89ad778e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#e89c2b814301914651d586ef60a40f0f">title</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品标题,不能超过60字节</span>  <a href="#e89c2b814301914651d586ef60a40f0f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#b7dc429e23d6d8aa26bb826a87fbda46">type</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品类型(fixed:一口价;auction:拍卖)注：取消团购</span>  <a href="#b7dc429e23d6d8aa26bb826a87fbda46"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#fbdb24f0bcd78225472080cf04c2f957">valid_thru</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">有效期,7或者14（默认是14天）</span>  <a href="#fbdb24f0bcd78225472080cf04c2f957"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#810687ada77b078516acfc36bb3374b6">videos</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品视频列表(目前只支持单个视频关联)。fields中只设置video可以返回Video结构体中所有字段，如果设置为video.id、video.video_id、 video.url等形式就只会返回相应的字段</span>  <a href="#810687ada77b078516acfc36bb3374b6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#67dbe7b42cbb9d46cf809f3f9ffab217">violation</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品是否违规，违规：true , 不违规：false</span>  <a href="#67dbe7b42cbb9d46cf809f3f9ffab217"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#04e5d01ad005758fffe17742a7f94dbb">volume</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">对应搜索商品列表页的最近成交量,只有调用商品搜索:taobao.items.get和taobao.items.search的时候才能返回</span>  <a href="#04e5d01ad005758fffe17742a7f94dbb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#4e3a7fdf946b18cd7d0414ff4967e876">wap_desc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">不带html标签的desc文本信息，该字段只在taobao.item.get接口中返回</span>  <a href="#4e3a7fdf946b18cd7d0414ff4967e876"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#967d1873ebe82450717bc183f5c16a57">wap_detail_url</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">适合wap应用的商品详情url ，该字段只在taobao.item.get接口中返回</span>  <a href="#967d1873ebe82450717bc183f5c16a57"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#0919ec1c3bd4421de5514c067841d67f">ww_status</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属的商家的旺旺在线状况， taobao.items.search和taobao.items.vip.search专用</span>  <a href="#0919ec1c3bd4421de5514c067841d67f"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html">Item</a>(商品)结构</span> 
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="2fa83ae420f544d6e27b04a2b8217030"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::after_sale_id" ref="2fa83ae420f544d6e27b04a2b8217030" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#2fa83ae420f544d6e27b04a2b8217030">TaobaoSdk::Domain::Item::Item::after_sale_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">售后服务ID,该字段仅在taobao.item.get接口中返回</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="b623ee57b12a62079473d2502a14a66e"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::approve_status" ref="b623ee57b12a62079473d2502a14a66e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#b623ee57b12a62079473d2502a14a66e">TaobaoSdk::Domain::Item::Item::approve_status</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品上传后的状态。onsale出售中，instock库中</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="827d63a0fe6ae83e76db377093232ef6"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::auction_point" ref="827d63a0fe6ae83e76db377093232ef6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#827d63a0fe6ae83e76db377093232ef6">TaobaoSdk::Domain::Item::Item::auction_point</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商城返点比例，为5的倍数，最低0.5%</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="286dc158912b19b9cebdac04fe72a67e"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::auto_fill" ref="286dc158912b19b9cebdac04fe72a67e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#286dc158912b19b9cebdac04fe72a67e">TaobaoSdk::Domain::Item::Item::auto_fill</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">代充商品类型。只有少数类目下的商品可以标记上此字段，具体哪些类目可以上传可以通过taobao.itemcat.features.get获得。在代充商品的类目下，不传表示不标记商品类型（交易搜索中就不能通过标记搜到相关的交易了）。可选类型： time_card(点卡软件代充) fee_card(话费软件代充)</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="9e0e3f146a0ae82d097ff21c203b9cbc"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::cid" ref="9e0e3f146a0ae82d097ff21c203b9cbc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#9e0e3f146a0ae82d097ff21c203b9cbc">TaobaoSdk::Domain::Item::Item::cid</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属的叶子类目 id</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="fe14316d724bdb4101cffb4427bae4ce"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::cod_postage_id" ref="fe14316d724bdb4101cffb4427bae4ce" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#fe14316d724bdb4101cffb4427bae4ce">TaobaoSdk::Domain::Item::Item::cod_postage_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">货到付款运费模板ID</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="3b708c07a78a08a8cc927955eb1fdd4d"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::created" ref="3b708c07a78a08a8cc927955eb1fdd4d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#3b708c07a78a08a8cc927955eb1fdd4d">TaobaoSdk::Domain::Item::Item::created</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Item的发布时间，目前仅供taobao.item.add和taobao.item.get可用</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="88c90f101bb8ad23a73fb3e06669b478"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::delist_time" ref="88c90f101bb8ad23a73fb3e06669b478" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#88c90f101bb8ad23a73fb3e06669b478">TaobaoSdk::Domain::Item::Item::delist_time</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">下架时间（格式：yyyy-MM-dd HH:mm:ss）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="89c47931d8e28b72f3498b603aec1ad8"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::desc" ref="89c47931d8e28b72f3498b603aec1ad8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#89c47931d8e28b72f3498b603aec1ad8">TaobaoSdk::Domain::Item::Item::desc</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品描述, 字数要大于5个字符，小于25000个字符</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="e14be25d59608b8d874bab3e3a74acbc"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::detail_url" ref="e14be25d59608b8d874bab3e3a74acbc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#e14be25d59608b8d874bab3e3a74acbc">TaobaoSdk::Domain::Item::Item::detail_url</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品url</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="9869381568b3d52b9a5d4615340a0abd"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::ems_fee" ref="9869381568b3d52b9a5d4615340a0abd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#9869381568b3d52b9a5d4615340a0abd">TaobaoSdk::Domain::Item::Item::ems_fee</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">ems费用,格式：5.00；单位：元；精确到：分</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Price</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="c8041e7cbd6990cc6dad929a73340b15"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::express_fee" ref="c8041e7cbd6990cc6dad929a73340b15" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#c8041e7cbd6990cc6dad929a73340b15">TaobaoSdk::Domain::Item::Item::express_fee</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">快递费用,格式：5.00；单位：元；精确到：分</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Price</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="ea264b09b52434b4ce3080e293265151"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::freight_payer" ref="ea264b09b52434b4ce3080e293265151" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#ea264b09b52434b4ce3080e293265151">TaobaoSdk::Domain::Item::Item::freight_payer</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">运费承担方式,seller（卖家承担），buyer(买家承担）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="27f424e981af5c100a515dd7774b0590"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::has_discount" ref="27f424e981af5c100a515dd7774b0590" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#27f424e981af5c100a515dd7774b0590">TaobaoSdk::Domain::Item::Item::has_discount</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">支持会员打折,true/false</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="6e9dededcd60ead0d7998afe738d3296"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::has_invoice" ref="6e9dededcd60ead0d7998afe738d3296" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#6e9dededcd60ead0d7998afe738d3296">TaobaoSdk::Domain::Item::Item::has_invoice</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否有发票,true/false</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="2a48cadccdd4beca946dbdf7da2eb785"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::has_showcase" ref="2a48cadccdd4beca946dbdf7da2eb785" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#2a48cadccdd4beca946dbdf7da2eb785">TaobaoSdk::Domain::Item::Item::has_showcase</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">橱窗推荐,true/false</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="93a4561016e6113d50d01deaea131bb6"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::has_warranty" ref="93a4561016e6113d50d01deaea131bb6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#93a4561016e6113d50d01deaea131bb6">TaobaoSdk::Domain::Item::Item::has_warranty</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否有保修,true/false</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="673037295e4f33d043666c49bb2604d1"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::increment" ref="673037295e4f33d043666c49bb2604d1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#673037295e4f33d043666c49bb2604d1">TaobaoSdk::Domain::Item::Item::increment</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">加价幅度。如果为0，代表系统代理幅度。 在竞拍中，为了超越上一个出价，会员需要在当前出价上增加金额，这个金额就是加价幅度。卖家在发布宝贝的时候可以自定义加价幅度，也可以让系统自动代理加价。系统自动代理加价的加价幅度随着当前出价金额的增加而增加，我们建议会员使用系统自动代理加价，并请买家在出价前看清楚加价幅度的具体金额。另外需要注意是，此功能只适用于拍卖的商品。 以下是系统自动代理加价幅度表： 当前价（加价幅度 ） 1-40（ 1 ）、41-100（ 2 ）、101-200（5 ）、201-500 （10）、501-1001（15）、001-2000（25）、2001-5000（50）、5001-10000（100） 10001以上 200</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="571730cefabda2ca2aeee35b4cb587f6"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::inner_shop_auction_template_id" ref="571730cefabda2ca2aeee35b4cb587f6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#571730cefabda2ca2aeee35b4cb587f6">TaobaoSdk::Domain::Item::Item::inner_shop_auction_template_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">用户内店宝贝装修模板id</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="b98e5ddce77a3fc45e92bf95316a477d"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::input_pids" ref="b98e5ddce77a3fc45e92bf95316a477d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#b98e5ddce77a3fc45e92bf95316a477d">TaobaoSdk::Domain::Item::Item::input_pids</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">用户自行输入的类目属性ID串。结构："pid1,pid2,pid3"，如："20000"（表示品牌） 注：通常一个类目下用户可输入的关键属性不超过1个。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="8e5bdb84f3117d3e9cdf6b874179a31f"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::input_str" ref="8e5bdb84f3117d3e9cdf6b874179a31f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#8e5bdb84f3117d3e9cdf6b874179a31f">TaobaoSdk::Domain::Item::Item::input_str</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">用户自行输入的子属性名和属性值，结构:"父属性值;一级子属性名;一级子属性值;二级子属性名;自定义输入值,....",如：“耐克;耐克系列;科比系列;科比系列;2K5”，input_str需要与input_pids一一对应，注：通常一个类目下用户可输入的关键属性不超过1个。所有属性别名加起来不能超过 3999字节。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="c0e773529ec314981a18c541e9f43cb9"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::is_3D" ref="c0e773529ec314981a18c541e9f43cb9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#c0e773529ec314981a18c541e9f43cb9">TaobaoSdk::Domain::Item::Item::is_3D</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否是3D淘宝的商品</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="39cf204b315bff89c7ec9177b17b0df1"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::is_ex" ref="39cf204b315bff89c7ec9177b17b0df1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#39cf204b315bff89c7ec9177b17b0df1">TaobaoSdk::Domain::Item::Item::is_ex</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否在外部网店显示</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="48e6f51e21a86ded89a460c4ae16db6f"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::is_fenxiao" ref="48e6f51e21a86ded89a460c4ae16db6f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#48e6f51e21a86ded89a460c4ae16db6f">TaobaoSdk::Domain::Item::Item::is_fenxiao</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">非分销商品：0，代销：1，经销：2</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="c3e7b340afec00182d9cc606675678e7"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::is_lightning_consignment" ref="c3e7b340afec00182d9cc606675678e7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#c3e7b340afec00182d9cc606675678e7">TaobaoSdk::Domain::Item::Item::is_lightning_consignment</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否24小时闪电发货</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="84e1238f4eaedd1325cf0f28988110a8"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::is_prepay" ref="84e1238f4eaedd1325cf0f28988110a8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#84e1238f4eaedd1325cf0f28988110a8">TaobaoSdk::Domain::Item::Item::is_prepay</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品是否为先行赔付 taobao.items.search和taobao.items.vip.search专用</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="a91b15c23b666696253a8843d84902eb"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::is_taobao" ref="a91b15c23b666696253a8843d84902eb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#a91b15c23b666696253a8843d84902eb">TaobaoSdk::Domain::Item::Item::is_taobao</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否在淘宝显示</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="4f80d0d3181c94b4ba0613e255aa8a79"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::is_timing" ref="4f80d0d3181c94b4ba0613e255aa8a79" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#4f80d0d3181c94b4ba0613e255aa8a79">TaobaoSdk::Domain::Item::Item::is_timing</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否定时上架商品</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="191f12a335c2f920d8193312d247ab0b"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::is_virtual" ref="191f12a335c2f920d8193312d247ab0b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#191f12a335c2f920d8193312d247ab0b">TaobaoSdk::Domain::Item::Item::is_virtual</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">虚拟商品的状态字段</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="8d50066e60e9c550edd6177b1a7eafb6"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::is_xinpin" ref="8d50066e60e9c550edd6177b1a7eafb6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#8d50066e60e9c550edd6177b1a7eafb6">TaobaoSdk::Domain::Item::Item::is_xinpin</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">标示商品是否为新品。 值含义：true-是，false-否。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="09fb8cb0a6422ae8bf4368d90322f118"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::item_imgs" ref="09fb8cb0a6422ae8bf4368d90322f118" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#09fb8cb0a6422ae8bf4368d90322f118">TaobaoSdk::Domain::Item::Item::item_imgs</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品图片列表(包括主图)。fields中只设置item_img可以返回ItemImg结构体中所有字段，如果设置为item_img.id、item_img.url、item_img.position等形式就只会返回相应的字段</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">ItemImg</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Object Array</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="de04612f16a96712f25366cd3e2d9ed5"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::list_time" ref="de04612f16a96712f25366cd3e2d9ed5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#de04612f16a96712f25366cd3e2d9ed5">TaobaoSdk::Domain::Item::Item::list_time</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">上架时间（格式：yyyy-MM-dd HH:mm:ss）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="2dcfb19a1708bd34cb3bc8257d004b33"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::location" ref="2dcfb19a1708bd34cb3bc8257d004b33" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#2dcfb19a1708bd34cb3bc8257d004b33">TaobaoSdk::Domain::Item::Item::location</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所在地</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Location</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Object</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="075a3f67953a9ed03f319018abc92b10"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::modified" ref="075a3f67953a9ed03f319018abc92b10" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#075a3f67953a9ed03f319018abc92b10">TaobaoSdk::Domain::Item::Item::modified</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品修改时间（格式：yyyy-MM-dd HH:mm:ss）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="27a8a17d866dbe0ee1edb4d0aa006edd"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::nick" ref="27a8a17d866dbe0ee1edb4d0aa006edd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#27a8a17d866dbe0ee1edb4d0aa006edd">TaobaoSdk::Domain::Item::Item::nick</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">卖家昵称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="fca11f1db30cca4cd7e73a18c9c0bc51"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::num" ref="fca11f1db30cca4cd7e73a18c9c0bc51" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#fca11f1db30cca4cd7e73a18c9c0bc51">TaobaoSdk::Domain::Item::Item::num</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品数量</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="7d7009d59a90b782d4e9d3f7381f6c79"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::num_iid" ref="7d7009d59a90b782d4e9d3f7381f6c79" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#7d7009d59a90b782d4e9d3f7381f6c79">TaobaoSdk::Domain::Item::Item::num_iid</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品数字id</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="a6d5ea33cd03ee7106836e1b5fe6869c"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::one_station" ref="a6d5ea33cd03ee7106836e1b5fe6869c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#a6d5ea33cd03ee7106836e1b5fe6869c">TaobaoSdk::Domain::Item::Item::one_station</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否淘1站商品</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="749d05d848e5d42b27c1d5e4afad715c"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::outer_id" ref="749d05d848e5d42b27c1d5e4afad715c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#749d05d848e5d42b27c1d5e4afad715c">TaobaoSdk::Domain::Item::Item::outer_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商家外部编码(可与商家外部系统对接)</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="02c6bc69d5cb639598ce9d34a2a2c572"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::outer_shop_auction_template_id" ref="02c6bc69d5cb639598ce9d34a2a2c572" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#02c6bc69d5cb639598ce9d34a2a2c572">TaobaoSdk::Domain::Item::Item::outer_shop_auction_template_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">用户外店装修模板id</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="8de64aaa8c90a59bfa2bc04a4163bf52"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::pic_url" ref="8de64aaa8c90a59bfa2bc04a4163bf52" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#8de64aaa8c90a59bfa2bc04a4163bf52">TaobaoSdk::Domain::Item::Item::pic_url</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品主图片地址</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="696aa949a3083a3ee0db9e78867916f0"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::post_fee" ref="696aa949a3083a3ee0db9e78867916f0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#696aa949a3083a3ee0db9e78867916f0">TaobaoSdk::Domain::Item::Item::post_fee</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">平邮费用,格式：5.00；单位：元；精确到：分</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Price</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="e7aaab36309f4e8cec2ceff5eb0b678d"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::postage_id" ref="e7aaab36309f4e8cec2ceff5eb0b678d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#e7aaab36309f4e8cec2ceff5eb0b678d">TaobaoSdk::Domain::Item::Item::postage_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">宝贝所属的运费模板ID，如果没有返回则说明没有使用运费模板</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="b30d8ff277e6fbaf567060f17e3bfa6a"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::price" ref="b30d8ff277e6fbaf567060f17e3bfa6a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#b30d8ff277e6fbaf567060f17e3bfa6a">TaobaoSdk::Domain::Item::Item::price</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品价格，格式：5.00；单位：元；精确到：分</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Price</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="bf6941c8424d2046f09095ef2f718e70"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::product_id" ref="bf6941c8424d2046f09095ef2f718e70" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#bf6941c8424d2046f09095ef2f718e70">TaobaoSdk::Domain::Item::Item::product_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">宝贝所属产品的id(可能为空). </span>
+<p>
+该字段可以通过taobao.products.search 得到 <ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="f6de42b0e3df98ec1e646650112b2410"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::promoted_service" ref="f6de42b0e3df98ec1e646650112b2410" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#f6de42b0e3df98ec1e646650112b2410">TaobaoSdk::Domain::Item::Item::promoted_service</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">消保类型，多个类型以,分割。可取以下值：2：假一赔三；4：7天无理由退换货；taobao.items.search和taobao.items.vip.search专用</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="b8d2b5cb4c1c07c479a50a7378e002f4"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::prop_imgs" ref="b8d2b5cb4c1c07c479a50a7378e002f4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#b8d2b5cb4c1c07c479a50a7378e002f4">TaobaoSdk::Domain::Item::Item::prop_imgs</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品属性图片列表。fields中只设置prop_img可以返回PropImg结构体中所有字段，如果设置为prop_img.id、prop_img.url、prop_img.properties、prop_img.position等形式就只会返回相应的字段</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">PropImg</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Object Array</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="03dfb845bcf14f314342e99821fcf01c"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::property_alias" ref="03dfb845bcf14f314342e99821fcf01c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#03dfb845bcf14f314342e99821fcf01c">TaobaoSdk::Domain::Item::Item::property_alias</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">属性值别名,比如颜色的自定义名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="b72729fec854312ef4bdba17533c1665"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::props" ref="b72729fec854312ef4bdba17533c1665" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#b72729fec854312ef4bdba17533c1665">TaobaoSdk::Domain::Item::Item::props</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品属性 格式：pid:vid;pid:vid</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="78858fb6d5fea63162df9cda2e5f2c5c"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::props_name" ref="78858fb6d5fea63162df9cda2e5f2c5c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#78858fb6d5fea63162df9cda2e5f2c5c">TaobaoSdk::Domain::Item::Item::props_name</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品属性名称。标识着props内容里面的pid和vid所对应的名称。格式为：pid1:vid1:pid_name1:vid_name1;pid2:vid2:pid_name2:vid_name2……(<b>注：</b>&lt;font color="red"&gt;属性名称中的冒号":"被转换为："cln#";  分号";"被转换为："scln#"&lt;/font&gt;)</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="a83ea45daf186f0f55f3773a11e82f3e"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::score" ref="a83ea45daf186f0f55f3773a11e82f3e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#a83ea45daf186f0f55f3773a11e82f3e">TaobaoSdk::Domain::Item::Item::score</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属卖家的信用等级数，1表示1心，2表示2心……，只有调用商品搜索:taobao.items.get和taobao.items.search的时候才能返回</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="35c60fbdc65040b15a8f429afe74fc1b"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::second_kill" ref="35c60fbdc65040b15a8f429afe74fc1b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#35c60fbdc65040b15a8f429afe74fc1b">TaobaoSdk::Domain::Item::Item::second_kill</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">秒杀商品类型。打上秒杀标记的商品，用户只能下架并不能再上架，其他任何编辑或删除操作都不能进行。如果用户想取消秒杀标记，需要联系小二进行操作。如果秒杀结束需要自由编辑请联系活动负责人（小二）去掉秒杀标记。可选类型 web_only(只能通过web网络秒杀) wap_only(只能通过wap网络秒杀) web_and_wap(既能通过web秒杀也能通过wap秒杀)</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="188d485a4efc1cad26fc8b0824fbd382"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::sell_promise" ref="188d485a4efc1cad26fc8b0824fbd382" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#188d485a4efc1cad26fc8b0824fbd382">TaobaoSdk::Domain::Item::Item::sell_promise</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否承诺退换货服务!</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="9a4f28055a9b52af80eb7d80d87d150d"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::seller_cids" ref="9a4f28055a9b52af80eb7d80d87d150d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#9a4f28055a9b52af80eb7d80d87d150d">TaobaoSdk::Domain::Item::Item::seller_cids</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属的店铺内卖家自定义类目列表</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="4240611bd07f300b6caa34bc03203684"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::skus" ref="4240611bd07f300b6caa34bc03203684" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#4240611bd07f300b6caa34bc03203684">TaobaoSdk::Domain::Item::Item::skus</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;"><a href="http://open.taobao.com/dev/index.php/Sku">Sku</a>列表。fields中只设置sku可以返回Sku结构体中所有字段，如果设置为sku.sku_id、sku.properties、sku.quantity等形式就只会返回相应的字段</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Sku</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Object Array</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="01560e5b163d368cd74d62368524dbb1"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::stuff_status" ref="01560e5b163d368cd74d62368524dbb1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#01560e5b163d368cd74d62368524dbb1">TaobaoSdk::Domain::Item::Item::stuff_status</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品新旧程度(全新:new，闲置:unused，二手：second)</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="7deb72808b8aa174ac5e101f25fa579c"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::sub_stock" ref="7deb72808b8aa174ac5e101f25fa579c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#7deb72808b8aa174ac5e101f25fa579c">TaobaoSdk::Domain::Item::Item::sub_stock</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">标识商品减库存的方式 值含义：1-拍下减库存，2-付款减库存。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="7e8e8aa562bbfa5cbc4afe8d89ad778e"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::template_id" ref="7e8e8aa562bbfa5cbc4afe8d89ad778e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#7e8e8aa562bbfa5cbc4afe8d89ad778e">TaobaoSdk::Domain::Item::Item::template_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">页面模板id</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="e89c2b814301914651d586ef60a40f0f"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::title" ref="e89c2b814301914651d586ef60a40f0f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#e89c2b814301914651d586ef60a40f0f">TaobaoSdk::Domain::Item::Item::title</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品标题,不能超过60字节</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="b7dc429e23d6d8aa26bb826a87fbda46"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::type" ref="b7dc429e23d6d8aa26bb826a87fbda46" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#b7dc429e23d6d8aa26bb826a87fbda46">TaobaoSdk::Domain::Item::Item::type</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品类型(fixed:一口价;auction:拍卖)注：取消团购</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="fbdb24f0bcd78225472080cf04c2f957"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::valid_thru" ref="fbdb24f0bcd78225472080cf04c2f957" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#fbdb24f0bcd78225472080cf04c2f957">TaobaoSdk::Domain::Item::Item::valid_thru</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">有效期,7或者14（默认是14天）</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="810687ada77b078516acfc36bb3374b6"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::videos" ref="810687ada77b078516acfc36bb3374b6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#810687ada77b078516acfc36bb3374b6">TaobaoSdk::Domain::Item::Item::videos</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品视频列表(目前只支持单个视频关联)。fields中只设置video可以返回Video结构体中所有字段，如果设置为video.id、video.video_id、 video.url等形式就只会返回相应的字段</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Video</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Object Array</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="67dbe7b42cbb9d46cf809f3f9ffab217"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::violation" ref="67dbe7b42cbb9d46cf809f3f9ffab217" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#67dbe7b42cbb9d46cf809f3f9ffab217">TaobaoSdk::Domain::Item::Item::violation</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品是否违规，违规：true , 不违规：false</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="04e5d01ad005758fffe17742a7f94dbb"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::volume" ref="04e5d01ad005758fffe17742a7f94dbb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#04e5d01ad005758fffe17742a7f94dbb">TaobaoSdk::Domain::Item::Item::volume</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">对应搜索商品列表页的最近成交量,只有调用商品搜索:taobao.items.get和taobao.items.search的时候才能返回</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="4e3a7fdf946b18cd7d0414ff4967e876"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::wap_desc" ref="4e3a7fdf946b18cd7d0414ff4967e876" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#4e3a7fdf946b18cd7d0414ff4967e876">TaobaoSdk::Domain::Item::Item::wap_desc</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">不带html标签的desc文本信息，该字段只在taobao.item.get接口中返回</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="967d1873ebe82450717bc183f5c16a57"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::wap_detail_url" ref="967d1873ebe82450717bc183f5c16a57" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#967d1873ebe82450717bc183f5c16a57">TaobaoSdk::Domain::Item::Item::wap_detail_url</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">适合wap应用的商品详情url ，该字段只在taobao.item.get接口中返回</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="0919ec1c3bd4421de5514c067841d67f"></a><!-- doxytag: member="TaobaoSdk::Domain::Item::Item::ww_status" ref="0919ec1c3bd4421de5514c067841d67f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_domain_1_1_item_1_1_item.html#0919ec1c3bd4421de5514c067841d67f">TaobaoSdk::Domain::Item::Item::ww_status</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品所属的商家的旺旺在线状况， taobao.items.search和taobao.items.vip.search专用</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Boolean</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;"></span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Domain/Item.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:43 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Request</b>::<b>TradeOrderskuUpdateRequest</b>::<a class="el" href="class_taobao_sdk_1_1_request_1_1_trade_ordersku_update_request_1_1_trade_ordersku_update_request.html">TradeOrderskuUpdateRequest</a></div>
+<h1>TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest��ο�</h1><!-- doxytag: class="TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">只能更新发货前子订单的销售属性 只能更新价格相同的销售属性。对于拍下减库存的交易会同步更新销售属性的库存量。对于旺店的交易，要使用商品扩展信息中的SKU价格来比较。 必须使用sku_id或sku_props中的一个参数来更新，如果两个都传的话，sku_id优先</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_request_1_1_trade_ordersku_update_request_1_1_trade_ordersku_update_request-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9801565f1176230dbc642c37d55eb002"></a><!-- doxytag: member="TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest::__init__" ref="9801565f1176230dbc642c37d55eb002" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_trade_ordersku_update_request_1_1_trade_ordersku_update_request.html#87b235c48b4eb8a85c9cf1d7e05e7454">method</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span>  <a href="#87b235c48b4eb8a85c9cf1d7e05e7454"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_trade_ordersku_update_request_1_1_trade_ordersku_update_request.html#3dadc7c90fbd65d0f317427d507a3a19">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span>  <a href="#3dadc7c90fbd65d0f317427d507a3a19"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_trade_ordersku_update_request_1_1_trade_ordersku_update_request.html#2b45d472b88552b180d7d477a64c75f2">oid</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">子订单编号（对于单笔订单的交易可以传交易编号）。</span>  <a href="#2b45d472b88552b180d7d477a64c75f2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_trade_ordersku_update_request_1_1_trade_ordersku_update_request.html#fabb6c2ecef06530e681715bda870d5b">sku_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">销售属性编号，可以通过taobao.item.skus.get获取订单对应的商品的所有销售属性。</span>  <a href="#fabb6c2ecef06530e681715bda870d5b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_trade_ordersku_update_request_1_1_trade_ordersku_update_request.html#3f5c88dce825e442b3abec6dcf19aa34">sku_props</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">销售属性组合串，格式：p1:v1;p2:v2，如：1627207:28329;20509:28314。可以通过taobao.item.skus.get获取订单对应的商品的所有销售属性。</span>  <a href="#3f5c88dce825e442b3abec6dcf19aa34"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">只能更新发货前子订单的销售属性 只能更新价格相同的销售属性。对于拍下减库存的交易会同步更新销售属性的库存量。对于旺店的交易，要使用商品扩展信息中的SKU价格来比较。 必须使用sku_id或sku_props中的一个参数来更新，如果两个都传的话，sku_id优先</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="87b235c48b4eb8a85c9cf1d7e05e7454"></a><!-- doxytag: member="TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest::method" ref="87b235c48b4eb8a85c9cf1d7e05e7454" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_trade_ordersku_update_request_1_1_trade_ordersku_update_request.html#87b235c48b4eb8a85c9cf1d7e05e7454">TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest::method</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="2b45d472b88552b180d7d477a64c75f2"></a><!-- doxytag: member="TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest::oid" ref="2b45d472b88552b180d7d477a64c75f2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_trade_ordersku_update_request_1_1_trade_ordersku_update_request.html#2b45d472b88552b180d7d477a64c75f2">TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest::oid</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">子订单编号（对于单笔订单的交易可以传交易编号）。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="fabb6c2ecef06530e681715bda870d5b"></a><!-- doxytag: member="TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest::sku_id" ref="fabb6c2ecef06530e681715bda870d5b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_trade_ordersku_update_request_1_1_trade_ordersku_update_request.html#fabb6c2ecef06530e681715bda870d5b">TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest::sku_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">销售属性编号，可以通过taobao.item.skus.get获取订单对应的商品的所有销售属性。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="3f5c88dce825e442b3abec6dcf19aa34"></a><!-- doxytag: member="TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest::sku_props" ref="3f5c88dce825e442b3abec6dcf19aa34" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_trade_ordersku_update_request_1_1_trade_ordersku_update_request.html#3f5c88dce825e442b3abec6dcf19aa34">TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest::sku_props</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">销售属性组合串，格式：p1:v1;p2:v2，如：1627207:28329;20509:28314。可以通过taobao.item.skus.get获取订单对应的商品的所有销售属性。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="3dadc7c90fbd65d0f317427d507a3a19"></a><!-- doxytag: member="TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest::timestamp" ref="3dadc7c90fbd65d0f317427d507a3a19" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_trade_ordersku_update_request_1_1_trade_ordersku_update_request.html#3dadc7c90fbd65d0f317427d507a3a19">TaobaoSdk::Request::TradeOrderskuUpdateRequest::TradeOrderskuUpdateRequest::timestamp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Request/TradeOrderskuUpdateRequest.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:52 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

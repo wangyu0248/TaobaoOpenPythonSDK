@@ -1,0 +1,546 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Request</b>::<b>CrmRuleAddRequest</b>::<a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html">CrmRuleAddRequest</a></div>
+<h1>TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest��ο�</h1><!-- doxytag: class="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">添加分组规则，规则可用于筛选一定条件的会员。过滤条件可以选择客户来源、会员级别 、交易笔数、交易额、上次交易时间、平均客单价、宝贝件数、省份、关闭交易数等，新建规则时必须至少选择一个以上筛选条件。如果输入的规则的筛选条件不正确则不会进行处理，可以将某些分组挂在这个规则下，对被挂在该规则下的分组，系统对现有满足规则的客户都划分到这个分组（异步任务）。每个规则可以应用到多个分组，一个用户的规则上限为5个。</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c49a13e138dd60f0b249fb27cf6f5be0"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::__init__" ref="c49a13e138dd60f0b249fb27cf6f5be0" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#f4a329b40099963aa5d5c86db99283c3">method</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span>  <a href="#f4a329b40099963aa5d5c86db99283c3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#589b0de352542f9e8ca56d72f45ea9c6">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span>  <a href="#589b0de352542f9e8ca56d72f45ea9c6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#7668d3e89a1f1ea711f43b15db5c280b">grade</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">会员等级，可选值为：1,2,3,4</span>  <a href="#7668d3e89a1f1ea711f43b15db5c280b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#7244a55efec7a4e061d38ba877fa85f0">group_ids</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">规则应用分组集合，若分组上有任务，则该分组不能挂到该规则下</span>  <a href="#7244a55efec7a4e061d38ba877fa85f0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#29449de78069b166c7c8ab4f8fbb4748">max_avg_price</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最大平均客单价，单位为元</span>  <a href="#29449de78069b166c7c8ab4f8fbb4748"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#cf20ca3f29d1143518f29fc0f309e59d">max_close_trade_num</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最大交易关闭数</span>  <a href="#cf20ca3f29d1143518f29fc0f309e59d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#e70979dcc7d34b1f3edbf70b9b28dacc">max_item_num</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最大宝贝件数</span>  <a href="#e70979dcc7d34b1f3edbf70b9b28dacc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#11a384b65ca4181d11d323d70c89a34e">max_last_trade_time</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最迟交易时间</span>  <a href="#11a384b65ca4181d11d323d70c89a34e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#13782abb01ee1c830185523e1bd4eeba">max_trade_amount</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最大交易金额，单位为元</span>  <a href="#13782abb01ee1c830185523e1bd4eeba"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#96f3ef4548e1af967634f5b20973d72c">max_trade_count</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最大交易数</span>  <a href="#96f3ef4548e1af967634f5b20973d72c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#dbcd8a3f0fd6d4b113dc28ace3dff2c3">min_avg_price</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最小平均客单价，单位元</span>  <a href="#dbcd8a3f0fd6d4b113dc28ace3dff2c3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#050b35f47c7007a80ca0e3a516536d93">min_close_trade_num</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最少交易关闭数</span>  <a href="#050b35f47c7007a80ca0e3a516536d93"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#434a4ac7d08e9fd6a2c9b00e2470d50e">min_item_num</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最少宝贝件数</span>  <a href="#434a4ac7d08e9fd6a2c9b00e2470d50e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#21a63c1ffc3f975e0121a49b7baffe35">min_last_trade_time</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最早交易日期 必须为早于今天的某个时间，例如今天是2011-11-11，那么必须填写2011-11-10或者早于此日期的时间</span>  <a href="#21a63c1ffc3f975e0121a49b7baffe35"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#385855c1431476870422bf76457bbfd0">min_trade_amount</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最小交易金额,单位元。</span>  <a href="#385855c1431476870422bf76457bbfd0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#cecb01ec93bd4bb3c118a4fcd9714577">min_trade_count</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最小交易次数</span>  <a href="#cecb01ec93bd4bb3c118a4fcd9714577"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#c46bfad77db45c0f6bdc8682a325a5a6">province</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">北京=1,天津=2,河北省=3,山西省=4,内蒙古自治区=5,辽宁省=6,吉林省=7,黑龙江省=8,上海=9,江苏省=10,浙江省=11,安徽省=12,福建省=13,江西省=14,山东省=15,河南省=16,湖北省=17,湖南省=18, 广东省=19,广西壮族自治区=20,海南省=21,重庆=22,四川省=23,贵州省=24,云南省=25,西藏自治区26,陕西省=27,甘肃省=28,青海省=29,宁夏回族自治区=30,新疆维吾尔自治区=31,台湾省=32,香港特别行政区=33,澳门特别行政区=34,海外=35</span>  <a href="#c46bfad77db45c0f6bdc8682a325a5a6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#376b20498d2dd4347add39e81d8fc969">relation_source</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">客户关系来源,可选值为:1,2</span>  <a href="#376b20498d2dd4347add39e81d8fc969"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#a9ba85a05c6598a7f99de9534bb76815">rule_name</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">规则名称</span>  <a href="#a9ba85a05c6598a7f99de9534bb76815"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">添加分组规则，规则可用于筛选一定条件的会员。过滤条件可以选择客户来源、会员级别 、交易笔数、交易额、上次交易时间、平均客单价、宝贝件数、省份、关闭交易数等，新建规则时必须至少选择一个以上筛选条件。如果输入的规则的筛选条件不正确则不会进行处理，可以将某些分组挂在这个规则下，对被挂在该规则下的分组，系统对现有满足规则的客户都划分到这个分组（异步任务）。每个规则可以应用到多个分组，一个用户的规则上限为5个。</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="7668d3e89a1f1ea711f43b15db5c280b"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::grade" ref="7668d3e89a1f1ea711f43b15db5c280b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#7668d3e89a1f1ea711f43b15db5c280b">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::grade</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">会员等级，可选值为：1,2,3,4</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="7244a55efec7a4e061d38ba877fa85f0"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::group_ids" ref="7244a55efec7a4e061d38ba877fa85f0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#7244a55efec7a4e061d38ba877fa85f0">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::group_ids</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">规则应用分组集合，若分组上有任务，则该分组不能挂到该规则下</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="29449de78069b166c7c8ab4f8fbb4748"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::max_avg_price" ref="29449de78069b166c7c8ab4f8fbb4748" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#29449de78069b166c7c8ab4f8fbb4748">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::max_avg_price</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最大平均客单价，单位为元</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Price</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="cf20ca3f29d1143518f29fc0f309e59d"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::max_close_trade_num" ref="cf20ca3f29d1143518f29fc0f309e59d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#cf20ca3f29d1143518f29fc0f309e59d">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::max_close_trade_num</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最大交易关闭数</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="e70979dcc7d34b1f3edbf70b9b28dacc"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::max_item_num" ref="e70979dcc7d34b1f3edbf70b9b28dacc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#e70979dcc7d34b1f3edbf70b9b28dacc">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::max_item_num</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最大宝贝件数</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="11a384b65ca4181d11d323d70c89a34e"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::max_last_trade_time" ref="11a384b65ca4181d11d323d70c89a34e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#11a384b65ca4181d11d323d70c89a34e">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::max_last_trade_time</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最迟交易时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="13782abb01ee1c830185523e1bd4eeba"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::max_trade_amount" ref="13782abb01ee1c830185523e1bd4eeba" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#13782abb01ee1c830185523e1bd4eeba">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::max_trade_amount</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最大交易金额，单位为元</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Price</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="96f3ef4548e1af967634f5b20973d72c"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::max_trade_count" ref="96f3ef4548e1af967634f5b20973d72c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#96f3ef4548e1af967634f5b20973d72c">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::max_trade_count</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最大交易数</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="f4a329b40099963aa5d5c86db99283c3"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::method" ref="f4a329b40099963aa5d5c86db99283c3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#f4a329b40099963aa5d5c86db99283c3">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::method</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="dbcd8a3f0fd6d4b113dc28ace3dff2c3"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::min_avg_price" ref="dbcd8a3f0fd6d4b113dc28ace3dff2c3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#dbcd8a3f0fd6d4b113dc28ace3dff2c3">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::min_avg_price</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最小平均客单价，单位元</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Price</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="050b35f47c7007a80ca0e3a516536d93"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::min_close_trade_num" ref="050b35f47c7007a80ca0e3a516536d93" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#050b35f47c7007a80ca0e3a516536d93">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::min_close_trade_num</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最少交易关闭数</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="434a4ac7d08e9fd6a2c9b00e2470d50e"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::min_item_num" ref="434a4ac7d08e9fd6a2c9b00e2470d50e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#434a4ac7d08e9fd6a2c9b00e2470d50e">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::min_item_num</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最少宝贝件数</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="21a63c1ffc3f975e0121a49b7baffe35"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::min_last_trade_time" ref="21a63c1ffc3f975e0121a49b7baffe35" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#21a63c1ffc3f975e0121a49b7baffe35">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::min_last_trade_time</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最早交易日期 必须为早于今天的某个时间，例如今天是2011-11-11，那么必须填写2011-11-10或者早于此日期的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="385855c1431476870422bf76457bbfd0"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::min_trade_amount" ref="385855c1431476870422bf76457bbfd0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#385855c1431476870422bf76457bbfd0">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::min_trade_amount</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最小交易金额,单位元。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Price</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="cecb01ec93bd4bb3c118a4fcd9714577"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::min_trade_count" ref="cecb01ec93bd4bb3c118a4fcd9714577" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#cecb01ec93bd4bb3c118a4fcd9714577">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::min_trade_count</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">最小交易次数</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="c46bfad77db45c0f6bdc8682a325a5a6"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::province" ref="c46bfad77db45c0f6bdc8682a325a5a6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#c46bfad77db45c0f6bdc8682a325a5a6">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::province</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">北京=1,天津=2,河北省=3,山西省=4,内蒙古自治区=5,辽宁省=6,吉林省=7,黑龙江省=8,上海=9,江苏省=10,浙江省=11,安徽省=12,福建省=13,江西省=14,山东省=15,河南省=16,湖北省=17,湖南省=18, 广东省=19,广西壮族自治区=20,海南省=21,重庆=22,四川省=23,贵州省=24,云南省=25,西藏自治区26,陕西省=27,甘肃省=28,青海省=29,宁夏回族自治区=30,新疆维吾尔自治区=31,台湾省=32,香港特别行政区=33,澳门特别行政区=34,海外=35</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="376b20498d2dd4347add39e81d8fc969"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::relation_source" ref="376b20498d2dd4347add39e81d8fc969" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#376b20498d2dd4347add39e81d8fc969">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::relation_source</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">客户关系来源,可选值为:1,2</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">special</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="a9ba85a05c6598a7f99de9534bb76815"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::rule_name" ref="a9ba85a05c6598a7f99de9534bb76815" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#a9ba85a05c6598a7f99de9534bb76815">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::rule_name</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">规则名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="589b0de352542f9e8ca56d72f45ea9c6"></a><!-- doxytag: member="TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::timestamp" ref="589b0de352542f9e8ca56d72f45ea9c6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_crm_rule_add_request_1_1_crm_rule_add_request.html#589b0de352542f9e8ca56d72f45ea9c6">TaobaoSdk::Request::CrmRuleAddRequest::CrmRuleAddRequest::timestamp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Request/CrmRuleAddRequest.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:45 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

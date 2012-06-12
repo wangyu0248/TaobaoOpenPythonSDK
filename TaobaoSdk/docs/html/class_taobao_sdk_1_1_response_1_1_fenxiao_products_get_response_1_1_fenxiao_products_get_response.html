@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Response::FenxiaoProductsGetResponse::FenxiaoProductsGetResponse��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Response</b>::<b>FenxiaoProductsGetResponse</b>::<a class="el" href="class_taobao_sdk_1_1_response_1_1_fenxiao_products_get_response_1_1_fenxiao_products_get_response.html">FenxiaoProductsGetResponse</a></div>
+<h1>TaobaoSdk::Response::FenxiaoProductsGetResponse::FenxiaoProductsGetResponse��ο�</h1><!-- doxytag: class="TaobaoSdk::Response::FenxiaoProductsGetResponse::FenxiaoProductsGetResponse" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Response: 查询供应商的产品数据。 * 入参传入pids将优先查询，即只按这个条件查询。 *入参传入sku_number将优先查询(没有传入pids)，即只按这个条件查询(最多显示50条) * 入参fields传skus将查询sku的数据，不传该参数默认不查询，返回产品的其它信息。 * 入参fields传入images将查询多图数据，不传只返回主图数据。 * 入参fields仅对传入pids生效（只有按ID查询时，才能查询额外的数据） * 查询结果按照产品发布时间倒序，即时间近的数据在前。</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_response_1_1_fenxiao_products_get_response_1_1_fenxiao_products_get_response-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3ab7066b0cf1932472893b0cf3358390"></a><!-- doxytag: member="TaobaoSdk::Response::FenxiaoProductsGetResponse::FenxiaoProductsGetResponse::__init__" ref="3ab7066b0cf1932472893b0cf3358390" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_fenxiao_products_get_response_1_1_fenxiao_products_get_response.html#4544b1df70cae729b69573e272320d6e">responseStatus</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的返回信息,包含状态等</span>  <a href="#4544b1df70cae729b69573e272320d6e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_fenxiao_products_get_response_1_1_fenxiao_products_get_response.html#f05df8cdcde03062e541d305317d92c1">responseBody</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的响应内容</span>  <a href="#f05df8cdcde03062e541d305317d92c1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_fenxiao_products_get_response_1_1_fenxiao_products_get_response.html#fc0c2ab6d2f9e9f2ec139523d1e685a1">products</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">产品对象记录集。返回 FenxiaoProduct 包含的字段信息。</span>  <a href="#fc0c2ab6d2f9e9f2ec139523d1e685a1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_fenxiao_products_get_response_1_1_fenxiao_products_get_response.html#ce1de66923ba3dc3ae8397487e4c6208">total_results</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">查询结果记录数</span>  <a href="#ce1de66923ba3dc3ae8397487e4c6208"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Response: 查询供应商的产品数据。 * 入参传入pids将优先查询，即只按这个条件查询。 *入参传入sku_number将优先查询(没有传入pids)，即只按这个条件查询(最多显示50条) * 入参fields传skus将查询sku的数据，不传该参数默认不查询，返回产品的其它信息。 * 入参fields传入images将查询多图数据，不传只返回主图数据。 * 入参fields仅对传入pids生效（只有按ID查询时，才能查询额外的数据） * 查询结果按照产品发布时间倒序，即时间近的数据在前。</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="fc0c2ab6d2f9e9f2ec139523d1e685a1"></a><!-- doxytag: member="TaobaoSdk::Response::FenxiaoProductsGetResponse::FenxiaoProductsGetResponse::products" ref="fc0c2ab6d2f9e9f2ec139523d1e685a1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_fenxiao_products_get_response_1_1_fenxiao_products_get_response.html#fc0c2ab6d2f9e9f2ec139523d1e685a1">TaobaoSdk::Response::FenxiaoProductsGetResponse::FenxiaoProductsGetResponse::products</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">产品对象记录集。返回 FenxiaoProduct 包含的字段信息。</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">FenxiaoProduct</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Object Array</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="f05df8cdcde03062e541d305317d92c1"></a><!-- doxytag: member="TaobaoSdk::Response::FenxiaoProductsGetResponse::FenxiaoProductsGetResponse::responseBody" ref="f05df8cdcde03062e541d305317d92c1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_fenxiao_products_get_response_1_1_fenxiao_products_get_response.html#f05df8cdcde03062e541d305317d92c1">TaobaoSdk::Response::FenxiaoProductsGetResponse::FenxiaoProductsGetResponse::responseBody</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的响应内容</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="4544b1df70cae729b69573e272320d6e"></a><!-- doxytag: member="TaobaoSdk::Response::FenxiaoProductsGetResponse::FenxiaoProductsGetResponse::responseStatus" ref="4544b1df70cae729b69573e272320d6e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_fenxiao_products_get_response_1_1_fenxiao_products_get_response.html#4544b1df70cae729b69573e272320d6e">TaobaoSdk::Response::FenxiaoProductsGetResponse::FenxiaoProductsGetResponse::responseStatus</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的返回信息,包含状态等</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">dict</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="ce1de66923ba3dc3ae8397487e4c6208"></a><!-- doxytag: member="TaobaoSdk::Response::FenxiaoProductsGetResponse::FenxiaoProductsGetResponse::total_results" ref="ce1de66923ba3dc3ae8397487e4c6208" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_fenxiao_products_get_response_1_1_fenxiao_products_get_response.html#ce1de66923ba3dc3ae8397487e4c6208">TaobaoSdk::Response::FenxiaoProductsGetResponse::FenxiaoProductsGetResponse::total_results</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">查询结果记录数</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Number</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Basic</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Response/FenxiaoProductsGetResponse.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:54 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

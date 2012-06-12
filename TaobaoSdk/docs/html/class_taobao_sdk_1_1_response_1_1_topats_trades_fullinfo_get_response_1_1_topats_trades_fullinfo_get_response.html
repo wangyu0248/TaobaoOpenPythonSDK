@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Response::TopatsTradesFullinfoGetResponse::TopatsTradesFullinfoGetResponse��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Response</b>::<b>TopatsTradesFullinfoGetResponse</b>::<a class="el" href="class_taobao_sdk_1_1_response_1_1_topats_trades_fullinfo_get_response_1_1_topats_trades_fullinfo_get_response.html">TopatsTradesFullinfoGetResponse</a></div>
+<h1>TaobaoSdk::Response::TopatsTradesFullinfoGetResponse::TopatsTradesFullinfoGetResponse��ο�</h1><!-- doxytag: class="TaobaoSdk::Response::TopatsTradesFullinfoGetResponse::TopatsTradesFullinfoGetResponse" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Response: 提供异步批量获取订单详情功能<br>
+ 1. </span> 
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_response_1_1_topats_trades_fullinfo_get_response_1_1_topats_trades_fullinfo_get_response-members.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="0b1e52e9d4274c88ccc5c535644ab3cd"></a><!-- doxytag: member="TaobaoSdk::Response::TopatsTradesFullinfoGetResponse::TopatsTradesFullinfoGetResponse::__init__" ref="0b1e52e9d4274c88ccc5c535644ab3cd" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_topats_trades_fullinfo_get_response_1_1_topats_trades_fullinfo_get_response.html#ac4b28eae6bfe7014210742fa6117470">responseStatus</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的返回信息,包含状态等</span>  <a href="#ac4b28eae6bfe7014210742fa6117470"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_topats_trades_fullinfo_get_response_1_1_topats_trades_fullinfo_get_response.html#e9d0c0aea9624d773b59ece9ef938451">responseBody</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的响应内容</span>  <a href="#e9d0c0aea9624d773b59ece9ef938451"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_response_1_1_topats_trades_fullinfo_get_response_1_1_topats_trades_fullinfo_get_response.html#565961519810cf55590cfa08dd2152f3">task</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">创建任务信息。里面只包含task_id和created</span>  <a href="#565961519810cf55590cfa08dd2152f3"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Response: 提供异步批量获取订单详情功能<br>
+ 1. </span>
+<p>
+一次可以查询的订单数量为1~100笔，强烈建议一次请求尽可能多的订单<br>
+ 2. 提交任务后会生成task_id，后继通过此task_id调用taobao.topats.result.get接口获取任务的结果<br>
+ 3. 如果订阅了Comet长连接推送方式，则直接通过Comet推送到长连接客户端<br>
+ 4. 这个任务ID有效时间为2天。 <ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="e9d0c0aea9624d773b59ece9ef938451"></a><!-- doxytag: member="TaobaoSdk::Response::TopatsTradesFullinfoGetResponse::TopatsTradesFullinfoGetResponse::responseBody" ref="e9d0c0aea9624d773b59ece9ef938451" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_topats_trades_fullinfo_get_response_1_1_topats_trades_fullinfo_get_response.html#e9d0c0aea9624d773b59ece9ef938451">TaobaoSdk::Response::TopatsTradesFullinfoGetResponse::TopatsTradesFullinfoGetResponse::responseBody</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的响应内容</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="ac4b28eae6bfe7014210742fa6117470"></a><!-- doxytag: member="TaobaoSdk::Response::TopatsTradesFullinfoGetResponse::TopatsTradesFullinfoGetResponse::responseStatus" ref="ac4b28eae6bfe7014210742fa6117470" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_topats_trades_fullinfo_get_response_1_1_topats_trades_fullinfo_get_response.html#ac4b28eae6bfe7014210742fa6117470">TaobaoSdk::Response::TopatsTradesFullinfoGetResponse::TopatsTradesFullinfoGetResponse::responseStatus</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">请求的返回信息,包含状态等</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">dict</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="565961519810cf55590cfa08dd2152f3"></a><!-- doxytag: member="TaobaoSdk::Response::TopatsTradesFullinfoGetResponse::TopatsTradesFullinfoGetResponse::task" ref="565961519810cf55590cfa08dd2152f3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_response_1_1_topats_trades_fullinfo_get_response_1_1_topats_trades_fullinfo_get_response.html#565961519810cf55590cfa08dd2152f3">TaobaoSdk::Response::TopatsTradesFullinfoGetResponse::TopatsTradesFullinfoGetResponse::task</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">创建任务信息。里面只包含task_id和created</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Task</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Object</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Response/TopatsTradesFullinfoGetResponse.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:31:00 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

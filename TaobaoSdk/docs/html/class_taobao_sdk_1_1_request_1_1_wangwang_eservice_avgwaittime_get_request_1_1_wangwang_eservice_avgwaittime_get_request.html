@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>TaobaoSdkForPython: TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest��ο�</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- ������ Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>��ҳ</span></a></li>
+    <li id="current"><a href="classes.html"><span>��</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;����&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>���ֵ�˳��������б�</span></a></li>
+    <li><a href="annotated.html"><span>��������б�</span></a></li>
+    <li><a href="functions.html"><span>������ͳ�Ա</span></a></li>
+  </ul></div>
+<div class="nav">
+<b>TaobaoSdk</b>::<b>Request</b>::<b>WangwangEserviceAvgwaittimeGetRequest</b>::<a class="el" href="class_taobao_sdk_1_1_request_1_1_wangwang_eservice_avgwaittime_get_request_1_1_wangwang_eservice_avgwaittime_get_request.html">WangwangEserviceAvgwaittimeGetRequest</a></div>
+<h1>TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest��ο�</h1><!-- doxytag: class="TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest" --><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">根据客服ID和日期，获取该客服"当日接待的所有客户的平均等待时长"。 <br>
+ 备注： <br>
+ 1、如果是操作者ID=被查者ID，返回被查者ID的"当日接待的所有客户的平均等待时长"。 <br>
+ 2、如果操作者是组管理员，他可以查询他的组中的所有子帐号的"当日接待的所有客户的平均等待时长"。service_staff_id为所有子帐号，用 "," 隔开 <br>
+ 3、如果操作者是主账户，他可以查询所有子帐号的"当日接待的所有客户的平均等待时长"。 service_staff_id为所有子帐号，用 "," 隔开<br>
+ 4、被查者ID可以是多个，用 "," 隔开，id数不能超过30。 <br>
+ 5、开始时间与结束时间之间的间隔不能超过7天 <br>
+ 6、不能查询90天以前的数据 <br>
+ 7、不能查询当天的记录</span>  
+<a href="#_details">����...</a>
+<p>
+<a href="class_taobao_sdk_1_1_request_1_1_wangwang_eservice_avgwaittime_get_request_1_1_wangwang_eservice45717b7e46c57399f6baaa15ba96ede3.html">���г�Ա���б���</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>���г�Ա</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3bf669acee8cef89c20a3ef3ed23f342"></a><!-- doxytag: member="TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest::__init__" ref="3bf669acee8cef89c20a3ef3ed23f342" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
+
+<tr><td colspan="2"><br><h2>��������</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_wangwang_eservice_avgwaittime_get_request_1_1_wangwang_eservice_avgwaittime_get_request.html#3aaf2e456e69b688d1bbb91d924a54dd">method</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span>  <a href="#3aaf2e456e69b688d1bbb91d924a54dd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_wangwang_eservice_avgwaittime_get_request_1_1_wangwang_eservice_avgwaittime_get_request.html#b8331898dda5406b6b925fd4123e6cbc">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span>  <a href="#b8331898dda5406b6b925fd4123e6cbc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_wangwang_eservice_avgwaittime_get_request_1_1_wangwang_eservice_avgwaittime_get_request.html#c45d75a1e643571a79139f01f32651a1">end_date</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">结束时间</span>  <a href="#c45d75a1e643571a79139f01f32651a1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_wangwang_eservice_avgwaittime_get_request_1_1_wangwang_eservice_avgwaittime_get_request.html#1950f6d91b27f9877d4e9df98dcd79e4">service_staff_id</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">客服人员id：cntaobao+淘宝nick，例如cntaobaotest</span>  <a href="#1950f6d91b27f9877d4e9df98dcd79e4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_taobao_sdk_1_1_request_1_1_wangwang_eservice_avgwaittime_get_request_1_1_wangwang_eservice_avgwaittime_get_request.html#0f3a1333a278c3b8fac99a97c2e3665a">start_date</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">开始时间</span>  <a href="#0f3a1333a278c3b8fac99a97c2e3665a"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>��ϸ����</h2>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">根据客服ID和日期，获取该客服"当日接待的所有客户的平均等待时长"。 <br>
+ 备注： <br>
+ 1、如果是操作者ID=被查者ID，返回被查者ID的"当日接待的所有客户的平均等待时长"。 <br>
+ 2、如果操作者是组管理员，他可以查询他的组中的所有子帐号的"当日接待的所有客户的平均等待时长"。service_staff_id为所有子帐号，用 "," 隔开 <br>
+ 3、如果操作者是主账户，他可以查询所有子帐号的"当日接待的所有客户的平均等待时长"。 service_staff_id为所有子帐号，用 "," 隔开<br>
+ 4、被查者ID可以是多个，用 "," 隔开，id数不能超过30。 <br>
+ 5、开始时间与结束时间之间的间隔不能超过7天 <br>
+ 6、不能查询90天以前的数据 <br>
+ 7、不能查询当天的记录</span> 
+<p>
+<ul>
+</ul>
+
+<p>
+<hr><h2>��Ա�����ĵ�</h2>
+<a class="anchor" name="c45d75a1e643571a79139f01f32651a1"></a><!-- doxytag: member="TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest::end_date" ref="c45d75a1e643571a79139f01f32651a1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_wangwang_eservice_avgwaittime_get_request_1_1_wangwang_eservice_avgwaittime_get_request.html#c45d75a1e643571a79139f01f32651a1">TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest::end_date</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">结束时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="3aaf2e456e69b688d1bbb91d924a54dd"></a><!-- doxytag: member="TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest::method" ref="3aaf2e456e69b688d1bbb91d924a54dd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_wangwang_eservice_avgwaittime_get_request_1_1_wangwang_eservice_avgwaittime_get_request.html#3aaf2e456e69b688d1bbb91d924a54dd">TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest::method</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取API名称</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">str</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="1950f6d91b27f9877d4e9df98dcd79e4"></a><!-- doxytag: member="TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest::service_staff_id" ref="1950f6d91b27f9877d4e9df98dcd79e4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_wangwang_eservice_avgwaittime_get_request_1_1_wangwang_eservice_avgwaittime_get_request.html#1950f6d91b27f9877d4e9df98dcd79e4">TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest::service_staff_id</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">客服人员id：cntaobao+淘宝nick，例如cntaobaotest</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">String</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="0f3a1333a278c3b8fac99a97c2e3665a"></a><!-- doxytag: member="TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest::start_date" ref="0f3a1333a278c3b8fac99a97c2e3665a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_wangwang_eservice_avgwaittime_get_request_1_1_wangwang_eservice_avgwaittime_get_request.html#0f3a1333a278c3b8fac99a97c2e3665a">TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest::start_date</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">开始时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">Date</span>  </li>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Required</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">required</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<a class="anchor" name="b8331898dda5406b6b925fd4123e6cbc"></a><!-- doxytag: member="TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest::timestamp" ref="b8331898dda5406b6b925fd4123e6cbc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_taobao_sdk_1_1_request_1_1_wangwang_eservice_avgwaittime_get_request_1_1_wangwang_eservice_avgwaittime_get_request.html#b8331898dda5406b6b925fd4123e6cbc">TaobaoSdk::Request::WangwangEserviceAvgwaittimeGetRequest::WangwangEserviceAvgwaittimeGetRequest::timestamp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<span style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">时间戳，如果不设置,发送请求时将使用当时的时间</span> 
+<p>
+<ul>
+<li>
+<span style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</span>: <span style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">int</span>  </li>
+</ul>
+
+</div>
+</div><p>
+<hr>������ĵ��������ļ����ɣ�<ul>
+<li>Request/WangwangEserviceAvgwaittimeGetRequest.py</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Tue Jun 12 12:30:53 2012 for TaobaoSdkForPython by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>
