@@ -1,5 +1,6 @@
 *.py[co]
 
+etc/ApiMetadat.xml
 # Packages
 *.egg
 *.egg-info
