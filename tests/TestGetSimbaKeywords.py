@@ -30,8 +30,8 @@ from TaobaoSdk import Keyword
 class TestGetSimbaKeywords(unittest.TestCase):
     def setUp(self):
         serverUrl = "http://gw.api.taobao.com/router/rest"
-        appKey = "12651461"
-        appSecret = "80a15051c411f9ca52d664ebde46a9da"
+        appKey = "your app key"
+        appSecret = "your secret"
         self.client = TaobaoClient(serverUrl, appKey, appSecret)
         pass
         
@@ -46,12 +46,13 @@ class TestGetSimbaKeywords(unittest.TestCase):
         while responses == None:
             responses = self.client.execute(request, 
                     #    "62029014bdfcaeddf5042fb3a9112165e252fa9f1034277106852163")
-            "62029014bdfcaeddf5042fb3a9112165e252fa9f1034277106852162")
+            " access token")
         response = responses[0]
         assert isinstance(response,SimbaKeywordsGetResponse)
         for keyword in response.keywords:
             print keyword.word
         print response.responseBody
+        
 
 
 if __name__ == '__main__':
