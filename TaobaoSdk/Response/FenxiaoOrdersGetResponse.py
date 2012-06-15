@@ -5,7 +5,7 @@
 
 ## @brief 分销商或供应商均可用此接口查询采购单信息. (发货处理请调用物流API中的发货接口)
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:11
+# @date 2012-06-15 11:23:10
 # @version: 0.0.0
 
 from datetime import datetime

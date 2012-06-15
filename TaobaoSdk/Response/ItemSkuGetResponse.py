@@ -5,7 +5,7 @@
 
 ## @brief 获取sku_id所对应的sku数据  sku_id对应的sku要属于传入的nick对应的卖家
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:07
+# @date 2012-06-15 11:23:06
 # @version: 0.0.0
 
 from datetime import datetime

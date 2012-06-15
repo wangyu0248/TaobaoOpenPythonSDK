@@ -5,7 +5,7 @@
 
 ## @brief 查询卖家收到的退款列表，查询外店的退款列表时需要指定交易类型
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:22
+# @date 2012-06-15 11:23:21
 # @version: 0.0.0
 
 from datetime import datetime

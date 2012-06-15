@@ -5,9 +5,10 @@
 
 ## @brief Room（酒店商品）结构。各字段详细说明可参考接口定义，如：商品发布接口。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:51
+# @date 2012-06-15 11:22:50
 # @version: 0.0.0
 
+from copy import deepcopy
 from datetime import datetime
 import os
 import sys
@@ -31,6 +32,8 @@ from RoomType import RoomType
 class Room(object):
     def __init__(self, kargs=dict()):
         super(self.__class__, self).__init__()
+
+        self.__kargs = deepcopy(kargs)
         
         
         ## @brief <SPAN style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">面积</SPAN>
@@ -459,6 +462,14 @@ class Room(object):
         self.title = None
         
         self.__init(kargs)
+
+    def toDict(self):
+        result = deepcopy(self.__kargs)
+        for key, value in self.__dict__.iteritems():
+            if result.has_key(key):
+                continue
+            result[key] = value
+        return result
         
     def _newInstance(self, name, value):
         propertyType = self._getPropertyType(name)

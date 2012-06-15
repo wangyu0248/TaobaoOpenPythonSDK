@@ -5,9 +5,10 @@
 
 ## @brief 评价详细
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:48
+# @date 2012-06-15 11:22:47
 # @version: 0.0.0
 
+from copy import deepcopy
 from datetime import datetime
 import os
 import sys
@@ -25,6 +26,8 @@ if __getCurrentPath() not in sys.path:
 class EvalDetail(object):
     def __init__(self, kargs=dict()):
         super(self.__class__, self).__init__()
+
+        self.__kargs = deepcopy(kargs)
         
         
         ## @brief <SPAN style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">评价详细： 1 非常满意 2 满意 3 一般 4 不满意</SPAN>
@@ -113,6 +116,14 @@ class EvalDetail(object):
         self.send_time = None
         
         self.__init(kargs)
+
+    def toDict(self):
+        result = deepcopy(self.__kargs)
+        for key, value in self.__dict__.iteritems():
+            if result.has_key(key):
+                continue
+            result[key] = value
+        return result
         
     def _newInstance(self, name, value):
         propertyType = self._getPropertyType(name)

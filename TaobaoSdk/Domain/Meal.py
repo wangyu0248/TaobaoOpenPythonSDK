@@ -5,9 +5,10 @@
 
 ## @brief 搭配套餐类。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:51
+# @date 2012-06-15 11:22:50
 # @version: 0.0.0
 
+from copy import deepcopy
 from datetime import datetime
 import os
 import sys
@@ -25,6 +26,8 @@ if __getCurrentPath() not in sys.path:
 class Meal(object):
     def __init__(self, kargs=dict()):
         super(self.__class__, self).__init__()
+
+        self.__kargs = deepcopy(kargs)
         
         
         ## @brief <SPAN style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">搭配套餐商品列表。item_id为商品的id;item_show_name为商品显示名。因最多允许5个商品进行搭配，所以查询最多有5个，以json格式传出。</SPAN>
@@ -147,6 +150,14 @@ class Meal(object):
         self.status = None
         
         self.__init(kargs)
+
+    def toDict(self):
+        result = deepcopy(self.__kargs)
+        for key, value in self.__dict__.iteritems():
+            if result.has_key(key):
+                continue
+            result[key] = value
+        return result
         
     def _newInstance(self, name, value):
         propertyType = self._getPropertyType(name)

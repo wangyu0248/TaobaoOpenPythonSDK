@@ -5,7 +5,7 @@
 
 ## @brief 获取修改的词ID
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:01
+# @date 2012-06-15 11:23:00
 # @version: 0.0.0
 
 import os

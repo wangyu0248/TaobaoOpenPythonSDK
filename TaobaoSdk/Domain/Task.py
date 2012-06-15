@@ -5,9 +5,10 @@
 
 ## @brief 批量异步任务结果
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:50
+# @date 2012-06-15 11:22:49
 # @version: 0.0.0
 
+from copy import deepcopy
 from datetime import datetime
 import os
 import sys
@@ -28,6 +29,8 @@ from Subtask import Subtask
 class Task(object):
     def __init__(self, kargs=dict()):
         super(self.__class__, self).__init__()
+
+        self.__kargs = deepcopy(kargs)
         
         
         ## @brief <SPAN style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">下载文件的MD5校验码，通过此校验码可以检查下载的文件是否是完整的。</SPAN>
@@ -167,6 +170,14 @@ class Task(object):
         self.task_id = None
         
         self.__init(kargs)
+
+    def toDict(self):
+        result = deepcopy(self.__kargs)
+        for key, value in self.__dict__.iteritems():
+            if result.has_key(key):
+                continue
+            result[key] = value
+        return result
         
     def _newInstance(self, name, value):
         propertyType = self._getPropertyType(name)

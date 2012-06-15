@@ -5,9 +5,10 @@
 
 ## @brief 推广计划的投放地域
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:52
+# @date 2012-06-15 11:22:51
 # @version: 0.0.0
 
+from copy import deepcopy
 from datetime import datetime
 import os
 import sys
@@ -25,6 +26,8 @@ if __getCurrentPath() not in sys.path:
 class CampaignArea(object):
     def __init__(self, kargs=dict()):
         super(self.__class__, self).__init__()
+
+        self.__kargs = deepcopy(kargs)
         
         
         ## @brief <SPAN style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">值为：“all”；或者用“,”分割的数字，数字必须是直通车全国省市列表的AreaID，如果已经包含省、自治区id，请不要再包括省内市的id；</SPAN>
@@ -113,6 +116,14 @@ class CampaignArea(object):
         self.nick = None
         
         self.__init(kargs)
+
+    def toDict(self):
+        result = deepcopy(self.__kargs)
+        for key, value in self.__dict__.iteritems():
+            if result.has_key(key):
+                continue
+            result[key] = value
+        return result
         
     def _newInstance(self, name, value):
         propertyType = self._getPropertyType(name)

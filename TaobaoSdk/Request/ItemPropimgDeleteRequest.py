@@ -5,7 +5,7 @@
 
 ## @brief 删除propimg_id 所指定的商品属性图片  传入的num_iid所对应的商品必须属于当前会话的用户  propimg_id对应的属性图片需要属于num_iid对应的商品
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:54
+# @date 2012-06-15 11:22:53
 # @version: 0.0.0
 
 import os

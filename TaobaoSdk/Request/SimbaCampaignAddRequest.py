@@ -5,7 +5,7 @@
 
 ## @brief 创建一个推广计划
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:59
+# @date 2012-06-15 11:22:58
 # @version: 0.0.0
 
 import os

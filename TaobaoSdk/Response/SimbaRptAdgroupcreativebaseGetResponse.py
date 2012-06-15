@@ -5,7 +5,7 @@
 
 ## @brief 推广组下创意报表基础数据查询(汇总数据，不分类型)
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:16
+# @date 2012-06-15 11:23:15
 # @version: 0.0.0
 
 from datetime import datetime

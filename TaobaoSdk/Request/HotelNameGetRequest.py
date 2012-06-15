@@ -5,7 +5,7 @@
 
 ## @brief 此接口用于查询一个酒店，根据传入的酒店名称/别名查询酒店信息。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:03
+# @date 2012-06-15 11:23:02
 # @version: 0.0.0
 
 import os

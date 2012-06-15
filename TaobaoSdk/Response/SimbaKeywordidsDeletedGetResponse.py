@@ -5,7 +5,7 @@
 
 ## @brief 获取删除的词ID
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:16
+# @date 2012-06-15 11:23:15
 # @version: 0.0.0
 
 from datetime import datetime

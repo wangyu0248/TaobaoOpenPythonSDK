@@ -5,7 +5,7 @@
 
 ## @brief 根据用户ID获取用户下所有模板
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:10
+# @date 2012-06-15 11:23:09
 # @version: 0.0.0
 
 from datetime import datetime

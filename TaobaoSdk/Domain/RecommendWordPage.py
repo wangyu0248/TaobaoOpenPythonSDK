@@ -5,9 +5,10 @@
 
 ## @brief 一页推荐词列表
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:53
+# @date 2012-06-15 11:22:52
 # @version: 0.0.0
 
+from copy import deepcopy
 from datetime import datetime
 import os
 import sys
@@ -28,6 +29,8 @@ from RecommendWord import RecommendWord
 class RecommendWordPage(object):
     def __init__(self, kargs=dict()):
         super(self.__class__, self).__init__()
+
+        self.__kargs = deepcopy(kargs)
         
         
         ## @brief <SPAN style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">返回第几页的数据从1开始。 如果输入的值大于可取得的最大页码值时，将返回 最大的页码值并且recommend_word_list值将 为空</SPAN>
@@ -99,6 +102,14 @@ class RecommendWordPage(object):
         self.total_item = None
         
         self.__init(kargs)
+
+    def toDict(self):
+        result = deepcopy(self.__kargs)
+        for key, value in self.__dict__.iteritems():
+            if result.has_key(key):
+                continue
+            result[key] = value
+        return result
         
     def _newInstance(self, name, value):
         propertyType = self._getPropertyType(name)

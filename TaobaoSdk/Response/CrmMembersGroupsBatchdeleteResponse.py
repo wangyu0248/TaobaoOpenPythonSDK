@@ -5,7 +5,7 @@
 
 ## @brief 批量删除多个会员的公共分组，接口返回删除是否成功，该接口只删除多个会员的公共分组，不是公共分组的，不进行删除。如果入参只输入一个会员，则表示删除该会员的某些分组。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:20
+# @date 2012-06-15 11:23:19
 # @version: 0.0.0
 
 from datetime import datetime

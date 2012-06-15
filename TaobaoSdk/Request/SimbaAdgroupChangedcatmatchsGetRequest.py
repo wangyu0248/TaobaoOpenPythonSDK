@@ -5,7 +5,7 @@
 
 ## @brief 获得更改过的推广组类目出价列表,此类表中只存类目出价ID和推广组ID
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:59
+# @date 2012-06-15 11:22:58
 # @version: 0.0.0
 
 import os

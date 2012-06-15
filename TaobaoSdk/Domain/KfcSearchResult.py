@@ -5,9 +5,10 @@
 
 ## @brief KFC 关键词过滤匹配结果
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:50
+# @date 2012-06-15 11:22:49
 # @version: 0.0.0
 
+from copy import deepcopy
 from datetime import datetime
 import os
 import sys
@@ -25,6 +26,8 @@ if __getCurrentPath() not in sys.path:
 class KfcSearchResult(object):
     def __init__(self, kargs=dict()):
         super(self.__class__, self).__init__()
+
+        self.__kargs = deepcopy(kargs)
         
         
         ## @brief <SPAN style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">过滤后的文本： 当匹配到B等级的词时，文本中的关键词被替换为*号，content即为关键词替换后的文本； 其他情况，content始终为null</SPAN>
@@ -79,6 +82,14 @@ class KfcSearchResult(object):
         self.matched = None
         
         self.__init(kargs)
+
+    def toDict(self):
+        result = deepcopy(self.__kargs)
+        for key, value in self.__dict__.iteritems():
+            if result.has_key(key):
+                continue
+            result[key] = value
+        return result
         
     def _newInstance(self, name, value):
         propertyType = self._getPropertyType(name)

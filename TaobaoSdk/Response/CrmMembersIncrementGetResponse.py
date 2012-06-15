@@ -5,7 +5,7 @@
 
 ## @brief 增量获取会员列表，接口返回符合查询条件的所有会员。任何状态更改都会返回
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:20
+# @date 2012-06-15 11:23:19
 # @version: 0.0.0
 
 from datetime import datetime

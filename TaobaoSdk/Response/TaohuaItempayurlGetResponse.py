@@ -5,7 +5,7 @@
 
 ## @brief 获取商品支付链接API
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:18
+# @date 2012-06-15 11:23:17
 # @version: 0.0.0
 
 from datetime import datetime

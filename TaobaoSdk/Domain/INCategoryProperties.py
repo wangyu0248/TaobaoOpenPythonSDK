@@ -5,9 +5,10 @@
 
 ## @brief 类目属性对象
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:49
+# @date 2012-06-15 11:22:48
 # @version: 0.0.0
 
+from copy import deepcopy
 from datetime import datetime
 import os
 import sys
@@ -25,6 +26,8 @@ if __getCurrentPath() not in sys.path:
 class INCategoryProperties(object):
     def __init__(self, kargs=dict()):
         super(self.__class__, self).__init__()
+
+        self.__kargs = deepcopy(kargs)
         
         
         ## @brief <SPAN style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">类目属性对象描述</SPAN>
@@ -79,6 +82,14 @@ class INCategoryProperties(object):
         self.properties_name = None
         
         self.__init(kargs)
+
+    def toDict(self):
+        result = deepcopy(self.__kargs)
+        for key, value in self.__dict__.iteritems():
+            if result.has_key(key):
+                continue
+            result[key] = value
+        return result
         
     def _newInstance(self, name, value):
         propertyType = self._getPropertyType(name)

@@ -5,7 +5,7 @@
 
 ## @brief 查询某个卖家的店铺优惠券领取活动 返回，优惠券领取活动ID，优惠券ID，总领用量，每人限领量，已领取数量 领取活动状态，优惠券领取链接 最多50个优惠券
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:17
+# @date 2012-06-15 11:23:16
 # @version: 0.0.0
 
 from datetime import datetime

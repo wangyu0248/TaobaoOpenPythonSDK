@@ -5,7 +5,7 @@
 
 ## @brief 根据淘宝会员帐号搜索所有产品信息  注意：支持分页，每页最多返回100条,默认值为40,页码从1开始，默认为第一页
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:55
+# @date 2012-06-15 11:22:54
 # @version: 0.0.0
 
 import os

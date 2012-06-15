@@ -5,7 +5,7 @@
 
 ## @brief 通过设置必要的参数，来获取商品后台标准类目属性，以及这些属性里面详细的属性值prop_values。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:53
+# @date 2012-06-15 11:22:53
 # @version: 0.0.0
 
 import os

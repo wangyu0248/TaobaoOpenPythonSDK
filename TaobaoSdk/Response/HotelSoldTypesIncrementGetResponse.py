@@ -5,7 +5,7 @@
 
 ## @brief 1. 此接口用于查询该会话用户作为房型发布者发布的房型被审核通过的增量房型信息。 2. 只能查询时间跨度为一天的增量酒店记录：start_modified：2011-7-1 16:00:00 end_modified： 2011-7-2 15:59:59（注意不能写成16:00:00）  3. 返回数据结果为发布房型时间的倒序
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:19
+# @date 2012-06-15 11:23:18
 # @version: 0.0.0
 
 from datetime import datetime

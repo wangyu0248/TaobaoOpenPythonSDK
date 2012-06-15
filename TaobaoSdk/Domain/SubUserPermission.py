@@ -5,9 +5,10 @@
 
 ## @brief 子账号所拥有的权限对象(直接赋予的权限和通过角色赋予的权限的总和对象)
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:51
+# @date 2012-06-15 11:22:50
 # @version: 0.0.0
 
+from copy import deepcopy
 from datetime import datetime
 import os
 import sys
@@ -31,6 +32,8 @@ from Role import Role
 class SubUserPermission(object):
     def __init__(self, kargs=dict()):
         super(self.__class__, self).__init__()
+
+        self.__kargs = deepcopy(kargs)
         
         
         ## @brief <SPAN style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">子账号被直接赋予的权限点列表</SPAN>
@@ -68,6 +71,14 @@ class SubUserPermission(object):
         self.roles = None
         
         self.__init(kargs)
+
+    def toDict(self):
+        result = deepcopy(self.__kargs)
+        for key, value in self.__dict__.iteritems():
+            if result.has_key(key):
+                continue
+            result[key] = value
+        return result
         
     def _newInstance(self, name, value):
         propertyType = self._getPropertyType(name)

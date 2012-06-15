@@ -5,7 +5,7 @@
 
 ## @brief 查询用户的图片空间使用信息，包括：订购量，已使用容量，免费容量，总的可使用容量，订购有效期，剩余容量
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:05
+# @date 2012-06-15 11:23:04
 # @version: 0.0.0
 
 import os

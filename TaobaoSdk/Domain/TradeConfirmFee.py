@@ -5,9 +5,10 @@
 
 ## @brief 确认收货费用结构
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:48
+# @date 2012-06-15 11:22:47
 # @version: 0.0.0
 
+from copy import deepcopy
 from datetime import datetime
 import os
 import sys
@@ -25,6 +26,8 @@ if __getCurrentPath() not in sys.path:
 class TradeConfirmFee(object):
     def __init__(self, kargs=dict()):
         super(self.__class__, self).__init__()
+
+        self.__kargs = deepcopy(kargs)
         
         
         ## @brief <SPAN style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">确认收货的金额(不包含邮费)。精确到2位小数;单位:元。如:200.07，表示:200元7分</SPAN>
@@ -79,6 +82,14 @@ class TradeConfirmFee(object):
         self.is_last_order = None
         
         self.__init(kargs)
+
+    def toDict(self):
+        result = deepcopy(self.__kargs)
+        for key, value in self.__dict__.iteritems():
+            if result.has_key(key):
+                continue
+            result[key] = value
+        return result
         
     def _newInstance(self, name, value):
         propertyType = self._getPropertyType(name)

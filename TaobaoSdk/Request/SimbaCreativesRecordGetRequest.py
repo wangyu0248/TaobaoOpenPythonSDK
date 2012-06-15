@@ -5,7 +5,7 @@
 
 ## @brief 根据一个创意Id列表取得创意对应的修改记录
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:00
+# @date 2012-06-15 11:22:59
 # @version: 0.0.0
 
 import os

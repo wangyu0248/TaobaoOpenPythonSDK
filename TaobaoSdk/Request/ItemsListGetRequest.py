@@ -5,7 +5,7 @@
 
 ## @brief 查看非公开属性时需要用户登录
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:50:55
+# @date 2012-06-15 11:22:54
 # @version: 0.0.0
 
 import os

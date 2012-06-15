@@ -5,7 +5,7 @@
 
 ## @brief * 单个商品下架     * 输入的num_iid必须属于当前会话用户
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:07
+# @date 2012-06-15 11:23:06
 # @version: 0.0.0
 
 from datetime import datetime

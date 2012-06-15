@@ -5,7 +5,7 @@
 
 ## @brief 根据词ID和给定的出价获取词的预估信息
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:15
+# @date 2012-06-15 11:23:15
 # @version: 0.0.0
 
 from datetime import datetime

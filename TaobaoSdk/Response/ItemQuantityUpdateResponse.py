@@ -5,7 +5,7 @@
 
 ## @brief 提供按照全量或增量形式修改宝贝/SKU库存的功能
 # @author wuliang@maimiaotech.com
-# @date 2012-06-12 20:51:07
+# @date 2012-06-15 11:23:06
 # @version: 0.0.0
 
 from datetime import datetime
