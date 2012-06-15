@@ -5,7 +5,7 @@
 
 ## @brief 创建退款留言/凭证
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:23:04
+# @date 2012-06-15 17:21:09
 # @version: 0.0.0
 
 import os

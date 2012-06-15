@@ -5,7 +5,7 @@
 
 ## @brief 查询物流订单的详细信息，涉及用户隐私字段。（注：该API主要是提供给卖家查询物流订单使用，买家查询物流订单，建议使用taobao.logistics.trace.search）
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:23:09
+# @date 2012-06-15 17:21:14
 # @version: 0.0.0
 
 from datetime import datetime

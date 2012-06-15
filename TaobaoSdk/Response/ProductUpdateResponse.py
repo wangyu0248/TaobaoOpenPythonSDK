@@ -5,7 +5,7 @@
 
 ## @brief 传入产品ID  可修改字段：outer_id,binds,sale_props,name,price,desc,image  注意：1.可以修改主图,不能修改子图片,主图最大500K,目前仅支持GIF,JPG       2.商城卖家产品发布24小时后不能作删除或修改操作
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:23:07
+# @date 2012-06-15 17:21:12
 # @version: 0.0.0
 
 from datetime import datetime

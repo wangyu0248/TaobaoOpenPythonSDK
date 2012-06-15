@@ -5,7 +5,7 @@
 
 ## @brief 获取单笔交易的详细信息 1.只有在交易成功的状态下才能取到交易佣金，其它状态下取到的都是零或空值  2.只有单笔订单的情况下Trade数据结构中才包含商品相关的信息  3.获取到的Order中的payment字段在单笔子订单时包含物流费用，多笔子订单时不包含物流费用  注：包含以下字段的返回会增加TOP的后台压力，请仅在确实需要的情况下才去获取：commission_fee, buyer_alipay_no, seller_alipay_no, buyer_email, seller_mobile, seller_phone, seller_name, seller_email, timeout_action_time, item_memo, trade_memo, title, available_confirm_fee
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:22:55
+# @date 2012-06-15 17:20:59
 # @version: 0.0.0
 
 import os

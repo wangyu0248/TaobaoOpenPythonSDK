@@ -5,7 +5,7 @@
 
 ## @brief 指定商品评论
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:22:52
+# @date 2012-06-15 17:20:57
 # @version: 0.0.0
 
 from copy import deepcopy
@@ -13,6 +13,7 @@ from datetime import datetime
 import os
 import sys
 import time
+import types
 
 def __getCurrentPath():
     return os.path.normpath(os.path.join(os.path.realpath(__file__), os.path.pardir))
@@ -88,8 +89,25 @@ class TaohuaItemComment(object):
         for key, value in self.__dict__.iteritems():
             if result.has_key(key):
                 continue
+            if key.endswith("__kargs"):
+                continue
             result[key] = value
+        result = self.__unicodeToUtf8(result)
         return result
+
+    def __unicodeToUtf8(self, obj):
+        if isinstance(obj, types.UnicodeType):
+            return obj.encode("utf-8")
+        elif isinstance(obj, types.DictType):
+            results = dict()
+            for key, value in obj.iteritems():
+                results[self.__unicodeToUtf8(key)] = self.__unicodeToUtf8(value)
+            return results
+        elif isinstance(obj, types.ListType):
+            results = [self.__unicodeToUtf8(x) for x in obj]
+            return results
+        else:
+            return obj
         
     def _newInstance(self, name, value):
         propertyType = self._getPropertyType(name)

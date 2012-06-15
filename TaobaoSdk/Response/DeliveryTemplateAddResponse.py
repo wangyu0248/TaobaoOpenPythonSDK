@@ -5,7 +5,7 @@
 
 ## @brief 新增运费模板
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:23:08
+# @date 2012-06-15 17:21:13
 # @version: 0.0.0
 
 from datetime import datetime

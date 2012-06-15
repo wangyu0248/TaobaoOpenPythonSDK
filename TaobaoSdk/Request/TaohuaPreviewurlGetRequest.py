@@ -5,7 +5,7 @@
 
 ## @brief 获取商品预览链接
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:23:02
+# @date 2012-06-15 17:21:06
 # @version: 0.0.0
 
 import os

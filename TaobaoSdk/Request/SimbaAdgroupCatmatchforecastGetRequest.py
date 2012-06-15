@@ -5,7 +5,7 @@
 
 ## @brief 获取指定推广组下给定出价的类目出价预估信息;
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:22:58
+# @date 2012-06-15 17:21:03
 # @version: 0.0.0
 
 import os

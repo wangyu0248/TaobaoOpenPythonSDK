@@ -5,7 +5,7 @@
 
 ## @brief 查询当前登录用户的店铺的宝贝详情页的模板名称
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:23:06
+# @date 2012-06-15 17:21:11
 # @version: 0.0.0
 
 from datetime import datetime

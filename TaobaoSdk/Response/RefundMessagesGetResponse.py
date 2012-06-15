@@ -5,7 +5,7 @@
 
 ## @brief 单笔退款详情
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:23:21
+# @date 2012-06-15 17:21:26
 # @version: 0.0.0
 
 from datetime import datetime

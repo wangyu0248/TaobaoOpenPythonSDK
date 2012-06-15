@@ -5,7 +5,7 @@
 
 ## @brief 支付确认结果回传
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:23:02
+# @date 2012-06-15 17:21:07
 # @version: 0.0.0
 
 import os

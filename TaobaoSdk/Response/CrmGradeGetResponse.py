@@ -5,7 +5,7 @@
 
 ## @brief 卖家查询等级规则，包括普通会员、高级会员、VIP会员、至尊VIP会员四个等级的信息
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:23:18
+# @date 2012-06-15 17:21:23
 # @version: 0.0.0
 
 from datetime import datetime

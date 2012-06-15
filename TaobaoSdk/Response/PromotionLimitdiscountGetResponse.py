@@ -5,7 +5,7 @@
 
 ## @brief 分页查询某个卖家的限时打折信息。每页20条数据，按照结束时间降序排列。也可指定某一个限时打折id查询唯一的限时打折信息。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:23:16
+# @date 2012-06-15 17:21:21
 # @version: 0.0.0
 
 from datetime import datetime

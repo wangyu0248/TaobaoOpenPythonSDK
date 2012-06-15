@@ -5,7 +5,7 @@
 
 ## @brief 查询指定的子账号的被直接赋予的权限信息和角色信息。<br/>返回对象中包括直接赋予子账号的权限点信息、被赋予的角色以及角色的对应权限点信息。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:23:20
+# @date 2012-06-15 17:21:25
 # @version: 0.0.0
 
 from datetime import datetime

@@ -5,7 +5,7 @@
 
 ## @brief 1. 搜索当前会话用户作为卖家已卖出的增量交易数据 2. 只能查询时间跨度为一天的增量交易记录：start_modified：2011-7-1 16:00:00 end_modified： 2011-7-2 15:59:59（注意不能写成16:00:00） 3. 返回数据结果为创建订单时间的倒序 4. 只能查询3个月内修改过的数据，超过这个时间的数据无法通过taobao.trade.fullinfo.get获取详情。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:22:55
+# @date 2012-06-15 17:21:00
 # @version: 0.0.0
 
 import os

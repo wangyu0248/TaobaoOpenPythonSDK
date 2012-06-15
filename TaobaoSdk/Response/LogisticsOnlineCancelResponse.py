@@ -5,7 +5,7 @@
 
 ## @brief 调此接口取消发货的订单，重新选择物流公司发货。前提是物流公司未揽收货物。对未发货和已经被物流公司揽收的物流订单，是不能取消的。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:23:09
+# @date 2012-06-15 17:21:14
 # @version: 0.0.0
 
 from datetime import datetime

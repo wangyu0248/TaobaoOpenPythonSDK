@@ -5,7 +5,7 @@
 
 ## @brief 设置一批关键词的出价和匹配模式（目前设置关键词出价和匹配模式不仅限制在一个宝贝下，入参keword_price中的keywordid可以是不同宝贝下的，adgroup_id暂时无用可不传）
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 11:23:15
+# @date 2012-06-15 17:21:20
 # @version: 0.0.0
 
 from datetime import datetime
