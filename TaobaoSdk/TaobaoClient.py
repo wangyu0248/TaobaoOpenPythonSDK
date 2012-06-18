@@ -16,6 +16,8 @@ from Common import *
 from Response import *
 from SdkCommon import *
 from Exceptions import * 
+import logging
+logger = logging.getLogger(__name__)
 
 def __getCurrentPath():
     return os.path.normpath(os.path.join(os.path.realpath(__file__), os.path.pardir))
@@ -66,13 +68,16 @@ class TaobaoClient(object):
            "Cache-Control": "no-cache",
            "Connection": "Keep-Alive",
         }
+        logger.info('start sending a request on api:%s'%(request.method))
         responseStatus, rawContent = client.request(uri=self.serverUrl, method="POST", 
             body=urllib.urlencode(parameters), headers=headers)
         if responseStatus["status"] != '200':
             print >> sys.stderr, rawContent
             return None
+        logger.debug('end sending a request on api:%s'%(request.method))
         content = JSONLib.decode(rawContent)
         responses = list()
+        logger.debug('start process raw response from api:%s'%(request.method))
         for key, value in content.iteritems():
             key = str().join([x.capitalize() for x in key.split("_")])
             ResponseClass = None
@@ -84,6 +89,7 @@ class TaobaoClient(object):
             response.responseStatus = responseStatus
             response.responseBody = rawContent
             responses.append(response)
+        logger.debug('end process raw response from api:%s'%(request.method))
         return tuple(responses)
     
     def buildSign(self, request, session=None):
