@@ -5,7 +5,7 @@
 
 ## @brief 将规则应用或取消应用到分组上，add_groups和delete_groups，两个参数最少填写一个。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:08
+# @date 2012-06-18 09:24:11
 # @version: 0.0.0
 
 import os

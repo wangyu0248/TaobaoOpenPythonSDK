@@ -5,7 +5,7 @@
 
 ## @brief 批量查询物流订单。（注：该API主要是提供给卖家查询物流订单使用，买家查询物流订单，建议使用taobao.logistics.trace.search）
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:01
+# @date 2012-06-18 09:24:03
 # @version: 0.0.0
 
 import os

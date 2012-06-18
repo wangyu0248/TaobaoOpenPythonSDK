@@ -5,7 +5,7 @@
 
 ## @brief 获取卖家店铺剩余橱窗数量，已用橱窗数量，总橱窗数量（对于B卖家，后两个参数返回-1）
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:15
+# @date 2012-06-18 09:24:17
 # @version: 0.0.0
 
 from datetime import datetime

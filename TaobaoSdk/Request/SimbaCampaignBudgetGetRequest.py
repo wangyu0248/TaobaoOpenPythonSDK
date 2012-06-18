@@ -5,7 +5,7 @@
 
 ## @brief 取得一个推广计划的日限额
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:04
+# @date 2012-06-18 09:24:06
 # @version: 0.0.0
 
 import os

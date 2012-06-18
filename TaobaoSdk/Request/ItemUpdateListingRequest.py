@@ -5,7 +5,7 @@
 
 ## @brief * 单个商品上架 * 输入的num_iid必须属于当前会话用户
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:20:59
+# @date 2012-06-18 09:24:01
 # @version: 0.0.0
 
 import os

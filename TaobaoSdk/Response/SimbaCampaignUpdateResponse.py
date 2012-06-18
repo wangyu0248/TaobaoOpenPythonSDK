@@ -5,7 +5,7 @@
 
 ## @brief 更新一个推广计划，可以设置推广计划名字，修改推广计划上下线状态。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:18
+# @date 2012-06-18 09:24:21
 # @version: 0.0.0
 
 from datetime import datetime

@@ -5,7 +5,7 @@
 
 ## @brief 取得一个推广组的所有创意或者根据一个创意Id列表取得一组创意； 如果同时提供了推广组Id和创意id列表，则优先使用推广组Id；
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:19
+# @date 2012-06-18 09:24:22
 # @version: 0.0.0
 
 from datetime import datetime

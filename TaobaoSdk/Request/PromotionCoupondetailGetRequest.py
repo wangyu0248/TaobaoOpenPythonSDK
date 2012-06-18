@@ -5,7 +5,7 @@
 
 ## @brief 通过接口可以查询某个店铺优惠券的买家详细信息返回的信息，买家昵称， 使用渠道，使用状态，总数量
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:06
+# @date 2012-06-18 09:24:08
 # @version: 0.0.0
 
 import os

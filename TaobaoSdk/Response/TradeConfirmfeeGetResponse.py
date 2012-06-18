@@ -5,7 +5,7 @@
 
 ## @brief 获取交易确认收货费用 可以获取主订单或子订单的确认收货费用
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:13
+# @date 2012-06-18 09:24:15
 # @version: 0.0.0
 
 from datetime import datetime

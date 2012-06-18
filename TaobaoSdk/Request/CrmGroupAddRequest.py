@@ -5,7 +5,7 @@
 
 ## @brief 卖家创建一个新的分组，接口返回一个创建成功的分组的id
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:07
+# @date 2012-06-18 09:24:10
 # @version: 0.0.0
 
 import os

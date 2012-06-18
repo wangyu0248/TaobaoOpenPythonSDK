@@ -60,34 +60,66 @@ class ${struct.getElementsByTagName("name")[0].firstChild.data}(object):
         
         % for node in struct.getElementsByTagName("prop"):
         <%
-            description = node.getElementsByTagName("desc")[0].firstChild
-            nameType = node.getElementsByTagName("type")[0].firstChild
-            level = node.getElementsByTagName("level")[0].firstChild
-            sample = node.getElementsByTagName("sample")
-            private = node.getElementsByTagName("private")
+            description = str()
+            nameType = None 
+            level = None
+            sample = None
+            private = None
+            name = None
+
+            try:
+                description = node.getElementsByTagName("desc")[0].firstChild.data
+            except Exception:
+                pass
+
+            try:
+                nameType = node.getElementsByTagName("type")[0].firstChild.data
+            except Exception:
+                pass
             
-            description = description != None and description.data or str()
-            nameType = nameType != None and nameType.data or str()
-            level = level != None and level.data or None
-            sample = (sample != None and len(sample) > 0) and sample[0].firstChild.data or str()
-            private = (private != None and len(private) > 0) and private[0].firstChild.data or str()
+            try:
+                level = node.getElementsByTagName("level")[0].firstChild.data
+            except Exception:
+                pass
+
+            try:
+                sample = node.getElementsByTagName("sample")[0].firstChild.data
+            except Exception:
+                pass
+
+            try:
+                private = node.getElementsByTagName("private")[0].firstChild.data
+            except Exception:
+                pass
+
+            try:
+                name = node.getElementsByTagName("name")[0].firstChild.data
+            except Exception:
+                pass
             
-            name = node.getElementsByTagName("name")[0].firstChild.data
         %>
         \#\# @brief <SPAN style="color:Blue3; font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">${description.replace(os.linesep, str())}</SPAN>
         # <UL>
+        % if nameType != None:
         # <LI>
         # <SPAN style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Type</SPAN>: <SPAN style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">${nameType}</SPAN>
         # </LI>
+        % endif
+        % if Level != None:
         # <LI>
         # <SPAN style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Level</SPAN>: <SPAN style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">${level}</SPAN>
         # </LI>
+        % endif
+        % if sample != None:
         # <LI>
         # <SPAN style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Sample</SPAN>: <SPAN style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">${sample}</SPAN>
         # </LI>
+        % endif
+        % if private != None:
         # <LI>
         # <SPAN style="color:DarkRed; font-size:18px; font-family:'Times New Roman',Georgia,Serif;">Private</SPAN>: <SPAN style="color:DarkMagenta; font-size:16px; font-family:'Times New Roman','宋体',Georgia,Serif;">${private}</SPAN>
         # </LI>
+        % endif
         # </UL>
         self.${name} = None
         % endfor

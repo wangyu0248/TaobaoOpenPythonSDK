@@ -5,7 +5,7 @@
 
 ## @brief 用于ISV根据登录进来的淘宝会员名查询该为该会员开通哪些收费项目，ISV只能查询自己名下的应用及收费项目的订购情况
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:25
+# @date 2012-06-18 09:24:28
 # @version: 0.0.0
 
 from datetime import datetime

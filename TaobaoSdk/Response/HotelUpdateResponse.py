@@ -5,7 +5,7 @@
 
 ## @brief 此接口用于更新一个酒店的信息，根据用户传入的hid更新酒店数据。如果该酒店在淘宝集市酒店不存在，则会返回错误提示。 该接口发出的是一个更新酒店信息的申请，需要淘宝小二审核。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:23
+# @date 2012-06-18 09:24:26
 # @version: 0.0.0
 
 from datetime import datetime

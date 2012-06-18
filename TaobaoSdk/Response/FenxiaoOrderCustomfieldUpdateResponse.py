@@ -5,7 +5,7 @@
 
 ## @brief 采购单自定义字段
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:15
+# @date 2012-06-18 09:24:18
 # @version: 0.0.0
 
 from datetime import datetime

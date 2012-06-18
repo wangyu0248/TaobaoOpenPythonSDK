@@ -5,7 +5,7 @@
 
 ## @brief * 根据传入的搜索条件，获取商品列表和商品类目信息ItemCategory列表（类似于淘宝页面上的商品搜索功能，与 taobao.items.get的区别在于：这个方法得到的结果既有商品列表，又有类目信息列表）     * 商品列表里只能获得商品的部分信息，商品的详细信息请通过taobao.item.get获取     * 商品类目信息列表里只包含类目id和该类目下商品的数量     * 不能通过设置cid=0来查询
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:20:59
+# @date 2012-06-18 09:24:01
 # @version: 0.0.0
 
 import os

@@ -5,7 +5,7 @@
 
 ## @brief 查询图片是否被引用，被引用返回true，未被引用返回false
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:25
+# @date 2012-06-18 09:24:27
 # @version: 0.0.0
 
 from datetime import datetime

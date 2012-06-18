@@ -5,7 +5,7 @@
 
 ## @brief *更新一个sku的数据  *需要更新的sku通过属性properties进行匹配查找  *商品的数量和价格必须大于等于0  *sku记录会更新到指定的num_iid对应的商品中  *num_iid对应的商品必须属于当前的会话用户
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:20:58
+# @date 2012-06-18 09:24:01
 # @version: 0.0.0
 
 import os

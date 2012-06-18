@@ -5,7 +5,7 @@
 
 ## @brief 取指定频道Id的指定条数推荐画报
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:24
+# @date 2012-06-18 09:24:27
 # @version: 0.0.0
 
 from datetime import datetime

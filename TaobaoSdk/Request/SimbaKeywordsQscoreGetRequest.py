@@ -5,7 +5,7 @@
 
 ## @brief 取得一个推广组的所有关键词的质量得分列表
 # @author wuliang@maimiaotech.com
-# @date 2012-06-15 17:21:05
+# @date 2012-06-18 09:24:08
 # @version: 0.0.0
 
 import os
