@@ -5,7 +5,7 @@
 
 ## @brief 更新图片分类的名字，或者更新图片分类的父分类（即分类移动）。只能移动2级分类到非2级分类，默认分类和1级分类不可移动。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:27
+# @date 2012-06-19 10:43:56
 # @version: 0.0.0
 
 from datetime import datetime

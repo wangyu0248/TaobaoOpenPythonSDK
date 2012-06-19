@@ -5,7 +5,7 @@
 
 ## @brief 删除itemimg_id 所指定的商品图片  传入的num_iid所对应的商品必须属于当前会话的用户  itemimg_id对应的图片需要属于num_iid对应的商品
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:13
+# @date 2012-06-19 10:43:42
 # @version: 0.0.0
 
 from datetime import datetime

@@ -5,7 +5,7 @@
 
 ## @brief 根据传入的搜索条件，获取商品列表（类似于淘宝页面上的商品搜索功能，但是只有搜索到的商品列表，不包含商品的ItemCategory列表）  只能获得商品的部分信息，商品的详细信息请通过taobao.item.get获取  如果只输入fields其他条件都不输入，系统会因为搜索条件不足而报错。 不能通过设置cid=0来查询。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:01
+# @date 2012-06-19 10:43:30
 # @version: 0.0.0
 
 import os

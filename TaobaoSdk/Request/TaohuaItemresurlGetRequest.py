@@ -5,7 +5,7 @@
 
 ## @brief 获取商品资源下载链接。 URL调用示例： http://gw.api.taobao.com/router/rest?timestamp=1982-07-27 06:06:06&method=taobao.taohua.itemresurl.get&app_key=2005&session=XXXXX&sign=ERITJKEIJKJHKKKKKKKHJEREEEEEEEEEEE&item_id=3365&position=3652
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:09
+# @date 2012-06-19 10:43:38
 # @version: 0.0.0
 
 import os

@@ -5,7 +5,7 @@
 
 ## @brief 取指定频道Id的画报列表，可以支持分页
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:11
+# @date 2012-06-19 10:43:40
 # @version: 0.0.0
 
 import os

@@ -5,7 +5,7 @@
 
 ## @brief 获取单笔交易的部分信息
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:02
+# @date 2012-06-19 10:43:31
 # @version: 0.0.0
 
 import os

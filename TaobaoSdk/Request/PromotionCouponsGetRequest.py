@@ -5,7 +5,7 @@
 
 ## @brief 查询卖家已经创建的优惠券，接口返回信息：优惠券ID，面值，创建时间，有效期，使用条件，使用渠道，创建渠道，优惠券总数量
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:08
+# @date 2012-06-19 10:43:38
 # @version: 0.0.0
 
 import os

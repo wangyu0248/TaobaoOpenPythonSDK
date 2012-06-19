@@ -5,7 +5,7 @@
 
 ## @brief 获取更改过的类目出价ID
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:21
+# @date 2012-06-19 10:43:50
 # @version: 0.0.0
 
 from datetime import datetime

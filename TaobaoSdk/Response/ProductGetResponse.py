@@ -5,7 +5,7 @@
 
 ## @brief 两种方式查看一个产品详细信息:  传入product_id来查询  传入cid和props来查询
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:14
+# @date 2012-06-19 10:43:43
 # @version: 0.0.0
 
 from datetime import datetime
