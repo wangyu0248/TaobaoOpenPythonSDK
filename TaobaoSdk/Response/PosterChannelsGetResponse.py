@@ -5,7 +5,7 @@
 
 ## @brief 获取画报所有频道信息
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:19
+# @date 2012-06-19 10:43:48
 # @version: 0.0.0
 
 from datetime import datetime

@@ -5,7 +5,7 @@
 
 ## @brief 卖家拒绝单笔退款交易，要求如下： 1. 传入的refund_id和相应的tid, oid必须匹配 2. 如果一笔订单只有一笔子订单，则tid必须与oid相同 3. 只有卖家才能执行拒绝退款操作 4. 以下三种情况不能退款：卖家未发货；7天无理由退换货；网游订单
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:12
+# @date 2012-06-19 10:43:41
 # @version: 0.0.0
 
 import os

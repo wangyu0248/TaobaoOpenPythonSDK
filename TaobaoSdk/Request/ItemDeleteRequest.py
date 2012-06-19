@@ -5,7 +5,7 @@
 
 ## @brief 删除单条商品
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:00
+# @date 2012-06-19 10:43:29
 # @version: 0.0.0
 
 import os

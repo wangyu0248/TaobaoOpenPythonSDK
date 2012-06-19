@@ -5,7 +5,7 @@
 
 ## @brief 此接口用于为商品删除商品图片。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:25
+# @date 2012-06-19 10:43:54
 # @version: 0.0.0
 
 from datetime import datetime

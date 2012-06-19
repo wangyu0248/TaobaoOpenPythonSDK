@@ -5,7 +5,7 @@
 
 ## @brief 取得最近最热门的画报。与频道有关，按点击排序
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:05
+# @date 2012-06-19 10:43:34
 # @version: 0.0.0
 
 import os

@@ -5,7 +5,7 @@
 
 ## @brief 此接口用于发布一个集市酒店商品，商品的发布者是当前会话的用户。如果该酒店、该房型、该用户所对应的商品在淘宝集市酒店系统中已经存在，则会返回错误提示。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:25
+# @date 2012-06-19 10:43:54
 # @version: 0.0.0
 
 from datetime import datetime

@@ -5,7 +5,7 @@
 
 ## @brief 检查一个分组上是否有异步任务,异步任务包括1.将一个分组下的所有用户添加到另外一个分组2.将一个分组下的所有用户移动到另外一个分组3.删除某个分组 若分组上有任务则该属性不能被操作。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:26
+# @date 2012-06-19 10:43:55
 # @version: 0.0.0
 
 from datetime import datetime

@@ -5,7 +5,7 @@
 
 ## @brief 推广组下的词基础报表数据查询(明细数据不分类型查询)
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:08
+# @date 2012-06-19 10:43:37
 # @version: 0.0.0
 
 import os

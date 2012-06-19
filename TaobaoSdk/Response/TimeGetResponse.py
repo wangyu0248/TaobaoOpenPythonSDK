@@ -5,7 +5,7 @@
 
 ## @brief 获取淘宝系统当前时间
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:20
+# @date 2012-06-19 10:43:48
 # @version: 0.0.0
 
 from datetime import datetime

@@ -5,7 +5,7 @@
 
 ## @brief 产品sku查询
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:04
+# @date 2012-06-19 10:43:34
 # @version: 0.0.0
 
 import os

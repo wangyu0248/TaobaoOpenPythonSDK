@@ -5,7 +5,7 @@
 
 ## @brief 商品优惠详情查询，可查询商品设置的详细优惠。包括限时折扣，满就送等官方优惠以及第三方优惠。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:15
+# @date 2012-06-19 10:43:44
 # @version: 0.0.0
 
 from datetime import datetime

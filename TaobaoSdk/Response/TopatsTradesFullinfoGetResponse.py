@@ -5,7 +5,7 @@
 
 ## @brief 提供异步批量获取订单详情功能<br/> 1. 一次可以查询的订单数量为1~100笔，强烈建议一次请求尽可能多的订单<br/> 2. 提交任务后会生成task_id，后继通过此task_id调用taobao.topats.result.get接口获取任务的结果<br/> 3. 如果订阅了Comet长连接推送方式，则直接通过Comet推送到长连接客户端<br/> 4. 这个任务ID有效时间为2天。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:15
+# @date 2012-06-19 10:43:44
 # @version: 0.0.0
 
 from datetime import datetime

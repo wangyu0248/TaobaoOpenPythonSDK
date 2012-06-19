@@ -5,7 +5,7 @@
 
 ## @brief 词和类目查询
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:22
+# @date 2012-06-19 10:43:51
 # @version: 0.0.0
 
 from datetime import datetime

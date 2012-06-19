@@ -5,7 +5,7 @@
 
 ## @brief 获取删除的创意ID
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:07
+# @date 2012-06-19 10:43:36
 # @version: 0.0.0
 
 import os

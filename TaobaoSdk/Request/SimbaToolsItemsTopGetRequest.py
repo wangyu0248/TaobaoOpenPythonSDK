@@ -5,7 +5,7 @@
 
 ## @brief 取得一个关键词的推广组排名列表
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:08
+# @date 2012-06-19 10:43:37
 # @version: 0.0.0
 
 import os

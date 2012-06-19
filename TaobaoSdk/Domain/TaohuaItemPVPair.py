@@ -5,7 +5,7 @@
 
 ## @brief 商品属性值配对数据结构
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:23:57
+# @date 2012-06-19 10:43:27
 # @version: 0.0.0
 
 from copy import deepcopy
@@ -61,14 +61,18 @@ class TaohuaItemPVPair(object):
         
         self.__init(kargs)
 
-    def toDict(self):
+    def toDict(self, **kargs):
         result = deepcopy(self.__kargs)
         for key, value in self.__dict__.iteritems():
-            if result.has_key(key):
-                continue
             if key.endswith("__kargs"):
                 continue
-            result[key] = value
+            if value == None:
+                if kargs.has_key("includeNone") and kargs["includeNone"]:
+                    result[key] = value
+                else:
+                    continue
+            else:
+                result[key] = value
         result = self.__unicodeToUtf8(result)
         return result
 

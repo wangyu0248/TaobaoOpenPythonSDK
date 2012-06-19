@@ -5,7 +5,7 @@
 
 ## @brief 获取删除的推广组ID
 # @author wuliang@maimiaotech.com
-# @date 2012-06-18 09:24:20
+# @date 2012-06-19 10:43:49
 # @version: 0.0.0
 
 from datetime import datetime
