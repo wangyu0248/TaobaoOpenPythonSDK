@@ -5,7 +5,7 @@
 
 ## @brief 更新一个推广组的信息，可以设置默认出价、是否上线、非搜索出价、非搜索是否使用默认出价
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:49
+# @date 2012-06-21 12:19:48
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SimbaAdgroupUpdateResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">被修改的推广组</SPAN>
@@ -63,6 +71,9 @@ class SimbaAdgroupUpdateResponse(object):
         self.adgroup = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

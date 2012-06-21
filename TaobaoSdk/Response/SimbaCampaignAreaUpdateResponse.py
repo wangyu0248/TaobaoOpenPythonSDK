@@ -5,7 +5,7 @@
 
 ## @brief 更新一个推广计划的投放地域
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:50
+# @date 2012-06-21 12:19:48
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SimbaCampaignAreaUpdateResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">修改后的推广计划投放地域</SPAN>
@@ -63,6 +71,9 @@ class SimbaCampaignAreaUpdateResponse(object):
         self.campaign_area = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

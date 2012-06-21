@@ -5,7 +5,7 @@
 
 ## @brief 搭配套餐查询。每个卖家最多创建50个搭配套餐，所以查询不会分页，会将所有的满足状态的搭配套餐全部查出。该接口不会校验商品的下架或库存为0，查询结果的状态表明搭配套餐在数据库中的状态，商品的状态请isv自己验证。在卖家后台页面点击查看会触发数据库状态的修改。 
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:53
+# @date 2012-06-21 12:19:52
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class PromotionMealGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">搭配套餐列表。</SPAN>
@@ -63,6 +71,9 @@ class PromotionMealGetResponse(object):
         self.meal_list = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

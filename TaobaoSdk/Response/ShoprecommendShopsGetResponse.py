@@ -5,7 +5,7 @@
 
 ## @brief 根据店铺信息推荐相关联的店铺集
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:58
+# @date 2012-06-21 12:19:57
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class ShoprecommendShopsGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">返回与店铺关联的店铺集</SPAN>
@@ -63,6 +71,9 @@ class ShoprecommendShopsGetResponse(object):
         self.favorite_shops = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

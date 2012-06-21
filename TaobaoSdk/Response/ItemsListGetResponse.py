@@ -5,7 +5,7 @@
 
 ## @brief 查看非公开属性时需要用户登录
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:43
+# @date 2012-06-21 12:19:42
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class ItemsListGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取的商品 具体字段根据权限和设定的fields决定</SPAN>
@@ -63,6 +71,9 @@ class ItemsListGetResponse(object):
         self.items = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

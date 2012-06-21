@@ -5,7 +5,7 @@
 
 ## @brief 根据用户id查询用户对应的评价详细情况， 主账号id可以查询店铺内子账号的评价 组管理员可以查询组内账号的评价 非管理员的子账号可以查自己的评价
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:48
+# @date 2012-06-21 12:19:47
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class WangwangEserviceEvalsGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">0表示成功</SPAN>
@@ -87,6 +95,9 @@ class WangwangEserviceEvalsGetResponse(object):
         self.staff_eval_details = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

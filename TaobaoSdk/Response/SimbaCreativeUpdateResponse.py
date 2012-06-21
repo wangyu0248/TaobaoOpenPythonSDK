@@ -5,7 +5,7 @@
 
 ## @brief 更新一个创意的信息，可以设置创意标题、创意图片
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:50
+# @date 2012-06-21 12:19:49
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SimbaCreativeUpdateResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">创意修改记录对象</SPAN>
@@ -63,6 +71,9 @@ class SimbaCreativeUpdateResponse(object):
         self.creativerecord = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

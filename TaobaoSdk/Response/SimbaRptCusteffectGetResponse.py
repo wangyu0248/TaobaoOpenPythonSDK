@@ -5,7 +5,7 @@
 
 ## @brief 用户账户报表效果数据查询（只有汇总数据，无分类数据）
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:52
+# @date 2012-06-21 12:19:51
 # @version: 0.0.0
 
 from datetime import datetime
@@ -46,6 +46,14 @@ class SimbaRptCusteffectGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">账户效果数据返回结果</SPAN>
@@ -60,6 +68,9 @@ class SimbaRptCusteffectGetResponse(object):
         self.rpt_cust_effect_list = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

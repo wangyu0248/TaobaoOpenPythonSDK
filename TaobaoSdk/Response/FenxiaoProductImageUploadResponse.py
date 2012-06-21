@@ -5,7 +5,7 @@
 
 ## @brief 产品主图图片空间相对路径或绝对路径添加或更新，或者是图片上传。如果指定位置的图片已存在，则覆盖原有信息。如果位置为1,自动设为主图；如果位置为0，表示属性图片
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:47
+# @date 2012-06-21 12:19:46
 # @version: 0.0.0
 
 from datetime import datetime
@@ -46,6 +46,14 @@ class FenxiaoProductImageUploadResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">操作时间</SPAN>
@@ -72,6 +80,9 @@ class FenxiaoProductImageUploadResponse(object):
         self.result = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

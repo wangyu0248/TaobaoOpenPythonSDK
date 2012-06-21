@@ -5,7 +5,7 @@
 
 ## @brief 商品属性值配对数据结构
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:27
+# @date 2012-06-21 12:19:25
 # @version: 0.0.0
 
 from copy import deepcopy

@@ -5,7 +5,7 @@
 
 ## @brief 此接口用于为商品上传商品图片。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:54
+# @date 2012-06-21 12:19:53
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class HotelRoomImgUploadResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品图片结构</SPAN>
@@ -63,6 +71,9 @@ class HotelRoomImgUploadResponse(object):
         self.room_image = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

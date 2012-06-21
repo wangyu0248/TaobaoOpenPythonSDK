@@ -5,7 +5,7 @@
 
 ## @brief 分页查询某个卖家的限时打折信息。每页20条数据，按照结束时间降序排列。也可指定某一个限时打折id查询唯一的限时打折信息。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:53
+# @date 2012-06-21 12:19:52
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class PromotionLimitdiscountGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">限时打折列表。</SPAN>
@@ -75,6 +83,9 @@ class PromotionLimitdiscountGetResponse(object):
         self.total_count = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

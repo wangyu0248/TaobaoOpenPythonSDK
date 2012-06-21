@@ -21,10 +21,18 @@ class ErrorResponseException(Exception):
         错误消息
         '''
 
+        self.sub_code = None
+
+        self.sub_msg = None
+
         if kargs.has_key("code"):
             self.code = kargs["code"]
         if kargs.has_key("msg"):
             self.msg = kargs["msg"] 
+        if kargs.has_key("sub_code"):
+            self.sub_code = kargs["sub_code"]
+        if kargs.has_key("sub_msg"):
+            self.sub_msg = kargs["sub_msg"]
 
     def __str__(self):
-        return "%s, ErrorCode: %s" % (self.msg, self.code)
+        return "%s, ErrorCode: %s; SubMsg: %s, SubCode: %s" % (self.msg, self.code, self.sub_msg, self.sub_code)

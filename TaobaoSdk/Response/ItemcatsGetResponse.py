@@ -5,7 +5,7 @@
 
 ## @brief 获取后台供卖家发布商品的标准商品类目
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:42
+# @date 2012-06-21 12:19:41
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class ItemcatsGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">增量类目信息,根据fields传入的参数返回相应的结果</SPAN>
@@ -75,6 +83,9 @@ class ItemcatsGetResponse(object):
         self.last_modified = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

@@ -5,7 +5,7 @@
 
 ## @brief 取得一个推广组的所有创意或者根据一个创意Id列表取得一组创意； 如果同时提供了推广组Id和创意id列表，则优先使用推广组Id；
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:50
+# @date 2012-06-21 12:19:49
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SimbaCreativesGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">创意对象列表</SPAN>
@@ -63,6 +71,9 @@ class SimbaCreativesGetResponse(object):
         self.creatives = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

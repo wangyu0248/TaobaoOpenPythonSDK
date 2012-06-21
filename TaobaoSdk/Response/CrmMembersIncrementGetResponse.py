@@ -5,7 +5,7 @@
 
 ## @brief 增量获取会员列表，接口返回符合查询条件的所有会员。任何状态更改都会返回
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:55
+# @date 2012-06-21 12:19:54
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class CrmMembersIncrementGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">返回当前页的会员列表</SPAN>
@@ -75,6 +83,9 @@ class CrmMembersIncrementGetResponse(object):
         self.total_result = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

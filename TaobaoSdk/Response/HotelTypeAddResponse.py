@@ -5,7 +5,7 @@
 
 ## @brief 此接口用于发布一个房型，房型的发布者是当前会话的用户。如果该房型在淘宝集市酒店下已经存在，则会返回错误提示。 该接口发布的是一个新增房型申请，需要淘宝小二审核
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:54
+# @date 2012-06-21 12:19:53
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class HotelTypeAddResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">房型结构</SPAN>
@@ -63,6 +71,9 @@ class HotelTypeAddResponse(object):
         self.room_type = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

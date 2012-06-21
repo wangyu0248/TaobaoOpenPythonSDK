@@ -5,7 +5,7 @@
 
 ## @brief 1. 此接口用于查询该会话用户作为房型发布者发布的房型被审核通过的增量房型信息。 2. 只能查询时间跨度为一天的增量酒店记录：start_modified：2011-7-1 16:00:00 end_modified： 2011-7-2 15:59:59（注意不能写成16:00:00）  3. 返回数据结果为发布房型时间的倒序
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:54
+# @date 2012-06-21 12:19:53
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class HotelSoldTypesIncrementGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">是否存在下一页</SPAN>
@@ -87,6 +95,9 @@ class HotelSoldTypesIncrementGetResponse(object):
         self.total_results = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

@@ -5,7 +5,7 @@
 
 ## @brief *更新一个sku的数据  *需要更新的sku通过属性properties进行匹配查找  *商品的数量和价格必须大于等于0  *sku记录会更新到指定的num_iid对应的商品中  *num_iid对应的商品必须属于当前的会话用户
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:43
+# @date 2012-06-21 12:19:42
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class ItemSkuUpdateResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品Sku</SPAN>
@@ -63,6 +71,9 @@ class ItemSkuUpdateResponse(object):
         self.sku = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

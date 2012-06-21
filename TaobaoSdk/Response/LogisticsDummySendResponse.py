@@ -5,7 +5,7 @@
 
 ## @brief 用户调用该接口可实现无需物流（虚拟）发货,使用该接口发货，交易订单状态会直接变成卖家已发货
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:45
+# @date 2012-06-21 12:19:44
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class LogisticsDummySendResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">返回发货是否成功is_success</SPAN>
@@ -63,6 +71,9 @@ class LogisticsDummySendResponse(object):
         self.shipping = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

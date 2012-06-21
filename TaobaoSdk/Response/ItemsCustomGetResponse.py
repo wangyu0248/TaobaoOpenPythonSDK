@@ -5,7 +5,7 @@
 
 ## @brief 跟据卖家设定的商品外部id获取商品  这个商品对应卖家从传入的session中获取，需要session绑定
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:43
+# @date 2012-06-21 12:19:42
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class ItemsCustomGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品列表，具体返回字段以fields决定</SPAN>
@@ -63,6 +71,9 @@ class ItemsCustomGetResponse(object):
         self.items = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

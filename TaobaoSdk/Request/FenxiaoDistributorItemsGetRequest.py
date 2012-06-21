@@ -5,7 +5,7 @@
 
 ## @brief 供应商查询分销商商品下载记录。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:33
+# @date 2012-06-21 12:19:32
 # @version: 0.0.0
 
 import os

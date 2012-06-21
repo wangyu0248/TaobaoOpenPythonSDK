@@ -5,7 +5,7 @@
 
 ## @brief 调此接口取消发货的订单，重新选择物流公司发货。前提是物流公司未揽收货物。对未发货和已经被物流公司揽收的物流订单，是不能取消的。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:46
+# @date 2012-06-21 12:19:44
 # @version: 0.0.0
 
 from datetime import datetime
@@ -46,6 +46,14 @@ class LogisticsOnlineCancelResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">成功与失败</SPAN>
@@ -84,6 +92,9 @@ class LogisticsOnlineCancelResponse(object):
         self.recreated_order_id = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

@@ -5,7 +5,7 @@
 
 ## @brief 获取实时余额，”元”为单位
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:49
+# @date 2012-06-21 12:19:48
 # @version: 0.0.0
 
 from datetime import datetime
@@ -46,6 +46,14 @@ class SimbaAccountBalanceGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">实时余额，”元”为单位</SPAN>
@@ -60,6 +68,9 @@ class SimbaAccountBalanceGetResponse(object):
         self.balance = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

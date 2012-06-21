@@ -5,7 +5,7 @@
 
 ## @brief 根据商品ID查询卖家使用该第三方工具对商品设置的所有优惠策略
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:52
+# @date 2012-06-21 12:19:51
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class MarketingPromotionsGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品对应的所有优惠列表</SPAN>
@@ -75,6 +83,9 @@ class MarketingPromotionsGetResponse(object):
         self.total_results = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

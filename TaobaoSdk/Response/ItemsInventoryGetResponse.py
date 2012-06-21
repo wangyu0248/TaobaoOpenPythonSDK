@@ -5,7 +5,7 @@
 
 ## @brief 获取当前用户作为卖家的仓库中的商品列表，并能根据传入的搜索条件对仓库中的商品列表进行过滤  只能获得商品的部分信息，商品的详细信息请通过taobao.item.get获取
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:43
+# @date 2012-06-21 12:19:42
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class ItemsInventoryGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">搜索到底商品列表，具体字段根据设定的fields决定，不包括desc,stuff_status字段</SPAN>
@@ -75,6 +83,9 @@ class ItemsInventoryGetResponse(object):
         self.total_results = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

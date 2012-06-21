@@ -5,7 +5,7 @@
 
 ## @brief 此接口用于更新多个集市酒店商品房态信息，根据传入的gids更新商品信息，该商品必须为对应的发布者才能执行更新操作。如果对应的商品在淘宝集市酒店系统中不存在，则会返回错误提示。是全量更新，非增量，会把之前的房态进行覆盖。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:54
+# @date 2012-06-21 12:19:53
 # @version: 0.0.0
 
 from datetime import datetime
@@ -46,6 +46,14 @@ class HotelRoomsUpdateResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">成功的gid list</SPAN>
@@ -60,6 +68,9 @@ class HotelRoomsUpdateResponse(object):
         self.gids = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

@@ -5,7 +5,7 @@
 
 ## @brief 画报数据结构
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:25
+# @date 2012-06-21 12:19:24
 # @version: 0.0.0
 
 from copy import deepcopy

@@ -5,7 +5,7 @@
 
 ## @brief 可用于取消已经创建的ATS任务。</br> 条件限制：1)一次只可以取消一个任务</br>          2）只能取消自己创建的任务</br>
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:49
+# @date 2012-06-21 12:19:48
 # @version: 0.0.0
 
 from datetime import datetime
@@ -46,6 +46,14 @@ class TopatsTaskDeleteResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">表示操作是否成功，是为true，否为false。</SPAN>
@@ -60,6 +68,9 @@ class TopatsTaskDeleteResponse(object):
         self.is_success = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

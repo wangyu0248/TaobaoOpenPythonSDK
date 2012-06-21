@@ -5,7 +5,7 @@
 
 ## @brief 获取单个商品的详细信息  卖家未登录时只能获得这个商品的公开数据，卖家登录后可以获取商品的所有数据
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:42
+# @date 2012-06-21 12:19:41
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class ItemGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">获取的商品 具体字段根据权限和设定的fields决定</SPAN>
@@ -63,6 +71,9 @@ class ItemGetResponse(object):
         self.item = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

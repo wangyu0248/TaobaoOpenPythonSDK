@@ -5,7 +5,7 @@
 
 ## @brief 推广组基础报表数据对象
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:37
+# @date 2012-06-21 12:19:36
 # @version: 0.0.0
 
 import os

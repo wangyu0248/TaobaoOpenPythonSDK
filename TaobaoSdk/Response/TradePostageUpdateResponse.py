@@ -5,7 +5,7 @@
 
 ## @brief 修改订单邮费接口，通过传入订单编号和邮费价格，修改订单的邮费，返回修改时间modified,邮费post_fee,总费用total_fee。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:44
+# @date 2012-06-21 12:19:43
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class TradePostageUpdateResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">返回trade类型，其中包含修改时间modified，修改邮费post_fee，修改后的总费用total_fee和买家实付款payment</SPAN>
@@ -63,6 +71,9 @@ class TradePostageUpdateResponse(object):
         self.trade = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

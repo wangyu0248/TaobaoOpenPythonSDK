@@ -5,7 +5,7 @@
 
 ## @brief 根据主账号nick查询该账号下所有的子账号列表，只能查询属于自己的账号信息 (主账号以及所属子账号)
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:57
+# @date 2012-06-21 12:19:56
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SellercenterSubusersGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">子账号基本信息列表。具体信息为id、子账号用户名、主账号id、主账号昵称、当前状态值、是否分流</SPAN>
@@ -63,6 +71,9 @@ class SellercenterSubusersGetResponse(object):
         self.subusers = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

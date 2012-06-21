@@ -5,7 +5,7 @@
 
 ## @brief 获取当前登录用户自己的店铺内的分流权重设置
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:48
+# @date 2012-06-21 12:19:47
 # @version: 0.0.0
 
 from datetime import datetime
@@ -48,6 +48,14 @@ class WangwangEserviceStreamweigthsGetResponse(object):
         # </LI>
         # </UL>        
         self.responseBody = None
+
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
 
         
         
@@ -99,6 +107,9 @@ class WangwangEserviceStreamweigthsGetResponse(object):
         self.total_weight = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

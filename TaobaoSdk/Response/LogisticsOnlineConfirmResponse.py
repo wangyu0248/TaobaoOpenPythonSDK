@@ -5,7 +5,7 @@
 
 ## @brief 确认发货的目的是让交易流程继承走下去，确认发货后交易状态会由【买家已付款】变为【卖家已发货】，然后买家才可以确认收货，货款打入卖家账号。货到付款的订单除外
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:46
+# @date 2012-06-21 12:19:44
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class LogisticsOnlineConfirmResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">只返回is_success：是否成功。</SPAN>
@@ -63,6 +71,9 @@ class LogisticsOnlineConfirmResponse(object):
         self.shipping = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

@@ -5,7 +5,7 @@
 
 ## @brief 添加分组规则，规则可用于筛选一定条件的会员。过滤条件可以选择客户来源、会员级别 、交易笔数、交易额、上次交易时间、平均客单价、宝贝件数、省份、关闭交易数等，新建规则时必须至少选择一个以上筛选条件。如果输入的规则的筛选条件不正确则不会进行处理，可以将某些分组挂在这个规则下，对被挂在该规则下的分组，系统对现有满足规则的客户都划分到这个分组（异步任务）。每个规则可以应用到多个分组，一个用户的规则上限为5个。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:55
+# @date 2012-06-21 12:19:54
 # @version: 0.0.0
 
 from datetime import datetime
@@ -46,6 +46,14 @@ class CrmRuleAddResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">返回规则添加是否成功</SPAN>
@@ -72,6 +80,9 @@ class CrmRuleAddResponse(object):
         self.rule_id = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

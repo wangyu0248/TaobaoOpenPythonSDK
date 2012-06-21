@@ -5,7 +5,7 @@
 
 ## @brief 针对父子订单新增批量评价(<font color="red">注：在评价之前需要对订单成功的时间进行判定（end_time）,如果超过15天，不用再通过该接口进行评价</font>)
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:45
+# @date 2012-06-21 12:19:44
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class TraderateListAddResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">返回的评论的信息，仅返回tid和created字段</SPAN>
@@ -63,6 +71,9 @@ class TraderateListAddResponse(object):
         self.trade_rate = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

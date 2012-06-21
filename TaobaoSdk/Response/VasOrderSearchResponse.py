@@ -5,7 +5,7 @@
 
 ## @brief 用于ISV查询自己名下的应用及收费项目的订单记录（已付款订单）。 目前所有应用调用此接口的频率限制为200次/分钟，即每分钟内，所有应用调用此接口的次数加起来最多为200次。 建议用于查询前一日的历史记录。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:57
+# @date 2012-06-21 12:19:56
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class VasOrderSearchResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品订单对象</SPAN>
@@ -75,6 +83,9 @@ class VasOrderSearchResponse(object):
         self.total_item = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

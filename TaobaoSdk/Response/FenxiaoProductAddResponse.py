@@ -5,7 +5,7 @@
 
 ## @brief 添加分销平台产品数据。业务逻辑与分销系统前台页面一致。      * 产品图片默认为空     * 产品发布后默认为下架状态
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:47
+# @date 2012-06-21 12:19:46
 # @version: 0.0.0
 
 from datetime import datetime
@@ -46,6 +46,14 @@ class FenxiaoProductAddResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">产品创建时间 时间格式：yyyy-MM-dd HH:mm:ss</SPAN>
@@ -72,6 +80,9 @@ class FenxiaoProductAddResponse(object):
         self.pid = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

@@ -5,7 +5,7 @@
 
 ## @brief 将当前用户指定商品设置为橱窗推荐状态 橱窗推荐需要用户有剩余橱窗位才可以顺利执行 这个Item所属卖家从传入的session中获取，需要session绑定 需要判断橱窗推荐是否已满，橱窗推荐已满停止调用橱窗推荐接口，2010年1月底开放查询剩余橱窗推荐数后可以按数量橱窗推荐商品
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:43
+# @date 2012-06-21 12:19:41
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class ItemRecommendAddResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">被推荐的商品的信息</SPAN>
@@ -63,6 +71,9 @@ class ItemRecommendAddResponse(object):
         self.item = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

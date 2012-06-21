@@ -5,7 +5,7 @@
 
 ## @brief 只能更新一笔交易里面的买家收货地址  只能更新发货前（即买家已付款，等待卖家发货状态）的交易的买家收货地址  更新后的发货地址可以通过taobao.trade.fullinfo.get查到  参数中所说的字节为GBK编码的（英文和数字占1字节，中文占2字节）
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:45
+# @date 2012-06-21 12:19:43
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class TradeShippingaddressUpdateResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">交易结构</SPAN>
@@ -63,6 +71,9 @@ class TradeShippingaddressUpdateResponse(object):
         self.trade = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

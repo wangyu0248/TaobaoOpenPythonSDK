@@ -5,7 +5,7 @@
 
 ## @brief 交易快照查询 目前只支持类型为“旺店标准版(600)”或“旺店入门版(610)”的交易  对于“旺店标准版”类型的交易，返回的snapshot字段为交易快照编号  对于“旺店入门版”类型的交易，返回的snapshot字段为JSON结构的数据(其中的shopPromotion包含了优惠，积分等信息）
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:45
+# @date 2012-06-21 12:19:43
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class TradeSnapshotGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">只包含Trade中的tid和snapshot、子订单Order中的oid和snapshot</SPAN>
@@ -63,6 +71,9 @@ class TradeSnapshotGetResponse(object):
         self.trade = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

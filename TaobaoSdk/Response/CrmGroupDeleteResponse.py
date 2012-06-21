@@ -5,7 +5,7 @@
 
 ## @brief 将该分组下的所有会员移除出该组，同时删除该分组。注：删除分组为异步任务，必须先调用taobao.crm.grouptask.check 确保涉及属性上没有任务。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:55
+# @date 2012-06-21 12:19:54
 # @version: 0.0.0
 
 from datetime import datetime
@@ -46,6 +46,14 @@ class CrmGroupDeleteResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">异步任务请求成功，是否执行完毕需要通过taobao.crm.grouptask.check检测</SPAN>
@@ -60,6 +68,9 @@ class CrmGroupDeleteResponse(object):
         self.is_success = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

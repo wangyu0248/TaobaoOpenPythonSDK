@@ -5,7 +5,7 @@
 
 ## @brief 分销商或供应商均可用此接口查询采购单信息. (发货处理请调用物流API中的发货接口)
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:47
+# @date 2012-06-21 12:19:46
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class FenxiaoOrdersGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">采购单及子采购单信息。返回 PurchaseOrder 包含的字段信息。</SPAN>
@@ -75,6 +83,9 @@ class FenxiaoOrdersGetResponse(object):
         self.total_results = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

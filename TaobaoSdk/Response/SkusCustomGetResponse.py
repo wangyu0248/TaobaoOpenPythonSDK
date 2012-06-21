@@ -5,7 +5,7 @@
 
 ## @brief 跟据卖家设定的Sku的外部id获取商品，如果一个outer_id对应多个Sku会返回所有符合条件的sku  这个Sku所属卖家从传入的session中获取，需要session绑定(注：iid标签里是num_iid的值，可以用作num_iid使用)
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:44
+# @date 2012-06-21 12:19:43
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SkusCustomGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">Sku对象，具体字段以fields决定</SPAN>
@@ -63,6 +71,9 @@ class SkusCustomGetResponse(object):
         self.skus = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

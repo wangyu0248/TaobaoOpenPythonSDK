@@ -5,7 +5,7 @@
 
 ## @brief 用户调用该接口可实现在线订单发货（支持货到付款） 调用该接口实现在线下单发货，有两种情况：<br> <font color='red'>如果不输入运单号的情况：交易状态不会改变，需要调用taobao.logistics.online.confirm确认发货后交易状态才会变成卖家已发货。<br> 如果输入运单号的情况发货：交易订单状态会直接变成卖家已发货 。</font>
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:46
+# @date 2012-06-21 12:19:45
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class LogisticsOnlineSendResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">返回发货是否成功is_success</SPAN>
@@ -63,6 +71,9 @@ class LogisticsOnlineSendResponse(object):
         self.shipping = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

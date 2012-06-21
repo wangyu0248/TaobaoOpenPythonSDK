@@ -5,7 +5,7 @@
 
 ## @brief 此接口用于查询多个酒店，根据传入的参数查询酒店信息。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:55
+# @date 2012-06-21 12:19:54
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class HotelsSearchResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">多个酒店结构<br></br><font color = red>不返回房型信息，需要查看房型信息，请调用taobao.hotel.get</font></SPAN>
@@ -75,6 +83,9 @@ class HotelsSearchResponse(object):
         self.total_results = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

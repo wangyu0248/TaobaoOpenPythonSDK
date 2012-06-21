@@ -5,7 +5,7 @@
 
 ## @brief 取得一个推广组的所有关键词的质量得分列表
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:51
+# @date 2012-06-21 12:19:50
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SimbaKeywordsQscoreGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">取得的关键词质量得分列表</SPAN>
@@ -63,6 +71,9 @@ class SimbaKeywordsQscoreGetResponse(object):
         self.keyword_qscore_list = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

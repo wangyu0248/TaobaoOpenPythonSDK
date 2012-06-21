@@ -5,7 +5,7 @@
 
 ## @brief 关键词排名推广商品信息
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:28
+# @date 2012-06-21 12:19:26
 # @version: 0.0.0
 
 from copy import deepcopy

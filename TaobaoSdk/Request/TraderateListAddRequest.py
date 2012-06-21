@@ -5,7 +5,7 @@
 
 ## @brief 针对父子订单新增批量评价(<font color="red">注：在评价之前需要对订单成功的时间进行判定（end_time）,如果超过15天，不用再通过该接口进行评价</font>)
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:32
+# @date 2012-06-21 12:19:30
 # @version: 0.0.0
 
 import os

@@ -5,7 +5,7 @@
 
 ## @brief 此API更新卖家店铺内自定义类目  注：因为缓存的关系，添加的新类目需8个小时后才可以在淘宝页面上正常显示，但是不影响在该类目下商品发布
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:46
+# @date 2012-06-21 12:19:45
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SellercatsListUpdateResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">返回sellercat数据结构中的：cid,modified</SPAN>
@@ -63,6 +71,9 @@ class SellercatsListUpdateResponse(object):
         self.seller_cat = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

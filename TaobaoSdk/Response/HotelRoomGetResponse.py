@@ -5,7 +5,7 @@
 
 ## @brief 此接口用于查询一个商品，根据传入的gid查询商品信息。卖家只能查询自己的商品。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:54
+# @date 2012-06-21 12:19:53
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class HotelRoomGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">商品结构。是否返回酒店信息、房型信息、房态列表、宝贝描述根据参数决定</SPAN>
@@ -63,6 +71,9 @@ class HotelRoomGetResponse(object):
         self.room = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

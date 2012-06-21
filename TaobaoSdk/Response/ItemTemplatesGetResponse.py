@@ -5,7 +5,7 @@
 
 ## @brief 查询当前登录用户的店铺的宝贝详情页的模板名称
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:43
+# @date 2012-06-21 12:19:42
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class ItemTemplatesGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">返回宝贝模板对象。包含模板id，模板name，还有模板的类别（0表示外店，1表示内店）</SPAN>
@@ -63,6 +71,9 @@ class ItemTemplatesGetResponse(object):
         self.item_template_list = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)
