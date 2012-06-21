@@ -5,7 +5,7 @@
 
 ## @brief 删除propimg_id 所指定的商品属性图片  传入的num_iid所对应的商品必须属于当前会话的用户  propimg_id对应的属性图片需要属于num_iid对应的商品
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:42
+# @date 2012-06-21 12:19:41
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class ItemPropimgDeleteResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">属性图片结构</SPAN>
@@ -63,6 +71,9 @@ class ItemPropimgDeleteResponse(object):
         self.prop_img = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

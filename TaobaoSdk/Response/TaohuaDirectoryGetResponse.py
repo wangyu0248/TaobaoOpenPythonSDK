@@ -5,7 +5,7 @@
 
 ## @brief 根据文档商品的ID获取文档目录
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:53
+# @date 2012-06-21 12:19:52
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class TaohuaDirectoryGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">淘花文档目录</SPAN>
@@ -63,6 +71,9 @@ class TaohuaDirectoryGetResponse(object):
         self.tree_vo = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

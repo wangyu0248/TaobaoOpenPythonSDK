@@ -5,7 +5,7 @@
 
 ## @brief 卖家查询该笔交易订单的资金帐务相关的数据； 1. 只供卖家使用，买家不可使用 2. 可查询所有的状态的订单，但不同状态时订单的相关数据可能会有不同
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:44
+# @date 2012-06-21 12:19:43
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class TradeAmountGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">主订单的财务信息详情</SPAN>
@@ -63,6 +71,9 @@ class TradeAmountGetResponse(object):
         self.trade_amount = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

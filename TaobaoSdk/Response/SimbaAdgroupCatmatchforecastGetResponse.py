@@ -5,7 +5,7 @@
 
 ## @brief 获取指定推广组下给定出价的类目出价预估信息;
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:49
+# @date 2012-06-21 12:19:48
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SimbaAdgroupCatmatchforecastGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">类目出价预估结果信息 预测数据皆为估算结果，以实际发生为准</SPAN>
@@ -63,6 +71,9 @@ class SimbaAdgroupCatmatchforecastGetResponse(object):
         self.adgroup_catmatch_forecast = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

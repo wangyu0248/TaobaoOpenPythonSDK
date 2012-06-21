@@ -5,7 +5,7 @@
 
 ## @brief 用户对一个掌柜进行关注. 关注操作失败返回对应的错误码. 已经关注的过再调用时，返回错误信息，提示已经关注过。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:41
+# @date 2012-06-21 12:19:40
 # @version: 0.0.0
 
 import os

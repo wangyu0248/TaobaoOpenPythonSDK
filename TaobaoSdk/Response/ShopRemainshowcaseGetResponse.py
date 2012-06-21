@@ -5,7 +5,7 @@
 
 ## @brief 获取卖家店铺剩余橱窗数量，已用橱窗数量，总橱窗数量（对于B卖家，后两个参数返回-1）
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:46
+# @date 2012-06-21 12:19:45
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class ShopRemainshowcaseGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">支持返回剩余橱窗数量，已用橱窗数量，总橱窗数量</SPAN>
@@ -63,6 +71,9 @@ class ShopRemainshowcaseGetResponse(object):
         self.shop = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

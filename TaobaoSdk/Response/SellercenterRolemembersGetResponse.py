@@ -5,7 +5,7 @@
 
 ## @brief 获取指定卖家的角色下属员工列表，只能获取属于登陆者自己的信息。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:57
+# @date 2012-06-21 12:19:56
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SellercenterRolemembersGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">子账号基本信息列表。具体信息为id、子账号用户名、主账号id、主账号昵称、当前状态值、是否分流</SPAN>
@@ -63,6 +71,9 @@ class SellercenterRolemembersGetResponse(object):
         self.subusers = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

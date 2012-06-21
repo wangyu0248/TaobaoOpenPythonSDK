@@ -5,7 +5,7 @@
 
 ## @brief 更新图片分类的名字，或者更新图片分类的父分类（即分类移动）。只能移动2级分类到非2级分类，默认分类和1级分类不可移动。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:56
+# @date 2012-06-21 12:19:55
 # @version: 0.0.0
 
 from datetime import datetime
@@ -46,6 +46,14 @@ class PictureCategoryUpdateResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">更新图片分类是否成功</SPAN>
@@ -60,6 +68,9 @@ class PictureCategoryUpdateResponse(object):
         self.done = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

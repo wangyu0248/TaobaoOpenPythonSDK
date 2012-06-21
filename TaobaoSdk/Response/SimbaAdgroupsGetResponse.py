@@ -5,7 +5,7 @@
 
 ## @brief 取得一个推广计划的所有推广组，或者根据一个推广组Id列表取得一组推广组； 如果同时提供了推广计划Id和推广组id列表，则优先使用推广计划Id，当使用 推广计划ID获取数据时，返回的结果是有分页的。如果是用推广组ID列表作查询 则将一次返回所有查询的结果。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:49
+# @date 2012-06-21 12:19:48
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SimbaAdgroupsGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">返回的推广组分页对象</SPAN>
@@ -63,6 +71,9 @@ class SimbaAdgroupsGetResponse(object):
         self.adgroups = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

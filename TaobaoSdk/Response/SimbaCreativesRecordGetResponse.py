@@ -5,7 +5,7 @@
 
 ## @brief 根据一个创意Id列表取得创意对应的修改记录
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:50
+# @date 2012-06-21 12:19:49
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SimbaCreativesRecordGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">创意修改对象列表</SPAN>
@@ -63,6 +71,9 @@ class SimbaCreativesRecordGetResponse(object):
         self.creativerecords = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

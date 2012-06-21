@@ -5,7 +5,7 @@
 
 ## @brief 更新分销平台产品数据，不传更新数据返回失败<br> 1. 对sku进行增、删操作时，原有的sku_ids字段会被忽略，请使用sku_properties和sku_properties_del。<br>
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:47
+# @date 2012-06-21 12:19:46
 # @version: 0.0.0
 
 from datetime import datetime
@@ -46,6 +46,14 @@ class FenxiaoProductUpdateResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">更新时间，时间格式：yyyy-MM-dd HH:mm:ss</SPAN>
@@ -72,6 +80,9 @@ class FenxiaoProductUpdateResponse(object):
         self.pid = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

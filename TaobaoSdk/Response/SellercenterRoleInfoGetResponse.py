@@ -5,7 +5,7 @@
 
 ## @brief 获取指定角色的信息。只能查询属于自己的角色信息 (主账号或者某个主账号的子账号登陆，只能查询属于该主账号的角色信息)
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:57
+# @date 2012-06-21 12:19:56
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SellercenterRoleInfoGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">角色具体信息</SPAN>
@@ -63,6 +71,9 @@ class SellercenterRoleInfoGetResponse(object):
         self.role = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

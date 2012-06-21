@@ -5,7 +5,7 @@
 
 ## @brief 子账号所拥有的权限对象(直接赋予的权限和通过角色赋予的权限的总和对象)
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:27
+# @date 2012-06-21 12:19:26
 # @version: 0.0.0
 
 from copy import deepcopy

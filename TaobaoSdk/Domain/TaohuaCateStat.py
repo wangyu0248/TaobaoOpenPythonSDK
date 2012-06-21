@@ -5,7 +5,7 @@
 
 ## @brief 淘花类目统计结构对象，  是搜索引擎统计返回回来的类目信息
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:28
+# @date 2012-06-21 12:19:27
 # @version: 0.0.0
 
 from copy import deepcopy

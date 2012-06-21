@@ -5,7 +5,7 @@
 
 ## @brief 获取单笔交易的详细信息 1.只有在交易成功的状态下才能取到交易佣金，其它状态下取到的都是零或空值  2.只有单笔订单的情况下Trade数据结构中才包含商品相关的信息  3.获取到的Order中的payment字段在单笔子订单时包含物流费用，多笔子订单时不包含物流费用  注：包含以下字段的返回会增加TOP的后台压力，请仅在确实需要的情况下才去获取：commission_fee, buyer_alipay_no, seller_alipay_no, buyer_email, seller_mobile, seller_phone, seller_name, seller_email, timeout_action_time, item_memo, trade_memo, title, available_confirm_fee
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:44
+# @date 2012-06-21 12:19:43
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class TradeFullinfoGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">搜索到的交易信息列表，返回的Trade和Order中包含的具体信息为入参fields请求的字段信息</SPAN>
@@ -63,6 +71,9 @@ class TradeFullinfoGetResponse(object):
         self.trade = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

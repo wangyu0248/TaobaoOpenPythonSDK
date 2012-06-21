@@ -5,7 +5,7 @@
 
 ## @brief 供应商确认收款（非支付宝交易）。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:47
+# @date 2012-06-21 12:19:46
 # @version: 0.0.0
 
 from datetime import datetime
@@ -46,6 +46,14 @@ class FenxiaoOrderConfirmPaidResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">确认结果成功与否</SPAN>
@@ -60,6 +68,9 @@ class FenxiaoOrderConfirmPaidResponse(object):
         self.is_success = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

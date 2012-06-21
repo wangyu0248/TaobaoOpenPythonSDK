@@ -5,7 +5,7 @@
 
 ## @brief 直通车推广计划下的词报表基础数据查询
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:52
+# @date 2012-06-21 12:19:51
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class TopatsSimbaCampkeywordbaseGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">创建任务信息。里面只包含task_id和created</SPAN>
@@ -63,6 +71,9 @@ class TopatsSimbaCampkeywordbaseGetResponse(object):
         self.task = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

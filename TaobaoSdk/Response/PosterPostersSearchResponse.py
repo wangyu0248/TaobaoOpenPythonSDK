@@ -5,7 +5,7 @@
 
 ## @brief 根据画报关键词、发布时间、画报制作者、编辑推荐、特色推荐进行搜索，同时支持多种排序方式。此接口至少需要一个查询条件方可进行查询，如key_word，start_date，end_date，channel_ids，editor_recommend，user_nick，recommend_factor，至少有一个查询条件。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:48
+# @date 2012-06-21 12:19:47
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class PosterPostersSearchResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">返回画报列表</SPAN>
@@ -63,6 +71,9 @@ class PosterPostersSearchResponse(object):
         self.posters = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

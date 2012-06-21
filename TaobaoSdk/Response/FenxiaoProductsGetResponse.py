@@ -5,7 +5,7 @@
 
 ## @brief 查询供应商的产品数据。      * 入参传入pids将优先查询，即只按这个条件查询。     *入参传入sku_number将优先查询(没有传入pids)，即只按这个条件查询(最多显示50条)     * 入参fields传skus将查询sku的数据，不传该参数默认不查询，返回产品的其它信息。     * 入参fields传入images将查询多图数据，不传只返回主图数据。     * 入参fields仅对传入pids生效（只有按ID查询时，才能查询额外的数据）     * 查询结果按照产品发布时间倒序，即时间近的数据在前。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:47
+# @date 2012-06-21 12:19:46
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class FenxiaoProductsGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">产品对象记录集。返回 FenxiaoProduct 包含的字段信息。</SPAN>
@@ -75,6 +83,9 @@ class FenxiaoProductsGetResponse(object):
         self.total_results = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

@@ -5,7 +5,7 @@
 
 ## @brief 用于获取指定时间段内的定时API任务信息。</br> 条件：1）必须是本APPKEY创建的任务。</br>      2)起始时间不能早于3天前的当前时刻。</br>      3）结束时间不能晚于一天以后的当前时刻。</br>
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:49
+# @date 2012-06-21 12:19:48
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class TopatsTasksGetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">符合查询条件内的定时任务的结果集</SPAN>
@@ -63,6 +71,9 @@ class TopatsTasksGetResponse(object):
         self.tasks = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

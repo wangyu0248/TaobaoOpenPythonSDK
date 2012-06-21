@@ -5,7 +5,7 @@
 
 ## @brief 添加一张商品属性图片到num_iid指定的商品中  传入的num_iid所对应的商品必须属于当前会话的用户  图片的属性必须要是颜色的属性，这个在前台显示的时候需要和sku进行关联的  商品属性图片只有享有服务的卖家（如：淘宝大卖家、订购了淘宝多图服务的卖家）才能上传  商品属性图片有数量和大小上的限制，最多不能超过24张（每个颜色属性都有一张）。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:42
+# @date 2012-06-21 12:19:41
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class ItemPropimgUploadResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">PropImg属性图片结构</SPAN>
@@ -63,6 +71,9 @@ class ItemPropimgUploadResponse(object):
         self.prop_img = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

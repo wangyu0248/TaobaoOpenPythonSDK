@@ -103,6 +103,14 @@ class ${str().join([x.capitalize() for x in api.getElementsByTagName("name")[0].
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
     ## 从元数据中解析得到的属性
     % if len(api.getElementsByTagName("response")) > 0:
         % for parameter in api.getElementsByTagName("response")[0].getElementsByTagName("param"):
@@ -164,6 +172,9 @@ class ${str().join([x.capitalize() for x in api.getElementsByTagName("name")[0].
     % endif
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

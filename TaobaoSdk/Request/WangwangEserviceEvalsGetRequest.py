@@ -5,7 +5,7 @@
 
 ## @brief 根据用户id查询用户对应的评价详细情况， 主账号id可以查询店铺内子账号的评价 组管理员可以查询组内账号的评价 非管理员的子账号可以查自己的评价
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:34
+# @date 2012-06-21 12:19:33
 # @version: 0.0.0
 
 import os

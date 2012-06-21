@@ -5,7 +5,7 @@
 
 ## @brief 应用订单信息
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:26
+# @date 2012-06-21 12:19:24
 # @version: 0.0.0
 
 from copy import deepcopy

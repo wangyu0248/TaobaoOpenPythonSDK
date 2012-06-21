@@ -5,7 +5,7 @@
 
 ## @brief 获取后台供卖家发布商品的标准商品类目
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:29
+# @date 2012-06-21 12:19:28
 # @version: 0.0.0
 
 import os

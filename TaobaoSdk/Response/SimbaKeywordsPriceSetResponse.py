@@ -5,7 +5,7 @@
 
 ## @brief 设置一批关键词的出价和匹配模式（目前设置关键词出价和匹配模式不仅限制在一个宝贝下，入参keword_price中的keywordid可以是不同宝贝下的，adgroup_id暂时无用可不传）
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:51
+# @date 2012-06-21 12:19:50
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class SimbaKeywordsPriceSetResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">成功设置关键词价格的关键词列表</SPAN>
@@ -63,6 +71,9 @@ class SimbaKeywordsPriceSetResponse(object):
         self.keywords = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

@@ -5,7 +5,7 @@
 
 ## @brief 用户对一个掌柜进行关注. 关注操作失败返回对应的错误码. 已经关注的过再调用时，返回错误信息，提示已经关注过。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:57
+# @date 2012-06-21 12:19:56
 # @version: 0.0.0
 
 from datetime import datetime
@@ -46,6 +46,14 @@ class JianghuFanFollowResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">true 成功。false 失败</SPAN>
@@ -60,6 +68,9 @@ class JianghuFanFollowResponse(object):
         self.follow_result = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)

@@ -5,7 +5,7 @@
 
 ## @brief 类目对象
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:24
+# @date 2012-06-21 12:19:23
 # @version: 0.0.0
 
 from copy import deepcopy

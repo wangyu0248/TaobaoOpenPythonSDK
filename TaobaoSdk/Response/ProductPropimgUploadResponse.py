@@ -5,7 +5,7 @@
 
 ## @brief 传入产品ID  传入props,目前仅支持颜色属性.调用taobao.itemprops.get.v2取得颜色属性pid, 再用taobao.itempropvalues.get取得vid;格式:pid:vid,只能传入一个颜色pid:vid串;  传入图片内容  注意：图片最大为2M,只支持JPG,GIF,如果需要传多张，可调多次
 # @author wuliang@maimiaotech.com
-# @date 2012-06-19 10:43:44
+# @date 2012-06-21 12:19:43
 # @version: 0.0.0
 
 from datetime import datetime
@@ -49,6 +49,14 @@ class ProductPropimgUploadResponse(object):
         # </UL>        
         self.responseBody = None
 
+        self.code = None
+
+        self.msg = None
+
+        self.sub_code = None
+
+        self.sub_msg = None
+
         
         
         ## @brief <SPAN style="font-size:16px; font-family:'宋体','Times New Roman',Georgia,Serif;">支持返回产品属性图片中的：url,id,created,modified</SPAN>
@@ -63,6 +71,9 @@ class ProductPropimgUploadResponse(object):
         self.product_prop_img = None
     
         self.__init(kargs)
+
+    def isSuccess(self):
+        return self.code == None and self.sub_code == None
     
     def _newInstance(self, name, value):
         types = self._getPropertyType(name)
