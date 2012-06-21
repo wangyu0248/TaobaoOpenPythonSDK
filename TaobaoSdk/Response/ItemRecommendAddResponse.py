@@ -5,7 +5,7 @@
 
 ## @brief 将当前用户指定商品设置为橱窗推荐状态 橱窗推荐需要用户有剩余橱窗位才可以顺利执行 这个Item所属卖家从传入的session中获取，需要session绑定 需要判断橱窗推荐是否已满，橱窗推荐已满停止调用橱窗推荐接口，2010年1月底开放查询剩余橱窗推荐数后可以按数量橱窗推荐商品
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:41
+# @date 2012-06-21 17:17:53
 # @version: 0.0.0
 
 from datetime import datetime
@@ -94,6 +94,10 @@ class ItemRecommendAddResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

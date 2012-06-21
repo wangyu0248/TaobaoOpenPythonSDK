@@ -5,7 +5,7 @@
 
 ## @brief 将一个分组下的所有会员移动到另一个分组，会员从原分组中删除 注：移动属性为异步任务建议先调用taobao.crm.grouptask.check 确保涉及属性上没有任务。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:54
+# @date 2012-06-21 17:18:08
 # @version: 0.0.0
 
 from datetime import datetime
@@ -91,6 +91,10 @@ class CrmGroupMoveResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

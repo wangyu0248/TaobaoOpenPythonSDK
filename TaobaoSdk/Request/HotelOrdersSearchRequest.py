@@ -5,7 +5,7 @@
 
 ## @brief 此接口用于查询多个酒店订单，根据传入的查询条件查询订单信息。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:37
+# @date 2012-06-21 17:17:48
 # @version: 0.0.0
 
 import os

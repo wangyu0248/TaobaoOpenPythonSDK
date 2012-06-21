@@ -5,7 +5,7 @@
 
 ## @brief 此API更新卖家店铺内自定义类目  注：因为缓存的关系，添加的新类目需8个小时后才可以在淘宝页面上正常显示，但是不影响在该类目下商品发布
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:45
+# @date 2012-06-21 17:17:57
 # @version: 0.0.0
 
 from datetime import datetime
@@ -94,6 +94,10 @@ class SellercatsListUpdateResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

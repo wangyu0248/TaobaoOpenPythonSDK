@@ -5,7 +5,7 @@
 
 ## @brief 卖家查询该笔交易订单的资金帐务相关的数据； 1. 只供卖家使用，买家不可使用 2. 可查询所有的状态的订单，但不同状态时订单的相关数据可能会有不同
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:43
+# @date 2012-06-21 17:17:54
 # @version: 0.0.0
 
 from datetime import datetime
@@ -94,6 +94,10 @@ class TradeAmountGetResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

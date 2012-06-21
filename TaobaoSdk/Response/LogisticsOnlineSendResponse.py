@@ -5,7 +5,7 @@
 
 ## @brief 用户调用该接口可实现在线订单发货（支持货到付款） 调用该接口实现在线下单发货，有两种情况：<br> <font color='red'>如果不输入运单号的情况：交易状态不会改变，需要调用taobao.logistics.online.confirm确认发货后交易状态才会变成卖家已发货。<br> 如果输入运单号的情况发货：交易订单状态会直接变成卖家已发货 。</font>
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:45
+# @date 2012-06-21 17:17:57
 # @version: 0.0.0
 
 from datetime import datetime
@@ -94,6 +94,10 @@ class LogisticsOnlineSendResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

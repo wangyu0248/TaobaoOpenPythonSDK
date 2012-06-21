@@ -5,7 +5,7 @@
 
 ## @brief 添加一张商品图片到num_iid指定的商品中  传入的num_iid所对应的商品必须属于当前会话的用户  如果更新图片需要设置itemimg_id，且该itemimg_id的图片记录需要属于传入的num_iid对应的商品。如果新增图片则不用设置  商品图片有数量和大小上的限制，根据卖家享有的服务（如：卖家订购了多图服务等），商品图片数量限制不同。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:41
+# @date 2012-06-21 17:17:52
 # @version: 0.0.0
 
 from datetime import datetime
@@ -94,6 +94,10 @@ class ItemImgUploadResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

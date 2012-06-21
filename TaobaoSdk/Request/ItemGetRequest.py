@@ -5,7 +5,7 @@
 
 ## @brief 获取单个商品的详细信息  卖家未登录时只能获得这个商品的公开数据，卖家登录后可以获取商品的所有数据
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:28
+# @date 2012-06-21 17:17:36
 # @version: 0.0.0
 
 import os

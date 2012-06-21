@@ -5,7 +5,7 @@
 
 ## @brief 用户信用
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:21
+# @date 2012-06-21 17:17:26
 # @version: 0.0.0
 
 from copy import deepcopy

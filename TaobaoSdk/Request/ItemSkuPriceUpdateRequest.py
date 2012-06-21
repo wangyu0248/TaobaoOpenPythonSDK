@@ -5,7 +5,7 @@
 
 ## @brief 更新商品SKU的价格
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:29
+# @date 2012-06-21 17:17:37
 # @version: 0.0.0
 
 import os

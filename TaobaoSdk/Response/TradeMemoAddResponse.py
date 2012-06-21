@@ -5,7 +5,7 @@
 
 ## @brief 根据登录用户的身份（买家或卖家），自动添加相应的交易备注,不能重复调用些接口添加备注，需要更新备注请用taobao.trade.memo.update
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:43
+# @date 2012-06-21 17:17:55
 # @version: 0.0.0
 
 from datetime import datetime
@@ -94,6 +94,10 @@ class TradeMemoAddResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

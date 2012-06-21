@@ -5,7 +5,7 @@
 
 ## @brief 图片链接
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:24
+# @date 2012-06-21 17:17:31
 # @version: 0.0.0
 
 from copy import deepcopy

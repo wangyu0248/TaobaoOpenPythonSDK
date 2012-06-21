@@ -5,7 +5,7 @@
 
 ## @brief 搜索评价信息，只能获取距今180天内的评价记录
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:30
+# @date 2012-06-21 17:17:39
 # @version: 0.0.0
 
 import os

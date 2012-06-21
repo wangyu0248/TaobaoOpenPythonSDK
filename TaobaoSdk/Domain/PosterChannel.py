@@ -5,7 +5,7 @@
 
 ## @brief 画报频道结构
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:22
+# @date 2012-06-21 17:17:28
 # @version: 0.0.0
 
 from copy import deepcopy

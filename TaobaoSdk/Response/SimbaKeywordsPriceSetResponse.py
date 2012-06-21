@@ -5,7 +5,7 @@
 
 ## @brief 设置一批关键词的出价和匹配模式（目前设置关键词出价和匹配模式不仅限制在一个宝贝下，入参keword_price中的keywordid可以是不同宝贝下的，adgroup_id暂时无用可不传）
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:50
+# @date 2012-06-21 17:18:04
 # @version: 0.0.0
 
 from datetime import datetime
@@ -94,6 +94,10 @@ class SimbaKeywordsPriceSetResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

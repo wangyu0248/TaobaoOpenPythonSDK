@@ -5,7 +5,7 @@
 
 ## @brief 1. 此接口用于查询该会话用户作为房型发布者发布的房型被审核通过的增量房型信息。 2. 只能查询时间跨度为一天的增量酒店记录：start_modified：2011-7-1 16:00:00 end_modified： 2011-7-2 15:59:59（注意不能写成16:00:00）  3. 返回数据结果为发布房型时间的倒序
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:53
+# @date 2012-06-21 17:18:07
 # @version: 0.0.0
 
 from datetime import datetime
@@ -118,6 +118,10 @@ class HotelSoldTypesIncrementGetResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

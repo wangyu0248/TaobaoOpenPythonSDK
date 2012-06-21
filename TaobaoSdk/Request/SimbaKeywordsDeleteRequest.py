@@ -5,7 +5,7 @@
 
 ## @brief 删除一批关键词
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:35
+# @date 2012-06-21 17:17:45
 # @version: 0.0.0
 
 import os

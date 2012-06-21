@@ -5,7 +5,7 @@
 
 ## @brief * 获取多个商品下的所有sku
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:29
+# @date 2012-06-21 17:17:37
 # @version: 0.0.0
 
 import os

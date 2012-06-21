@@ -5,7 +5,7 @@
 
 ## @brief 下单结果回传
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:53
+# @date 2012-06-21 17:18:06
 # @version: 0.0.0
 
 from datetime import datetime
@@ -91,6 +91,10 @@ class HotelOrderBookingFeedbackResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

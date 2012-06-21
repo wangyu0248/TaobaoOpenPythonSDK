@@ -5,7 +5,7 @@
 
 ## @brief 推荐关联店铺信息
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:26
+# @date 2012-06-21 17:17:33
 # @version: 0.0.0
 
 from copy import deepcopy

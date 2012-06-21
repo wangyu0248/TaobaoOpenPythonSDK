@@ -5,7 +5,7 @@
 
 ## @brief 查询卖家已经创建的优惠券，接口返回信息：优惠券ID，面值，创建时间，有效期，使用条件，使用渠道，创建渠道，优惠券总数量
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:52
+# @date 2012-06-21 17:18:05
 # @version: 0.0.0
 
 from datetime import datetime
@@ -106,6 +106,10 @@ class PromotionCouponsGetResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

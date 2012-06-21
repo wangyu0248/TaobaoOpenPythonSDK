@@ -5,7 +5,7 @@
 
 ## @brief 只能更新发货前子订单的销售属性  只能更新价格相同的销售属性。对于拍下减库存的交易会同步更新销售属性的库存量。对于旺店的交易，要使用商品扩展信息中的SKU价格来比较。  必须使用sku_id或sku_props中的一个参数来更新，如果两个都传的话，sku_id优先
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:43
+# @date 2012-06-21 17:17:55
 # @version: 0.0.0
 
 from datetime import datetime
@@ -94,6 +94,10 @@ class TradeOrderskuUpdateResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

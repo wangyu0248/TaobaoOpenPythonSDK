@@ -5,7 +5,7 @@
 
 ## @brief 编辑会员的基本资料，接口返回会员信息修改是否成功
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:38
+# @date 2012-06-21 17:17:49
 # @version: 0.0.0
 
 import os

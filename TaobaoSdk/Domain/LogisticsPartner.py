@@ -5,7 +5,7 @@
 
 ## @brief 查询揽送范围之内的物流公司信息
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:28
+# @date 2012-06-21 17:17:35
 # @version: 0.0.0
 
 from copy import deepcopy

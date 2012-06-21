@@ -5,7 +5,7 @@
 
 ## @brief 与对应画报相关联的商品的信息
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:25
+# @date 2012-06-21 17:17:31
 # @version: 0.0.0
 
 from copy import deepcopy

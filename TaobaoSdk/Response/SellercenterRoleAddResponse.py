@@ -5,7 +5,7 @@
 
 ## @brief 给指定的卖家创建新的子账号角色<br/> 如果需要授权的权限点有下级权限点或上级权限点，把该权限点的父权限点和该权限点的所有子权限都一并做赋权操作，并递归处理<br/>例如：权限点列表如下<br/> code=sell 宝贝管理<br/> ---------|code=sm 店铺管理<br/> ---------|---------|code=sm-design 如店铺装修<br/> ---------|---------|---------|code=sm-tbd-visit内店装修入口<br/> ---------|---------|---------|code=sm-tbd-publish内店装修发布<br/> ---------|---------|code=phone 手机淘宝店铺<br/> 调用改接口给code=sm-design店铺装修赋权时，同时会将下列权限点都赋予默认角色<br/> code=sell 宝贝管理<br/> ---------|code=sm 店铺管理<br/> ---------|---------|code=sm-design 如店铺装修<br/> ---------|---------|---------|code=sm-tbd-visit内店装修入口<br/> ---------|---------|---------|code=sm-tbd-publish内店装修发布<br/>
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:56
+# @date 2012-06-21 17:18:10
 # @version: 0.0.0
 
 from datetime import datetime
@@ -94,6 +94,10 @@ class SellercenterRoleAddResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

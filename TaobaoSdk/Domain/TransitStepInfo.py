@@ -5,7 +5,7 @@
 
 ## @brief 物流跟踪信息的一条
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:26
+# @date 2012-06-21 17:17:32
 # @version: 0.0.0
 
 from copy import deepcopy

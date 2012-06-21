@@ -5,7 +5,7 @@
 
 ## @brief 获取删除的类目出价ID
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:34
+# @date 2012-06-21 17:17:44
 # @version: 0.0.0
 
 import os

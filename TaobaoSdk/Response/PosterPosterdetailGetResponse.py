@@ -5,7 +5,7 @@
 
 ## @brief 通过画报ID取得画报信息，上一张，下一张，图片列表等信息
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:47
+# @date 2012-06-21 17:17:59
 # @version: 0.0.0
 
 from datetime import datetime
@@ -109,6 +109,10 @@ class PosterPosterdetailGetResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

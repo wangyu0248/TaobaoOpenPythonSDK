@@ -5,7 +5,7 @@
 
 ## @brief 修改一个已经存在的分组，接口返回分组的修改是否成功
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:54
+# @date 2012-06-21 17:18:08
 # @version: 0.0.0
 
 from datetime import datetime
@@ -91,6 +91,10 @@ class CrmGroupUpdateResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

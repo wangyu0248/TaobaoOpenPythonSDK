@@ -5,7 +5,7 @@
 
 ## @brief 用户对一个掌柜进行关注. 关注操作失败返回对应的错误码. 已经关注的过再调用时，返回错误信息，提示已经关注过。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:56
+# @date 2012-06-21 17:18:11
 # @version: 0.0.0
 
 from datetime import datetime
@@ -91,6 +91,10 @@ class JianghuFanFollowResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

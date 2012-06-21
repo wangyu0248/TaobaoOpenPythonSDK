@@ -5,7 +5,7 @@
 
 ## @brief 更新频道Id取频道详情
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:39
+# @date 2012-06-21 17:17:49
 # @version: 0.0.0
 
 import os

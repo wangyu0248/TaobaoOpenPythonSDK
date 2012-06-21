@@ -5,7 +5,7 @@
 
 ## @brief 用户根据淘宝交易号查询物流流转信息，如2010-8-10 15：23：00到达杭州集散地
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:31
+# @date 2012-06-21 17:17:40
 # @version: 0.0.0
 
 import os

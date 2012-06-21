@@ -5,7 +5,7 @@
 
 ## @brief *更新一个sku的数据  *需要更新的sku通过属性properties进行匹配查找  *商品的数量和价格必须大于等于0  *sku记录会更新到指定的num_iid对应的商品中  *num_iid对应的商品必须属于当前的会话用户
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:42
+# @date 2012-06-21 17:17:53
 # @version: 0.0.0
 
 from datetime import datetime
@@ -94,6 +94,10 @@ class ItemSkuUpdateResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

@@ -5,7 +5,7 @@
 
 ## @brief 商品优惠策略详情
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:28
+# @date 2012-06-21 17:17:35
 # @version: 0.0.0
 
 from copy import deepcopy

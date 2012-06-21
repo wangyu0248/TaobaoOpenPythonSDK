@@ -5,7 +5,7 @@
 
 ## @brief 通过此接口新增卖家地址库,卖家最多可添加5条地址库,新增第一条卖家地址，将会自动设为默认地址库
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:31
+# @date 2012-06-21 17:17:39
 # @version: 0.0.0
 
 import os

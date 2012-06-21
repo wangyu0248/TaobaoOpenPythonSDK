@@ -5,7 +5,7 @@
 
 ## @brief 此接口用于发布一个集市酒店商品，商品的发布者是当前会话的用户。如果该酒店、该房型、该用户所对应的商品在淘宝集市酒店系统中已经存在，则会返回错误提示。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:53
+# @date 2012-06-21 17:18:07
 # @version: 0.0.0
 
 from datetime import datetime
@@ -94,6 +94,10 @@ class HotelRoomAddResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:

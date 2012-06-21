@@ -5,7 +5,7 @@
 
 ## @brief Hotel（酒店）结构。各字段详细说明可参考接口定义，如：酒店发布接口。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:25
+# @date 2012-06-21 17:17:32
 # @version: 0.0.0
 
 from copy import deepcopy

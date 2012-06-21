@@ -5,7 +5,7 @@
 
 ## @brief 酒店订单入住人结构。
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:25
+# @date 2012-06-21 17:17:32
 # @version: 0.0.0
 
 from copy import deepcopy

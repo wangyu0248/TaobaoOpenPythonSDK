@@ -5,7 +5,7 @@
 
 ## @brief 删除itemimg_id 所指定的商品图片  传入的num_iid所对应的商品必须属于当前会话的用户  itemimg_id对应的图片需要属于num_iid对应的商品
 # @author wuliang@maimiaotech.com
-# @date 2012-06-21 12:19:41
+# @date 2012-06-21 17:17:52
 # @version: 0.0.0
 
 from datetime import datetime
@@ -94,6 +94,10 @@ class ItemImgDeleteResponse(object):
             if isArray:
                 return [x.encode("utf-8") for x in value[value.keys()[0]]]
             else:
+                #like taobao.simba.rpt.adgroupbase.get, response.rpt_adgroup_base_list is a json string,but will be decode into a list via python json lib 
+                if not isinstance(value,str):
+                    #the value should be a json string 
+                    return value
                 return value.encode("utf-8")
         else:
             if isArray:
